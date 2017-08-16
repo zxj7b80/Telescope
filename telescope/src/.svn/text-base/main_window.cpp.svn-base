@@ -1,0 +1,245 @@
+/***************************************************************************
+ *   Copyright (C) 2009 by donglongchao   *
+ *   donglongchao@163.com   *
+ *                                                                         *
+ *   This program is free software; you can redistribute it and/or modify  *
+ *   it under the terms of the GNU General Public License as published by  *
+ *   the Free Software Foundation; either version 2 of the License, or     *
+ *   (at your option) any later version.                                   *
+ *                                                                         *
+ *   This program is distributed in the hope that it will be useful,       *
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
+ *   GNU General Public License for more details.                          *
+ *                                                                         *
+ *   You should have received a copy of the GNU General Public License     *
+ *   along with this program; if not, write to the                         *
+ *   Free Software Foundation, Inc.,                                       *
+ *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
+ ***************************************************************************/
+
+#include "main_window.h"
+#include "direct_azalt.h"
+#include "direct_m3.h"
+#include "direct_m2.h"
+#include "tracking.h"
+#include "diag_m2.h"
+#include "terminal.h"
+#include "UMAC.h"
+#include "signs.h"
+
+ServiceThread::ServiceThread()
+{
+//	connect(this, SIGNAL(finished()), this, SLOT(deleteLater()));
+}
+
+ServiceThread::~ServiceThread()
+{
+	qDebug ( "service" );
+}
+
+void ServiceThread::run()
+{
+	exec();
+}
+
+MainWindow::MainWindow ( QWidget *parent ) :QMainWindow ( parent )
+{
+	setupUi ( this );
+	setAttribute ( Qt::WA_DeleteOnClose );
+	service = new ServiceThread;
+	connect(service, SIGNAL(finished()), service, SLOT(deleteLater()));
+	service->start();
+	SMySetting::instance_p()->beginGroup ( "main_window" );
+	resize ( SMySetting::instance_p()->value ( "size" ).toSize() );
+	move ( SMySetting::instance_p()->value ( "pos" ).toPoint() );
+	SMySetting::instance_p()->endGroup();
+	connect ( actionAz_Alt,SIGNAL ( triggered() ),this,SLOT ( startDirectAzalt() ) );
+	connect ( actionM3,SIGNAL ( triggered() ),this,SLOT ( startDirectM3() ) );
+	connect ( actionM2,SIGNAL ( triggered() ),this,SLOT ( startDirectM2() ) );
+	connect ( actionTracking,SIGNAL ( triggered() ),this,SLOT ( startTracking() ) );
+	connect ( actionM2_D,SIGNAL ( triggered() ),this,SLOT ( startDiagM2() ) );
+	connect ( actionTerminal,SIGNAL ( triggered() ),this,SLOT ( startTerminal() ) );
+}
+
+MainWindow::~MainWindow()
+{
+	deleteLater();
+	service->exit(0);usleep(0);//important ,to wait the destrocurtor of service
+	service->deleteLater();
+//	service->wait();
+	
+//	direct_m3->deleteLater();
+//	terminal->deleteLater();
+}
+
+void MainWindow::closeEvent ( QCloseEvent *event )
+{
+	QMessageBox mb ( QMessageBox::Question,tr ( "About to close" ),
+	                 tr ( "Do you want to close?      " ),
+	                 QMessageBox::Yes |QMessageBox::No |QMessageBox::Cancel );
+	if ( mb.exec() == QMessageBox::Yes )
+	{
+		SMySetting::instance_p()->beginGroup ( "main_window" );
+		SMySetting::instance_p()->setValue ( "size",size() );
+		SMySetting::instance_p()->setValue ( "pos",pos() );
+		SMySetting::instance_p()->endGroup();
+		return;
+	}
+	event->ignore();
+}
+
+void MainWindow::startDirectAzalt()
+{
+//
+	try
+	{
+		direct_azalt = new DirectAzalt ( this );
+	}
+	catch ( QString excepts )
+	{
+		QMessageBox mb ( QMessageBox::Warning,
+		                 tr ( "About to close" ),
+		                 tr ( excepts.toAscii() ),
+		                 QMessageBox::Ok );
+		if ( mb.exec() ==QMessageBox::Ok )
+			return;
+	}
+	mdiArea->addSubWindow ( direct_azalt );
+	direct_azalt->show();
+	disconnect ( actionAz_Alt,SIGNAL ( triggered() ),this,SLOT ( startDirectAzalt() ) );
+	connect ( actionAz_Alt,SIGNAL ( triggered() ),direct_azalt->parentWidget(),SLOT ( showNormal() ) );
+}
+void MainWindow::startDirectM3()
+{
+	try
+	{
+		direct_m3 = new DirectM3 ( this );
+	}
+	catch ( std::string excepts )
+	{
+		QMessageBox mb ( QMessageBox::Warning,
+		                 tr ( "About to close" ),
+	                        tr ("%1").arg(QString::fromStdString(excepts)),
+//		                 tr ( "unknown error or excepts" ),
+		                 QMessageBox::Ok );
+		if ( mb.exec() ==QMessageBox::Ok )
+			return;
+	}
+	mdiArea->addSubWindow ( direct_m3 );
+	direct_m3->show();
+	disconnect ( actionM3,SIGNAL ( triggered() ),this,SLOT ( startDirectM3() ) );
+	connect ( actionM3,SIGNAL ( triggered() ),direct_m3->parentWidget(),SLOT ( showNormal() ) );
+}
+
+void MainWindow::startDirectM2()
+{
+//
+	try
+	{
+		direct_m2 = new DirectM2 ( this );
+	}
+	catch ( std::string excepts )
+	{
+		qDebug() << "catch";
+		QMessageBox mb ( QMessageBox::Warning,
+		                 tr ( "About to close" ),
+		                 tr ( "%1" ).arg ( QString::fromStdString ( excepts ) ),
+		                 QMessageBox::Ok );
+		if ( mb.exec() ==QMessageBox::Ok )
+			return;
+	}
+	mdiArea->addSubWindow ( direct_m2 );
+	direct_m2->show();
+	disconnect ( actionM2,SIGNAL ( triggered() ),this,SLOT ( startDirectM2() ) );
+	connect ( actionM2,SIGNAL ( triggered() ),direct_m2->parentWidget(),SLOT ( showNormal() ) );
+}
+
+void MainWindow::startTracking()
+{
+//
+	try
+	{
+		tracking = new Tracking ( this );
+	}
+	catch ( std::string excepts )
+	{
+		qDebug() << "catch";
+		QMessageBox mb ( QMessageBox::Warning,
+		                 tr ( "About to close" ),
+		                 tr ( "%1" ).arg ( QString::fromStdString ( excepts ) ),
+		                 QMessageBox::Ok );
+		if ( mb.exec() ==QMessageBox::Ok )
+			return;
+	}
+	mdiArea->addSubWindow ( tracking );
+	tracking->show();
+	disconnect ( actionTracking,SIGNAL ( triggered() ),this,SLOT ( startTracking() ) );
+	connect ( actionTracking,SIGNAL ( triggered() ),tracking->parentWidget(),SLOT ( showNormal() ) );
+}
+
+void MainWindow::startDiagM2()
+{
+//
+	try
+	{
+		diag_m2 = new DiagM2 ( this );
+	}
+	catch ( std::string excepts )
+	{
+		QMessageBox mb ( QMessageBox::Warning,
+		                 tr ( "About to close" ),
+		                 tr ( "%1" ).arg ( QString::fromStdString ( excepts ) ),
+		                 QMessageBox::Ok );
+		if ( mb.exec() ==QMessageBox::Ok )
+			return;
+	}
+	mdiArea->addSubWindow ( diag_m2 );
+	diag_m2->show();
+	disconnect ( actionM2_D,SIGNAL ( triggered() ),this,SLOT ( startDiagM2() ) );
+	connect ( actionM2_D,SIGNAL ( triggered() ),diag_m2->parentWidget(),SLOT ( showNormal() ) );
+}
+
+void MainWindow::startTerminal()
+{
+//
+	try
+	{
+		terminal = new Terminal ( this );
+	}
+	catch ( std::string excepts )
+	{
+		QMessageBox mb ( QMessageBox::Warning,
+		                 tr ( "About to close" ),
+		                 tr ( "%1" ).arg ( QString::fromStdString ( excepts ) ),
+		                 QMessageBox::Ok );
+		if ( mb.exec() ==QMessageBox::Ok )
+			return;
+	}
+	mdiArea->addSubWindow ( terminal );
+	terminal->show();
+	disconnect ( actionTerminal,SIGNAL ( triggered() ),this,SLOT ( startTerminal() ) );
+	connect ( actionTerminal,SIGNAL ( triggered() ),terminal->parentWidget(),SLOT ( showNormal() ) );
+}
+
+void MainWindow::on_actionWindows_triggered()
+{
+	qDebug("windows");
+	QApplication::setStyle(new QWindowsStyle);
+}
+
+void MainWindow::on_actionMotif_triggered()
+{
+	QApplication::setStyle(new QMotifStyle);
+}
+
+void MainWindow::on_actionGtk_triggered()
+{
+	QApplication::setStyle(new QGtkStyle);
+}
+
+void MainWindow::on_actionCDE_triggered()
+{
+	QApplication::setStyle(new QCDEStyle);
+}
+

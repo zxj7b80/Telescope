@@ -1,0 +1,39 @@
+//
+// C++ Interface: terminal
+//
+// Description: 
+//
+//
+// Author: donglongchao <donglongchao@163.com>, (C) 2010
+//
+// Copyright: See COPYING file that comes with this distribution
+//
+//
+#ifndef TERMINAL_H
+#define TERMINAL_H
+#include <QtGui>
+#include "ui_terminal.h"
+
+class MainWindow;
+class QGalil;
+class Terminal:public QDialog,private Ui::Dialog
+{
+	Q_OBJECT
+	public:
+		Terminal(MainWindow *parent);
+		~Terminal();
+//		QGalil *galil;
+		QGalil *galil2;
+	protected:
+		virtual void closeEvent ( QCloseEvent *event );
+	private:
+		MainWindow *m_parent;
+		void connectDevice();
+		void initUi();
+		void initUi2();
+	private slots:
+		void updateInterface(std::vector<char> );
+		void updateInterface2(std::vector<char> );
+		void on_pushButton_clicked();
+};
+#endif

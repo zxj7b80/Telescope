@@ -1,0 +1,140 @@
+//
+// C++ Interface: signs
+//
+// Description:
+//
+//
+// Author: donglongchao <donglongchao@163.com>, (C) 2009
+//
+// Copyright: See COPYING file that comes with this distribution
+//
+//
+#ifndef SIGNS_H
+#define SIGNS_H
+
+#include <QValidator>
+#include <QMutex>
+#include "singleton.h"
+#include "qgalil.h"
+
+#define VEL_FAST      0x00
+#define VEL_MID       0x01
+#define VEL_SLOW      0x02
+#define VEL_SPEC      0x03
+#define ACC_DEFAULT   0x00
+#define ACC_SPEC      0x01
+#define STEP1         0x00
+#define STEP01        0x01
+#define STEP001       0x02
+#define STEP_SPEC     0x03
+
+#define CTS           0.1125
+#define M3_TR_EN      0x0A
+#define M3_TR_MO      10.2
+#define MMTOCTS(X)    (((X)*M3_TR_EN*300)/M3_TR_MO)
+
+#define IP_LOCAL        "192.6.94.1"
+#define IP_UMAC         "192.6.94.5" //AZ,ALT,E1,DERO,DOME
+#define IP_GALIL8       "192.6.94.8" //M3,BALANCE
+#define IP_GALIL6_1     "192.6.94.9" //N1,C1,AGU
+#define IP_GALIL6_2     "192.6.94.10" //COVERS,M1 LIFT
+#define IP_GALIL6_3     "192.6.94.7" //M2
+
+class MyDoubleValidator : public QDoubleValidator//enhanced version of QDoubleValidator,more strict.
+{
+	public:
+		MyDoubleValidator ( double bottom, double top, int decimals, QObject* parent = 0 )
+				: QDoubleValidator ( bottom, top, decimals, parent )
+		{}
+		QValidator::State validate ( QString & input, int &pos ) const
+		{
+			if ( input.isEmpty() || input == "." )
+				return Intermediate;
+			if ( QDoubleValidator::validate ( input, pos ) != Acceptable )
+			{
+				return Invalid;
+			}
+			return Acceptable;
+		}
+};
+
+class MySetting:public QSettings
+{
+		DECLARE_SINGLETON_CLASS ( MySetting )
+	private:
+		MySetting() :QSettings ( "SaiGu","Telescope" ) {}
+		virtual ~MySetting(){}
+};
+typedef Singleton<MySetting> SMySetting;
+
+class UMAC;
+class QUMAC:public QObject
+{
+		DECLARE_SINGLETON_CLASS ( QUMAC )
+		Q_OBJECT
+	public:
+		void QcommCmdPMAC ( const char cCommand[],QString& cResponse );
+		void QctrlCmdPMAC ( const int cCommand,QString& cResponse );
+		void QsendDataDPRAM ( const char cData[],long offset );
+		void QgetDataDPRAM ( QString& data,long offset,int data_length );
+		void Qclean_close();
+	protected:
+	private:
+		QUMAC (const std::string& address = IP_UMAC);
+		virtual ~QUMAC();
+
+		UMAC *umac;
+		QTimer *timer;
+		QMutex cmd_mutex;
+	private slots:
+		void throwUMACInfo();
+	signals:
+		void UMACInfoThrown ( QHash<QString,QString> );
+};
+typedef Singleton<QUMAC> SQUMAC;
+
+class QGalil;
+class Galil8:public QGalil
+{
+//		Q_OBJECT
+		DECLARE_SINGLETON_CLASS ( Galil8 )
+	private:
+		Galil8(const std::string address = IP_GALIL8):QGalil(address){}
+		virtual ~Galil8(){}
+	
+};
+typedef Singleton<Galil8> SGalil8;
+
+class Galil6_3:public QGalil
+{
+//		Q_OBJECT
+		DECLARE_SINGLETON_CLASS ( Galil6_3 )
+	private:
+		Galil6_3(const std::string address = IP_GALIL6_3):QGalil(address){}
+		virtual ~Galil6_3(){}
+	
+};
+typedef Singleton<Galil6_3> SGalil6_3;
+
+class Galil6_2:public QGalil
+{
+//		Q_OBJECT
+		DECLARE_SINGLETON_CLASS ( Galil6_2 )
+	private:
+		Galil6_2(const std::string address = IP_GALIL6_2):QGalil(address){}
+		virtual ~Galil6_2(){}
+	
+};
+typedef Singleton<Galil6_2> SGalil6_2;
+
+class Galil6_1:public QGalil
+{
+//		Q_OBJECT
+		DECLARE_SINGLETON_CLASS ( Galil6_1 )
+	private:
+		Galil6_1(const std::string address = IP_GALIL6_1):QGalil(address){}
+		virtual ~Galil6_1(){}
+	
+};
+typedef Singleton<Galil6_1> SGalil6_1;
+#endif

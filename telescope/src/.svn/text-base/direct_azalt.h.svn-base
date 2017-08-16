@@ -1,0 +1,111 @@
+//
+// C++ Interface: direct_azalt
+//
+// Description:
+//
+//
+// Author: donglongchao <donglongchao@163.com>, (C) 2009
+//
+// Copyright: See COPYING file that comes with this distribution
+//
+//
+#ifndef DIRECT_AZALT_H
+#define DIRECT_AZALT_H
+#include <QtGui>
+#include "ui_direct_azalt.h"
+class MainWindow;
+class QUMAC;
+class DirectAzalt;
+
+class DirectAzaltThread:public QObject
+{
+		Q_OBJECT
+	public:
+		DirectAzaltThread ( DirectAzalt *parent );
+		virtual ~DirectAzaltThread();
+		DirectAzalt *m_parent;
+	private:
+		double az_vel;
+		double az_acc;
+		double az_step;
+
+		double alt_vel;
+		double alt_acc;
+		double alt_step;
+	public slots:
+	private slots:
+		void on_lineEdit_az_vel_spec_returnPressed(double az_vel_spec);
+		void on_lineEdit_az_acc_spec_returnPressed(double az_acc_spec);
+		void on_lineEdit_az_step_spec_returnPressed(double az_step_spec);
+
+		void on_lineEdit_alt_vel_spec_returnPressed(double alt_vel_spec);
+		void on_lineEdit_alt_acc_spec_returnPressed(double alt_acc_spec);
+		void on_lineEdit_alt_step_spec_returnPressed(double alt_step_spec);
+};
+
+class DirectAzalt:public QScrollArea,private Ui::DirectAzalt
+{
+		Q_OBJECT
+	public:
+		DirectAzalt ( MainWindow *parent );
+		virtual ~DirectAzalt();
+
+		MainWindow *m_parent;
+	protected:
+//		virtual void closeEvent ( QCloseEvent *event );
+	private:
+		void initUi();
+		void connectSignals();
+//		DirectAzaltThread *direct_azalt_thread;
+		double az_target;
+		double az_vel;
+		double az_acc;
+		double az_step;
+
+		double alt_target;
+		double alt_vel;
+		double alt_acc;
+		double alt_step;
+	public slots:
+	private slots:
+		void updateInterface(QHash<QString,QString>);
+
+		void on_pushButton_az_enable_clicked();
+		void on_pushButton_az_disable_clicked();
+		void on_pushButton_az_home_clicked();
+
+		void on_radioButton_az_vel_fast_toggled ( bool on );
+		void on_radioButton_az_vel_mid_toggled ( bool on );
+		void on_radioButton_az_vel_slow_toggled ( bool on );
+		void on_lineEdit_az_vel_spec_returnPressed();
+
+		void on_radioButton_az_acc_default_toggled ( bool on );
+		void on_lineEdit_az_acc_spec_returnPressed();
+
+		void on_pushButton_az_go_clicked();
+		void on_pushButton_az_stop_clicked();
+
+		void on_pushButton_alt_enable_clicked();
+		void on_pushButton_alt_disable_clicked();
+		void on_pushButton_alt_home_clicked();
+
+		void on_radioButton_alt_vel_fast_toggled ( bool on );
+		void on_radioButton_alt_vel_mid_toggled ( bool on );
+		void on_radioButton_alt_vel_slow_toggled ( bool on );
+		void on_lineEdit_alt_vel_spec_returnPressed();
+
+		void on_radioButton_alt_acc_default_toggled ( bool on );
+		void on_lineEdit_alt_acc_spec_returnPressed();
+
+		void on_pushButton_alt_go_clicked();
+		void on_pushButton_alt_stop_clicked();
+	signals:
+
+//		void az_vel_spec(double);
+//		void az_acc_spec(double);
+//		void az_step_spec(double);
+//		void alt_vel_spec(double);
+//		void alt_acc_spec(double);
+//		void alt_step_spec(double);
+};
+#endif

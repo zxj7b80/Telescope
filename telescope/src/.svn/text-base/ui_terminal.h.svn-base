@@ -1,0 +1,172 @@
+/********************************************************************************
+** Form generated from reading ui file 'terminal.ui'
+**
+** Created: Fri Jan 15 18:11:59 2010
+**      by: Qt User Interface Compiler version 4.5.0
+**
+** WARNING! All changes made in this file will be lost when recompiling ui file!
+********************************************************************************/
+
+#ifndef UI_TERMINAL_H
+#define UI_TERMINAL_H
+
+#include <QtCore/QVariant>
+#include <QtGui/QAction>
+#include <QtGui/QApplication>
+#include <QtGui/QButtonGroup>
+#include <QtGui/QDialog>
+#include <QtGui/QHeaderView>
+#include <QtGui/QLineEdit>
+#include <QtGui/QPushButton>
+#include <QtGui/QRadioButton>
+#include <QtGui/QTabWidget>
+#include <QtGui/QTableWidget>
+#include <QtGui/QTextBrowser>
+#include <QtGui/QWidget>
+
+QT_BEGIN_NAMESPACE
+
+class Ui_Dialog
+{
+public:
+    QTextBrowser *textBrowser;
+    QLineEdit *lineEdit;
+    QPushButton *pushButton;
+    QRadioButton *radioButton_m2;
+    QRadioButton *radioButton_m3;
+    QTabWidget *tabWidget;
+    QWidget *tab_galil8;
+    QTableWidget *tableWidget;
+    QWidget *tab_galil63;
+    QTableWidget *tableWidget_2;
+    QWidget *tab_galil62;
+    QTableWidget *tableWidget_3;
+    QWidget *tab_galil61;
+    QTableWidget *tableWidget_4;
+
+    void setupUi(QDialog *Dialog)
+    {
+        if (Dialog->objectName().isEmpty())
+            Dialog->setObjectName(QString::fromUtf8("Dialog"));
+        Dialog->resize(742, 803);
+        Dialog->setMinimumSize(QSize(74, 83));
+        Dialog->setSizeGripEnabled(true);
+        textBrowser = new QTextBrowser(Dialog);
+        textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
+        textBrowser->setGeometry(QRect(388, 1, 321, 601));
+        lineEdit = new QLineEdit(Dialog);
+        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
+        lineEdit->setGeometry(QRect(450, 620, 221, 31));
+        pushButton = new QPushButton(Dialog);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(500, 670, 121, 31));
+        radioButton_m2 = new QRadioButton(Dialog);
+        radioButton_m2->setObjectName(QString::fromUtf8("radioButton_m2"));
+        radioButton_m2->setGeometry(QRect(480, 720, 91, 41));
+        radioButton_m3 = new QRadioButton(Dialog);
+        radioButton_m3->setObjectName(QString::fromUtf8("radioButton_m3"));
+        radioButton_m3->setGeometry(QRect(620, 720, 91, 41));
+        radioButton_m3->setChecked(true);
+        tabWidget = new QTabWidget(Dialog);
+        tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
+        tabWidget->setGeometry(QRect(0, 0, 391, 791));
+        tabWidget->setDocumentMode(true);
+        tabWidget->setTabsClosable(false);
+        tabWidget->setMovable(true);
+        tab_galil8 = new QWidget();
+        tab_galil8->setObjectName(QString::fromUtf8("tab_galil8"));
+        tableWidget = new QTableWidget(tab_galil8);
+        if (tableWidget->columnCount() < 4)
+            tableWidget->setColumnCount(4);
+        if (tableWidget->rowCount() < 361)
+            tableWidget->setRowCount(361);
+        tableWidget->setObjectName(QString::fromUtf8("tableWidget"));
+        tableWidget->setGeometry(QRect(0, 0, 381, 771));
+        tableWidget->setAutoScrollMargin(16);
+        tableWidget->setRowCount(361);
+        tableWidget->setColumnCount(4);
+        tableWidget->horizontalHeader()->setDefaultSectionSize(80);
+        tableWidget->horizontalHeader()->setMinimumSectionSize(16);
+        tableWidget->verticalHeader()->setDefaultSectionSize(20);
+        tableWidget->verticalHeader()->setMinimumSectionSize(18);
+        tabWidget->addTab(tab_galil8, QString());
+        tab_galil63 = new QWidget();
+        tab_galil63->setObjectName(QString::fromUtf8("tab_galil63"));
+        tableWidget_2 = new QTableWidget(tab_galil63);
+        if (tableWidget_2->columnCount() < 4)
+            tableWidget_2->setColumnCount(4);
+        if (tableWidget_2->rowCount() < 303)
+            tableWidget_2->setRowCount(303);
+        tableWidget_2->setObjectName(QString::fromUtf8("tableWidget_2"));
+        tableWidget_2->setGeometry(QRect(0, 0, 381, 771));
+        tableWidget_2->setAutoScrollMargin(16);
+        tableWidget_2->setRowCount(303);
+        tableWidget_2->setColumnCount(4);
+        tableWidget_2->horizontalHeader()->setDefaultSectionSize(80);
+        tableWidget_2->verticalHeader()->setDefaultSectionSize(20);
+        tableWidget_2->verticalHeader()->setMinimumSectionSize(18);
+        tabWidget->addTab(tab_galil63, QString());
+        tab_galil62 = new QWidget();
+        tab_galil62->setObjectName(QString::fromUtf8("tab_galil62"));
+        tableWidget_3 = new QTableWidget(tab_galil62);
+        if (tableWidget_3->columnCount() < 4)
+            tableWidget_3->setColumnCount(4);
+        if (tableWidget_3->rowCount() < 303)
+            tableWidget_3->setRowCount(303);
+        tableWidget_3->setObjectName(QString::fromUtf8("tableWidget_3"));
+        tableWidget_3->setGeometry(QRect(0, 0, 381, 771));
+        tableWidget_3->setAutoScrollMargin(16);
+        tableWidget_3->setRowCount(303);
+        tableWidget_3->setColumnCount(4);
+        tableWidget_3->horizontalHeader()->setDefaultSectionSize(80);
+        tableWidget_3->verticalHeader()->setDefaultSectionSize(20);
+        tableWidget_3->verticalHeader()->setMinimumSectionSize(18);
+        tabWidget->addTab(tab_galil62, QString());
+        tab_galil61 = new QWidget();
+        tab_galil61->setObjectName(QString::fromUtf8("tab_galil61"));
+        tableWidget_4 = new QTableWidget(tab_galil61);
+        if (tableWidget_4->columnCount() < 4)
+            tableWidget_4->setColumnCount(4);
+        if (tableWidget_4->rowCount() < 303)
+            tableWidget_4->setRowCount(303);
+        tableWidget_4->setObjectName(QString::fromUtf8("tableWidget_4"));
+        tableWidget_4->setGeometry(QRect(0, 0, 381, 771));
+        tableWidget_4->setAutoScrollMargin(16);
+        tableWidget_4->setRowCount(303);
+        tableWidget_4->setColumnCount(4);
+        tableWidget_4->horizontalHeader()->setDefaultSectionSize(80);
+        tableWidget_4->verticalHeader()->setDefaultSectionSize(20);
+        tableWidget_4->verticalHeader()->setMinimumSectionSize(18);
+        tabWidget->addTab(tab_galil61, QString());
+
+        retranslateUi(Dialog);
+        QObject::connect(lineEdit, SIGNAL(returnPressed()), pushButton, SLOT(click()));
+
+        tabWidget->setCurrentIndex(2);
+
+
+        QMetaObject::connectSlotsByName(Dialog);
+    } // setupUi
+
+    void retranslateUi(QDialog *Dialog)
+    {
+        Dialog->setWindowTitle(QApplication::translate("Dialog", "GalilTools", 0, QApplication::UnicodeUTF8));
+        pushButton->setText(QApplication::translate("Dialog", "Send", 0, QApplication::UnicodeUTF8));
+        radioButton_m2->setText(QApplication::translate("Dialog", "M2", 0, QApplication::UnicodeUTF8));
+        radioButton_m3->setText(QApplication::translate("Dialog", "M3", 0, QApplication::UnicodeUTF8));
+        tabWidget->setTabText(tabWidget->indexOf(tab_galil8), QApplication::translate("Dialog", "Galil8", 0, QApplication::UnicodeUTF8));
+        tabWidget->setTabText(tabWidget->indexOf(tab_galil63), QApplication::translate("Dialog", "Galil6_3", 0, QApplication::UnicodeUTF8));
+        tabWidget->setTabText(tabWidget->indexOf(tab_galil62), QApplication::translate("Dialog", "Galil6_2", 0, QApplication::UnicodeUTF8));
+        tabWidget->setTabText(tabWidget->indexOf(tab_galil61), QApplication::translate("Dialog", "Galil6_1", 0, QApplication::UnicodeUTF8));
+        Q_UNUSED(Dialog);
+    } // retranslateUi
+
+};
+
+namespace Ui {
+    class Dialog: public Ui_Dialog {};
+} // namespace Ui
+
+QT_END_NAMESPACE
+
+#endif // UI_TERMINAL_H

@@ -1,0 +1,38 @@
+//
+// C++ Interface: tracking
+//
+// Description: 
+//
+//
+// Author: donglongchao <donglongchao@163.com>, (C) 2010
+//
+// Copyright: See COPYING file that comes with this distribution
+//
+//
+#ifndef TRACKING_H
+#define TRACKING_H
+
+#include <QtGui>
+#include "ui_tracking.h"
+
+class MainWindow;
+class Tracking:public QScrollArea,private Ui::Tracking
+{
+	Q_OBJECT
+	public:
+		Tracking(MainWindow *parent);
+		virtual ~Tracking();
+		MainWindow *m_parent;
+	protected:
+		virtual void closeEvent ( QCloseEvent *event );
+	private:
+		void initUi();
+		void connectSignals();
+	private slots:
+		void on_pushButton_tracking_clicked();
+		void on_pushButton_stop_clicked();
+		void on_pushButton_caculate_clicked();
+		
+
+};
+#endif

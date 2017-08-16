@@ -1,0 +1,45 @@
+//
+// C++ Implementation: tracking
+//
+// Description: 
+//
+//
+// Author: donglongchao <donglongchao@163.com>, (C) 2010
+//
+// Copyright: See COPYING file that comes with this distribution
+//
+//
+#include "tracking.h"
+#include "signs.h"
+Tracking::Tracking(MainWindow *parent)
+{
+	m_parent = parent;
+	setupUi(this);
+	
+}
+
+Tracking::~Tracking()
+{
+	qDebug("tracking");
+}
+
+void Tracking::closeEvent ( QCloseEvent *event )
+{
+	parentWidget()->hide();
+	event->ignore();
+}
+
+void Tracking::on_pushButton_tracking_clicked()
+{
+	
+}
+
+void Tracking::on_pushButton_stop_clicked()
+{
+	
+}
+
+void Tracking::on_pushButton_caculate_clicked()
+{
+	
+}

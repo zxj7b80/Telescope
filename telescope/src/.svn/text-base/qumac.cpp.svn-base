@@ -1,0 +1,87 @@
+//
+// C++ Implementation: qumac
+//
+// Description:
+//
+//
+// Author: donglongchao <donglongchao@163.com>, (C) 2009
+//
+// Copyright: See COPYING file that comes with this distribution
+//
+//
+#include "signs.h"
+#include "UMAC.h"
+
+QUMAC::QUMAC ( const std::string& address )
+{
+	umac = new UMAC ( address );
+	timer = new QTimer;
+	connect ( timer,SIGNAL ( timeout() ),this,SLOT ( throwUMACInfo() ) );
+	timer->start ( 1000 );
+}
+
+QUMAC::~QUMAC()
+{
+	timer->deleteLater();
+	delete umac;
+}
+
+void QUMAC::QcommCmdPMAC ( const char cCommand[],QString& cResponse )
+{
+	QMutexLocker locker ( &cmd_mutex );
+	if ( umac->commCmdPMAC ( cCommand,cResponse ) == -1 )
+		throw ( QString ( strerror(errno) ) );
+}
+
+void QUMAC::QctrlCmdPMAC ( const int cCommand,QString& cResponse )
+{
+	QMutexLocker locker ( &cmd_mutex );
+	if ( umac->ctrlCmdPMAC ( cCommand,cResponse ) == -1 )
+		throw ( QString ( strerror(errno) ) );
+}
+
+void QUMAC::QsendDataDPRAM ( const char cData[],long offset )
+{
+	QMutexLocker locker ( &cmd_mutex );
+	if ( umac->sendDataDPRAM ( cData,offset ) == -1 )
+		throw ( QString ( strerror(errno) ) );
+}
+
+void QUMAC::QgetDataDPRAM ( QString& data,long offset,int data_length )
+{
+	QMutexLocker locker ( &cmd_mutex );
+	if ( umac->getDataDPRAM ( data,offset,data_length ) == -1 )
+		throw ( QString ( strerror(errno) ) );
+}
+
+void QUMAC::throwUMACInfo()
+{
+	QHash<QString,QString> map;
+	QString info;
+	QString cmd = "m161 m162 m164 m165 m174 m261 m262 m264 m265 m274 m142 m242 m342 m141 m241 m341 m154 m254 m354 m138 m238 m338 p17 p18";
+	try
+	{
+		QcommCmdPMAC ( cmd.toAscii(),info );
+	}
+	catch ( QString excepts )
+	{
+		QMessageBox mb ( QMessageBox::Warning,
+		                 tr ( "About to close" ),
+		                 tr ( excepts.toAscii() ),
+		                 QMessageBox::Ok );
+		if ( mb.exec() ==QMessageBox::Ok )
+		{
+			timer->deleteLater();
+			SQUMAC::release();
+			return;
+		}
+	}
+	QStringList cmd_key = cmd.split ( QRegExp ( "\\s+" ) );
+	QStringList info_value = info.split ( QRegExp ( "\\s+" ) /*,QString::SkipEmptyParts*/ );
+	QStringList::iterator i;//STL Style
+	QStringList::iterator j;
+	for ( j = info_value.begin(),i = cmd_key.begin();i != cmd_key.end();++j,++i )
+		map.insert ( *i,*j );
+	emit UMACInfoThrown ( map );
+}
+

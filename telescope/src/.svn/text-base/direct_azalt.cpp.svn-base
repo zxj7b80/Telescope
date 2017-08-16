@@ -1,0 +1,484 @@
+//
+// C++ Implementation: direct_azalt
+//
+// Description:
+//
+//
+// Author: donglongchao <donglongchao@163.com>, (C) 2009
+//
+// Copyright: See COPYING file that comes with this distribution
+//
+//
+#include "main_window.h"
+#include "direct_azalt.h"
+#include "signs.h"
+
+DirectAzaltThread::DirectAzaltThread ( DirectAzalt *parent )
+{
+	m_parent = parent;
+//	SQUMAC::instance_p()->moveToThread ( parent->m_parent->service );
+}
+
+DirectAzaltThread::~DirectAzaltThread()
+{
+	qDebug("DirectAzaltThread");
+}
+
+void DirectAzaltThread::on_lineEdit_az_vel_spec_returnPressed ( double az_vel_spec )
+{
+	az_vel = az_vel_spec;
+}
+
+void DirectAzaltThread::on_lineEdit_az_acc_spec_returnPressed ( double az_acc_spec )
+{
+	az_acc = az_acc_spec;
+}
+
+void DirectAzaltThread::on_lineEdit_az_step_spec_returnPressed ( double az_step_spec )
+{
+	az_step = az_step_spec;
+}
+
+void DirectAzaltThread::on_lineEdit_alt_vel_spec_returnPressed ( double alt_vel_spec )
+{
+	alt_vel = alt_vel_spec;
+}
+
+void DirectAzaltThread::on_lineEdit_alt_acc_spec_returnPressed ( double alt_acc_spec )
+{
+	alt_acc = alt_acc_spec;
+}
+
+void DirectAzaltThread::on_lineEdit_alt_step_spec_returnPressed ( double alt_step_spec )
+{
+	alt_step = alt_step_spec;
+}
+
+DirectAzalt::DirectAzalt ( MainWindow *parent ) /*:QScrollArea(parent)*/
+{
+	m_parent = parent;
+	setupUi ( this );
+//	connect(SQUMAC::instance_p(),SIGNAL(UMACInfoThrown(QHash<QString,QString>)),this,SLOT(updateInterface(QHash<QString,QString>)));
+//	direct_azalt_thread = new DirectAzaltThread ( this );
+//	direct_azalt_thread->moveToThread ( m_parent->service );
+	connectSignals();
+//	initUi();
+}
+
+DirectAzalt::~DirectAzalt()
+{
+	qDebug("DirectAzalt");
+	deleteLater();
+//	direct_azalt_thread->deleteLater();
+}
+void DirectAzalt::connectSignals()
+{
+// 	connect ( this,SIGNAL ( az_vel_spec ( double ) ),direct_azalt_thread,SLOT ( on_lineEdit_az_vel_spec_returnPressed ( double ) ) );
+// 	connect ( this,SIGNAL ( az_acc_spec ( double ) ),direct_azalt_thread,SLOT ( on_lineEdit_az_acc_spec_returnPressed ( double ) ) );
+// 	connect ( this,SIGNAL ( az_step_spec ( double ) ),direct_azalt_thread,SLOT ( on_lineEdit_az_step_spec_returnPressed ( double ) ) );
+// 
+// 	connect ( this,SIGNAL ( alt_vel_spec ( double ) ),direct_azalt_thread,SLOT ( on_lineEdit_alt_vel_spec_returnPressed ( double ) ) );
+// 	connect ( this,SIGNAL ( alt_acc_spec ( double ) ),direct_azalt_thread,SLOT ( on_lineEdit_alt_acc_spec_returnPressed ( double ) ) );
+// 	connect ( this,SIGNAL ( alt_step_spec ( double ) ),direct_azalt_thread,SLOT ( on_lineEdit_alt_step_spec_returnPressed ( double ) ) );
+}
+void DirectAzalt::initUi()
+{
+	switch ( SMySetting::instance_p()->value ( "az_alt/az_vel" ).toInt() )
+	{
+		case VEL_FAST:radioButton_az_vel_fast->setChecked ( TRUE );break;
+		case VEL_MID: radioButton_az_vel_mid->setChecked ( TRUE );break;
+		case VEL_SLOW:radioButton_az_vel_slow->setChecked ( TRUE );break;
+		case VEL_SPEC:radioButton_az_vel_spec->setChecked ( TRUE );break;
+		default:break;
+	}
+	switch ( SMySetting::instance_p()->value ( "az_alt/az_acc" ).toInt() )
+	{
+		case ACC_DEFAULT:radioButton_az_acc_default->setChecked ( TRUE );break;
+		case ACC_SPEC:radioButton_az_acc_spec->setChecked ( TRUE );break;
+		default:break;
+	}
+	switch ( SMySetting::instance_p()->value ( "az_alt/az_step" ).toInt() )
+	{
+		case STEP1:radioButton_az_step1->setChecked ( TRUE );break;
+		case STEP01:radioButton_az_step01->setChecked ( TRUE );break;
+		case STEP001:radioButton_az_step001->setChecked ( TRUE );break;
+		case STEP_SPEC:radioButton_az_step_spec->setChecked ( TRUE );break;
+		default:break;
+	}
+	switch ( SMySetting::instance_p()->value ( "az_alt/alt_vel" ).toInt() )
+	{
+		case VEL_FAST:radioButton_alt_vel_fast->setChecked ( TRUE );break;
+		case VEL_MID: radioButton_alt_vel_mid->setChecked ( TRUE );break;
+		case VEL_SLOW:radioButton_alt_vel_slow->setChecked ( TRUE );break;
+		case VEL_SPEC:radioButton_alt_vel_spec->setChecked ( TRUE );break;
+		default:break;
+	}
+	switch ( SMySetting::instance_p()->value ( "az_alt/alt_acc" ).toInt() )
+	{
+		case ACC_DEFAULT:radioButton_alt_acc_default->setChecked ( TRUE );break;
+		case ACC_SPEC:radioButton_alt_acc_spec->setChecked ( TRUE );break;
+		default:break;
+	}
+	switch ( SMySetting::instance_p()->value ( "az_alt/alt_step" ).toInt() )
+	{
+		case STEP1:radioButton_alt_step1->setChecked ( TRUE );break;
+		case STEP01:radioButton_alt_step01->setChecked ( TRUE );break;
+		case STEP001:radioButton_alt_step001->setChecked ( TRUE );break;
+		case STEP_SPEC:radioButton_alt_step_spec->setChecked ( TRUE );break;
+		default:break;
+	}
+}
+// void DirectAzalt::closeEvent ( QCloseEvent *event )
+// {
+// 	parentWidget()->hide();
+// 	event->ignore();
+// }
+
+void DirectAzalt::updateInterface(QHash<QString,QString> map)
+{
+/*********************AZ ALT pos,poserr,vel*********************************************************/
+	double az_pos = (map["m161"].toDouble()/3072.0)*CTS;
+	double az_pos_real = ((map["m162"].toDouble()+map["m164"].toDouble())/3072.0)*CTS;//arcsec
+	double az_vel = (map["m174"].toDouble()/3072.0)*CTS*1000*2;//  "/s
+
+	int az_posD = static_cast<int>(az_pos_real/3600);
+	int az_posM = static_cast<int>((az_pos_real/3600-az_posD)*60);
+	double az_posS = ((az_pos_real/3600-az_posD)*60-az_posM)*60;
+	double az_poserr = az_pos-az_pos_real;
+
+	lineEdit_az_posD->setText(QString::number(az_posD));
+	lineEdit_az_posM->setText(QString::number(az_posM));
+	lineEdit_az_posS->setText(QString::number(az_posS,'f',3));
+	lineEdit_az_poserr->setText(QString::number(az_poserr,'f',3));
+	lineEdit_az_vel->setText(QString::number(az_vel,'f',3));
+
+	double alt_pos = (map["m261"].toDouble()/3072.0)*CTS;
+	double alt_pos_real = ((map["m262"].toDouble()+map["m264"].toDouble())/3072.0)*CTS;//arcsec
+	double alt_vel = (map["m274"].toDouble()/3072.0)*CTS*1000*2;//  "/s
+
+	int alt_posD = static_cast<int>(alt_pos_real/3600);
+	int alt_posM = static_cast<int>((alt_pos_real/3600-alt_posD)*60);
+	double alt_posS = ((alt_pos_real/3600-alt_posD)*60-alt_posM)*60;
+	double alt_poserr = alt_pos-az_pos_real;
+
+	lineEdit_alt_posD->setText(QString::number(alt_posD));
+	lineEdit_alt_posM->setText(QString::number(alt_posM));
+	lineEdit_alt_posS->setText(QString::number(alt_posS,'f',3));
+	lineEdit_alt_poserr->setText(QString::number(alt_poserr,'f',3));
+	lineEdit_alt_vel->setText(QString::number(alt_vel,'f',3));
+
+/******************************AZ ALT ampli**************************************************/
+	if(map["m154"] != "1")//AZ AMPLI,equal to "1" means OK
+	{
+		label_az_ampli_fault->setStyleSheet("background-color: rgb(255, 0, 0)");
+	}
+	else
+	{
+		label_az_ampli_fault->setStyleSheet("background-color: rgb(0, 255, 0)");
+	}
+
+	if(map["m254"] != "1")//ALT AMPLI1
+	{
+		label_alt_ampli1_fault->setStyleSheet("background-color: rgb(255, 0, 0)");
+	}
+	else
+	{
+		label_alt_ampli1_fault->setStyleSheet("background-color: rgb(0, 255, 0)");
+	}
+
+	if(map["m354"] != "1")//ALT AMPLI2
+	{
+		label_alt_ampli2_fault->setStyleSheet("background-color: rgb(255, 0, 0)");
+	}
+	else
+	{
+		label_alt_ampli2_fault->setStyleSheet("background-color: rgb(0, 255, 0)");
+	}
+
+/****************************AZ ALT loop closed************************************************/
+	if(map["m138"] == "0")//AZ loop,equal to "0" means closed.
+	{
+		label_az_loop->setStyleSheet("background-color: rgb(0, 255, 0)");
+	}
+	else
+	{
+		label_az_loop->setStyleSheet("background-color: rgb(255, 0, 0)");
+	}
+
+	if(map["m238"] == "0")//ALT loop1
+	{
+		label_alt_loop1->setStyleSheet("background-color: rgb(0, 255, 0)");
+	}
+	else
+	{
+		label_alt_loop1->setStyleSheet("background-color: rgb(255, 0, 0)");
+	}
+
+	if(map["338"] == "0")//ALT loop2
+	{
+		label_alt_loop2->setStyleSheet("background-color: rgb(0, 255, 0)");
+	}
+	else
+	{
+		label_alt_loop2->setStyleSheet("background-color: rgb(255, 0, 0)");
+	}
+
+/**************************AZ ALT error*****************************************/
+	if(map["m142"] == "1")//AZ ,equal to "1" means error
+	{
+		label_az_error->setStyleSheet("background-color: rgb(255, 0, 0)");
+	}
+	else
+	{
+		label_az_error->setStyleSheet("background-color: rgb(0, 255, 0)");
+	}
+
+	if(map["m242"] == "1")//ALT 1,
+	{
+		label_alt_error1->setStyleSheet("background-color: rgb(255, 0, 0)");
+	}
+	else
+	{
+		label_alt_error1->setStyleSheet("background-color: rgb(0, 255, 0)");
+	}
+
+	if(map["m342"] == "1")//ALT 2
+	{
+		label_alt_error2->setStyleSheet("background-color: rgb(255, 0, 0)");
+	}
+	else
+	{
+		label_alt_error2->setStyleSheet("background-color: rgb(0, 255, 0)");
+	}
+
+/**************************AZ ALT warning*****************************************/
+	if(map["m141"] == "1")//AZ ,equal to "1" means warning
+	{
+		label_az_warning->setStyleSheet("background-color: rgb(255, 0, 0)");
+	}
+	else
+	{
+		label_az_warning->setStyleSheet("background-color: rgb(0, 255, 0)");
+	}
+
+	if(map["m241"] == "1")//ALT 1,
+	{
+		label_alt_warning1->setStyleSheet("background-color: rgb(255, 0, 0)");
+	}
+	else
+	{
+		label_alt_warning1->setStyleSheet("background-color: rgb(0, 255, 0)");
+	}
+
+	if(map["m341"] == "1")//ALT 2
+	{
+		label_alt_warning2->setStyleSheet("background-color: rgb(255, 0, 0)");
+	}
+	else
+	{
+		label_alt_warning2->setStyleSheet("background-color: rgb(0, 255, 0)");
+	}
+
+/****************************AZ ALT homing*******************************************/
+	
+}
+
+void DirectAzalt::on_pushButton_az_enable_clicked()
+{
+	QString str;
+	char cmd[255];
+	sprintf ( cmd,"ENABLE PLC11" );  // ENABLE AZ MOTOR 1#
+	SQUMAC::instance_p()->QcommCmdPMAC ( cmd,str );
+}
+
+void DirectAzalt::on_pushButton_az_disable_clicked()
+{
+	QString str;
+	char cmd[255];
+	sprintf ( cmd,"ENABLE PLC16" );  // DISABLE AZ MOTOR 1#
+	SQUMAC::instance_p()->QcommCmdPMAC ( cmd,str );
+}
+
+void DirectAzalt::on_pushButton_az_home_clicked()
+{
+	QString str;
+	SQUMAC::instance_p()->QcommCmdPMAC ( "DISABLE PLC5",str );
+	SQUMAC::instance_p()->QcommCmdPMAC ( "P29=0",str );
+	SQUMAC::instance_p()->QcommCmdPMAC ( "P17=3",str );
+	SQUMAC::instance_p()->QcommCmdPMAC ( "ENABLE PLC5",str );
+	SQUMAC::instance_p()->QcommCmdPMAC ( "P801=0",str );//flag
+}
+
+void DirectAzalt::on_radioButton_az_vel_fast_toggled ( bool on )
+{
+	if ( on )
+	{
+		char cmd[255];
+		QString str;
+		az_vel = SMySetting::instance_p()->value("az_alt/az_vel_fast").toDouble()/(CTS*1000);
+		sprintf ( cmd,"I122=%f",az_vel );
+		SQUMAC::instance_p()->QcommCmdPMAC ( cmd,str );
+	}
+}
+
+void DirectAzalt::on_radioButton_az_vel_mid_toggled ( bool on )
+{
+	if ( on )
+	{
+		char cmd[255];
+		QString str;
+		az_vel = SMySetting::instance_p()->value("az_alt/az_vel_mid").toDouble()/(CTS*1000);
+		sprintf ( cmd,"I122=%f",az_vel );
+		SQUMAC::instance_p()->QcommCmdPMAC ( cmd,str );
+	}
+}
+
+void DirectAzalt::on_radioButton_az_vel_slow_toggled ( bool on )
+{
+	if ( on )
+	{
+		char cmd[255];
+		QString str;
+		az_vel = SMySetting::instance_p()->value("az_alt/az_vel_slow").toDouble()/(CTS*1000);
+		sprintf ( cmd,"I122=%f",az_vel );
+		SQUMAC::instance_p()->QcommCmdPMAC ( cmd,str );
+	}
+}
+
+void DirectAzalt::on_lineEdit_az_vel_spec_returnPressed()
+{
+//	emit az_vel_spec ( lineEdit_az_vel_spec->text().toFloat() );
+	char cmd[255];
+	QString str;
+	az_vel = lineEdit_az_vel_spec->text().toFloat()/(CTS*1000);
+	sprintf ( cmd,"I122=%f",az_vel );
+	SQUMAC::instance_p()->QcommCmdPMAC ( cmd,str );
+	
+}
+
+void DirectAzalt::on_radioButton_az_acc_default_toggled ( bool on )
+{
+	if ( on )
+		qDebug ( "default\n" );
+}
+
+void DirectAzalt::on_lineEdit_az_acc_spec_returnPressed()
+{
+//	emit az_acc_spec ( lineEdit_az_acc_spec->text().toFloat() );
+}
+
+void DirectAzalt::on_pushButton_az_go_clicked()
+{
+	char cmd[255];
+	QString str;
+	az_target = (lineEdit_az_targetD->text().toFloat()*3600+lineEdit_az_targetM->text().toFloat()*60+lineEdit_az_targetS->text().toFloat())/CTS;
+	SQUMAC::instance_p()->QcommCmdPMAC ( "P130=-5600P131=11500P132=11600P133=550",str );
+	sprintf ( cmd,"#1J=%f",az_target );
+	SQUMAC::instance_p()->QcommCmdPMAC ( cmd,str );
+}
+
+void DirectAzalt::on_pushButton_az_stop_clicked()
+{
+	QString str;
+	SQUMAC::instance_p()->QcommCmdPMAC ( "#1K",str );
+}
+
+void DirectAzalt::on_pushButton_alt_enable_clicked()
+{
+	QString str;
+	char cmd[255];
+	sprintf ( cmd,"ENABLE PLC9" );  // ENABLE ALT MOTOR 2# 3#
+	SQUMAC::instance_p()->QcommCmdPMAC ( cmd,str );
+}
+
+void DirectAzalt::on_pushButton_alt_disable_clicked()
+{
+	QString str;
+	char cmd[255];
+	sprintf ( cmd,"ENABLE PLC15" );  // DISABLE ALT MOTOR 2# 3#
+	SQUMAC::instance_p()->QcommCmdPMAC ( cmd,str );
+}
+
+void DirectAzalt::on_pushButton_alt_home_clicked()
+{
+	QString str;
+	SQUMAC::instance_p()->QcommCmdPMAC ( "DISABLE PLC6",str );
+	SQUMAC::instance_p()->QcommCmdPMAC ( "P64=0",str );
+	SQUMAC::instance_p()->QcommCmdPMAC ( "P18=3",str );
+	SQUMAC::instance_p()->QcommCmdPMAC ( "ENABLE PLC6",str );
+	SQUMAC::instance_p()->QcommCmdPMAC ( "P807=0",str );//flag
+}
+
+void DirectAzalt::on_radioButton_alt_vel_fast_toggled ( bool on )
+{
+	if ( on )
+	{
+		char cmd[255];
+		QString str;
+		alt_vel = SMySetting::instance_p()->value("az_alt/alt_vel_fast").toDouble()/(CTS*1000);
+		sprintf ( cmd,"I222=%fI322=%f",alt_vel,alt_vel );
+		SQUMAC::instance_p()->QcommCmdPMAC ( cmd,str );
+	}
+}
+
+void DirectAzalt::on_radioButton_alt_vel_mid_toggled ( bool on )
+{
+	if ( on )
+	{
+		char cmd[255];
+		QString str;
+		alt_vel = SMySetting::instance_p()->value("az_alt/alt_vel_mid").toDouble()/(CTS*1000);
+		sprintf ( cmd,"I222=%fI322=%f",alt_vel,alt_vel );
+		SQUMAC::instance_p()->QcommCmdPMAC ( cmd,str );
+	}
+}
+
+void DirectAzalt::on_radioButton_alt_vel_slow_toggled ( bool on )
+{
+	if ( on )
+	{
+		char cmd[255];
+		QString str;
+		alt_vel = SMySetting::instance_p()->value("az_alt/alt_vel_slow").toDouble()/(CTS*1000);
+		sprintf ( cmd,"I222=%fI322=%f",alt_vel,alt_vel );
+		SQUMAC::instance_p()->QcommCmdPMAC ( cmd,str );
+	}
+}
+
+
+void DirectAzalt::on_lineEdit_alt_vel_spec_returnPressed()
+{
+//	emit alt_vel_spec ( lineEdit_alt_vel_spec->text().toFloat() );
+	char cmd[255];
+	QString str;
+	alt_vel = lineEdit_alt_vel_spec->text().toFloat()/(CTS*1000);
+	sprintf ( cmd,"I222=%fI322=%f",alt_vel,alt_vel );
+	SQUMAC::instance_p()->QcommCmdPMAC ( cmd,str );
+}
+
+void DirectAzalt::on_radioButton_alt_acc_default_toggled ( bool on )
+{
+	if ( on )
+		qDebug ( "default\n" );
+}
+
+void DirectAzalt::on_lineEdit_alt_acc_spec_returnPressed()
+{
+//	emit alt_acc_spec ( lineEdit_alt_acc_spec->text().toFloat() );
+}
+
+void DirectAzalt::on_pushButton_alt_go_clicked()
+{
+	char cmd[255];
+	QString str;
+	alt_target = (lineEdit_alt_targetD->text().toFloat()*3600+lineEdit_alt_targetM->text().toFloat()*60+lineEdit_alt_targetS->text().toFloat())/CTS;
+	SQUMAC::instance_p()->QcommCmdPMAC ( "P130=-5600P131=11500P132=11600P133=550",str );
+	sprintf ( cmd,"#2J=%f",alt_target );
+	SQUMAC::instance_p()->QcommCmdPMAC ( cmd,str );
+}
+
+void DirectAzalt::on_pushButton_alt_stop_clicked()
+{
+	QString str;
+	SQUMAC::instance_p()->QcommCmdPMAC ( "#2K",str );
+}

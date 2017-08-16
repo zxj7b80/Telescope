@@ -1,0 +1,209 @@
+/********************************************************************************
+** Form generated from reading ui file 'telescope.ui'
+**
+** Created: Fri Jan 15 18:11:59 2010
+**      by: Qt User Interface Compiler version 4.5.0
+**
+** WARNING! All changes made in this file will be lost when recompiling ui file!
+********************************************************************************/
+
+#ifndef UI_TELESCOPE_H
+#define UI_TELESCOPE_H
+
+#include <QtCore/QVariant>
+#include <QtGui/QAction>
+#include <QtGui/QApplication>
+#include <QtGui/QButtonGroup>
+#include <QtGui/QGridLayout>
+#include <QtGui/QHeaderView>
+#include <QtGui/QMainWindow>
+#include <QtGui/QMdiArea>
+#include <QtGui/QMenu>
+#include <QtGui/QMenuBar>
+#include <QtGui/QStatusBar>
+#include <QtGui/QToolBar>
+#include <QtGui/QWidget>
+
+QT_BEGIN_NAMESPACE
+
+class Ui_MainWindow
+{
+public:
+    QAction *actionAz_Alt;
+    QAction *actionM3;
+    QAction *actionM3_D;
+    QAction *actionM2_D;
+    QAction *actionGlobal;
+    QAction *actionSet_up;
+    QAction *actionAz_Alt_D;
+    QAction *actionM2;
+    QAction *actionTerminal;
+    QAction *actionWindows;
+    QAction *actionMotif;
+    QAction *actionGtk;
+    QAction *actionCDE;
+    QAction *actionTracking;
+    QWidget *centralwidget;
+    QGridLayout *gridLayout_2;
+    QMdiArea *mdiArea;
+    QMenuBar *menubar;
+    QMenu *menuDirect_D;
+    QMenu *menuTracking;
+    QMenu *menuDiagnosis;
+    QMenu *menuSet_up;
+    QMenu *menuStyle;
+    QStatusBar *statusbar;
+    QToolBar *toolbar;
+
+    void setupUi(QMainWindow *MainWindow)
+    {
+        if (MainWindow->objectName().isEmpty())
+            MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
+        MainWindow->resize(1016, 800);
+        QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(MainWindow->sizePolicy().hasHeightForWidth());
+        MainWindow->setSizePolicy(sizePolicy);
+        QIcon icon;
+        icon.addPixmap(QPixmap(QString::fromUtf8(":/icon/star7.png")), QIcon::Normal, QIcon::Off);
+        MainWindow->setWindowIcon(icon);
+        MainWindow->setAnimated(true);
+        actionAz_Alt = new QAction(MainWindow);
+        actionAz_Alt->setObjectName(QString::fromUtf8("actionAz_Alt"));
+        actionAz_Alt->setCheckable(false);
+        actionAz_Alt->setEnabled(true);
+        QIcon icon1;
+        icon1.addPixmap(QPixmap(QString::fromUtf8(":/icon/20071128105357345.png")), QIcon::Normal, QIcon::Off);
+        actionAz_Alt->setIcon(icon1);
+        actionAz_Alt->setMenuRole(QAction::TextHeuristicRole);
+        actionM3 = new QAction(MainWindow);
+        actionM3->setObjectName(QString::fromUtf8("actionM3"));
+        actionM3->setIcon(icon1);
+        actionM3_D = new QAction(MainWindow);
+        actionM3_D->setObjectName(QString::fromUtf8("actionM3_D"));
+        actionM2_D = new QAction(MainWindow);
+        actionM2_D->setObjectName(QString::fromUtf8("actionM2_D"));
+        actionGlobal = new QAction(MainWindow);
+        actionGlobal->setObjectName(QString::fromUtf8("actionGlobal"));
+        actionSet_up = new QAction(MainWindow);
+        actionSet_up->setObjectName(QString::fromUtf8("actionSet_up"));
+        actionAz_Alt_D = new QAction(MainWindow);
+        actionAz_Alt_D->setObjectName(QString::fromUtf8("actionAz_Alt_D"));
+        actionM2 = new QAction(MainWindow);
+        actionM2->setObjectName(QString::fromUtf8("actionM2"));
+        QIcon icon2;
+        icon2.addPixmap(QPixmap(QString::fromUtf8(":/icon/star.png")), QIcon::Normal, QIcon::Off);
+        actionM2->setIcon(icon2);
+        actionTerminal = new QAction(MainWindow);
+        actionTerminal->setObjectName(QString::fromUtf8("actionTerminal"));
+        actionWindows = new QAction(MainWindow);
+        actionWindows->setObjectName(QString::fromUtf8("actionWindows"));
+        actionMotif = new QAction(MainWindow);
+        actionMotif->setObjectName(QString::fromUtf8("actionMotif"));
+        actionGtk = new QAction(MainWindow);
+        actionGtk->setObjectName(QString::fromUtf8("actionGtk"));
+        actionCDE = new QAction(MainWindow);
+        actionCDE->setObjectName(QString::fromUtf8("actionCDE"));
+        actionTracking = new QAction(MainWindow);
+        actionTracking->setObjectName(QString::fromUtf8("actionTracking"));
+        centralwidget = new QWidget(MainWindow);
+        centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
+        gridLayout_2 = new QGridLayout(centralwidget);
+        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
+        mdiArea = new QMdiArea(centralwidget);
+        mdiArea->setObjectName(QString::fromUtf8("mdiArea"));
+        sizePolicy.setHeightForWidth(mdiArea->sizePolicy().hasHeightForWidth());
+        mdiArea->setSizePolicy(sizePolicy);
+        mdiArea->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+        mdiArea->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+        mdiArea->setViewMode(QMdiArea::SubWindowView);
+        mdiArea->setTabShape(QTabWidget::Triangular);
+        mdiArea->setTabPosition(QTabWidget::South);
+
+        gridLayout_2->addWidget(mdiArea, 0, 0, 1, 1);
+
+        MainWindow->setCentralWidget(centralwidget);
+        menubar = new QMenuBar(MainWindow);
+        menubar->setObjectName(QString::fromUtf8("menubar"));
+        menubar->setGeometry(QRect(0, 0, 1016, 23));
+        menuDirect_D = new QMenu(menubar);
+        menuDirect_D->setObjectName(QString::fromUtf8("menuDirect_D"));
+        menuTracking = new QMenu(menubar);
+        menuTracking->setObjectName(QString::fromUtf8("menuTracking"));
+        menuDiagnosis = new QMenu(menubar);
+        menuDiagnosis->setObjectName(QString::fromUtf8("menuDiagnosis"));
+        menuSet_up = new QMenu(menubar);
+        menuSet_up->setObjectName(QString::fromUtf8("menuSet_up"));
+        menuStyle = new QMenu(menubar);
+        menuStyle->setObjectName(QString::fromUtf8("menuStyle"));
+        MainWindow->setMenuBar(menubar);
+        statusbar = new QStatusBar(MainWindow);
+        statusbar->setObjectName(QString::fromUtf8("statusbar"));
+        MainWindow->setStatusBar(statusbar);
+        toolbar = new QToolBar(MainWindow);
+        toolbar->setObjectName(QString::fromUtf8("toolbar"));
+        MainWindow->addToolBar(Qt::TopToolBarArea, toolbar);
+
+        menubar->addAction(menuDirect_D->menuAction());
+        menubar->addAction(menuTracking->menuAction());
+        menubar->addAction(menuDiagnosis->menuAction());
+        menubar->addAction(menuSet_up->menuAction());
+        menubar->addAction(menuStyle->menuAction());
+        menuDirect_D->addAction(actionAz_Alt);
+        menuDirect_D->addAction(actionM3);
+        menuDirect_D->addAction(actionM2);
+        menuTracking->addAction(actionTracking);
+        menuDiagnosis->addAction(actionAz_Alt_D);
+        menuDiagnosis->addAction(actionM3_D);
+        menuDiagnosis->addAction(actionM2_D);
+        menuDiagnosis->addAction(actionGlobal);
+        menuSet_up->addAction(actionSet_up);
+        menuStyle->addAction(actionWindows);
+        menuStyle->addAction(actionMotif);
+        menuStyle->addAction(actionGtk);
+        menuStyle->addAction(actionCDE);
+        toolbar->addAction(actionAz_Alt);
+        toolbar->addAction(actionM3);
+        toolbar->addSeparator();
+        toolbar->addAction(actionTerminal);
+
+        retranslateUi(MainWindow);
+
+        QMetaObject::connectSlotsByName(MainWindow);
+    } // setupUi
+
+    void retranslateUi(QMainWindow *MainWindow)
+    {
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "Telescope 2.5m", 0, QApplication::UnicodeUTF8));
+        actionAz_Alt->setText(QApplication::translate("MainWindow", "Az/Alt", 0, QApplication::UnicodeUTF8));
+        actionM3->setText(QApplication::translate("MainWindow", "M3", 0, QApplication::UnicodeUTF8));
+        actionM3_D->setText(QApplication::translate("MainWindow", "M3", 0, QApplication::UnicodeUTF8));
+        actionM2_D->setText(QApplication::translate("MainWindow", "M2", 0, QApplication::UnicodeUTF8));
+        actionGlobal->setText(QApplication::translate("MainWindow", "Global", 0, QApplication::UnicodeUTF8));
+        actionSet_up->setText(QApplication::translate("MainWindow", "Set up", 0, QApplication::UnicodeUTF8));
+        actionAz_Alt_D->setText(QApplication::translate("MainWindow", "Az/Alt", 0, QApplication::UnicodeUTF8));
+        actionM2->setText(QApplication::translate("MainWindow", "M2", 0, QApplication::UnicodeUTF8));
+        actionTerminal->setText(QApplication::translate("MainWindow", "Terminal", 0, QApplication::UnicodeUTF8));
+        actionWindows->setText(QApplication::translate("MainWindow", "Windows", 0, QApplication::UnicodeUTF8));
+        actionMotif->setText(QApplication::translate("MainWindow", "Motif", 0, QApplication::UnicodeUTF8));
+        actionGtk->setText(QApplication::translate("MainWindow", "Gtk", 0, QApplication::UnicodeUTF8));
+        actionCDE->setText(QApplication::translate("MainWindow", "CDE", 0, QApplication::UnicodeUTF8));
+        actionTracking->setText(QApplication::translate("MainWindow", "Tracking", 0, QApplication::UnicodeUTF8));
+        menuDirect_D->setTitle(QApplication::translate("MainWindow", "Direct", 0, QApplication::UnicodeUTF8));
+        menuTracking->setTitle(QApplication::translate("MainWindow", "Tracking", 0, QApplication::UnicodeUTF8));
+        menuDiagnosis->setTitle(QApplication::translate("MainWindow", "Diagnosis", 0, QApplication::UnicodeUTF8));
+        menuSet_up->setTitle(QApplication::translate("MainWindow", "Set up", 0, QApplication::UnicodeUTF8));
+        menuStyle->setTitle(QApplication::translate("MainWindow", "Style", 0, QApplication::UnicodeUTF8));
+        toolbar->setWindowTitle(QApplication::translate("MainWindow", "toolBar", 0, QApplication::UnicodeUTF8));
+    } // retranslateUi
+
+};
+
+namespace Ui {
+    class MainWindow: public Ui_MainWindow {};
+} // namespace Ui
+
+QT_END_NAMESPACE
+
+#endif // UI_TELESCOPE_H

@@ -1,0 +1,41 @@
+//
+// C++ Implementation: server
+//
+// Description: 
+//
+//
+// Author: donglongchao <donglongchao@163.com>, (C) 2010
+//
+// Copyright: See COPYING file that comes with this distribution
+//
+//
+#include "server.h"
+Server::Server()
+{
+	
+}
+
+Server::~Server()
+{
+	
+}
+
+void Server::incomingConnection(int socketDescriptor)
+{
+	
+}
+
+ServerThread::ServerThread()
+{
+	
+}
+
+ServerThread::~ServerThread()
+{
+	
+}
+
+void ServerThread::run()
+{
+	
+}

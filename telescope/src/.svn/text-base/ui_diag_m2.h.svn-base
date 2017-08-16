@@ -1,0 +1,1265 @@
+/********************************************************************************
+** Form generated from reading ui file 'diag_m2.ui'
+**
+** Created: Fri Jan 15 18:11:59 2010
+**      by: Qt User Interface Compiler version 4.5.0
+**
+** WARNING! All changes made in this file will be lost when recompiling ui file!
+********************************************************************************/
+
+#ifndef UI_DIAG_M2_H
+#define UI_DIAG_M2_H
+
+#include <QtCore/QVariant>
+#include <QtGui/QAction>
+#include <QtGui/QApplication>
+#include <QtGui/QButtonGroup>
+#include <QtGui/QCheckBox>
+#include <QtGui/QGridLayout>
+#include <QtGui/QGroupBox>
+#include <QtGui/QHeaderView>
+#include <QtGui/QLabel>
+#include <QtGui/QLineEdit>
+#include <QtGui/QPushButton>
+#include <QtGui/QScrollArea>
+#include <QtGui/QVBoxLayout>
+#include <QtGui/QWidget>
+
+QT_BEGIN_NAMESPACE
+
+class Ui_DiagM2
+{
+public:
+    QWidget *scrollAreaWidgetContents;
+    QLabel *label;
+    QGroupBox *groupBox;
+    QVBoxLayout *verticalLayout;
+    QCheckBox *checkBox_tilt1_homed;
+    QCheckBox *checkBox_tilt1_enabled;
+    QGroupBox *groupBox_2;
+    QWidget *layoutWidget;
+    QVBoxLayout *verticalLayout_2;
+    QCheckBox *checkBox_tilt1_softP;
+    QCheckBox *checkBox_tilt1_softM;
+    QCheckBox *checkBox_tilt1_hardP;
+    QCheckBox *checkBox_tilt1_hardM;
+    QWidget *layoutWidget1;
+    QGridLayout *gridLayout;
+    QLabel *label_3;
+    QLineEdit *lineEdit_tilt1_pos;
+    QLabel *label_15;
+    QLabel *label_2;
+    QLineEdit *lineEdit_tilt1_poserr;
+    QLabel *label_23;
+    QLabel *label_6;
+    QLineEdit *lineEdit_tilt1_vel;
+    QLabel *label_24;
+    QGroupBox *groupBox_3;
+    QPushButton *pushButton_tilt1_enable;
+    QPushButton *pushButton_tilt1_go;
+    QPushButton *pushButton_tilt1_dirP;
+    QPushButton *pushButton_tilt1_dirM;
+    QPushButton *pushButton_tilt1_stop;
+    QWidget *layoutWidget2;
+    QGridLayout *gridLayout_6;
+    QLabel *label_4;
+    QLineEdit *lineEdit_tilt1_target;
+    QLabel *label_48;
+    QLabel *label_5;
+    QLineEdit *lineEdit_tilt1_vel_spec;
+    QLabel *label_47;
+    QGroupBox *groupBox_4;
+    QVBoxLayout *verticalLayout_4;
+    QCheckBox *checkBox_tilt2_homed;
+    QCheckBox *checkBox_tilt2_enabled;
+    QLabel *label_7;
+    QGroupBox *groupBox_5;
+    QWidget *layoutWidget_2;
+    QVBoxLayout *verticalLayout_5;
+    QCheckBox *checkBox_tilt2_softP;
+    QCheckBox *checkBox_tilt2_softM;
+    QCheckBox *checkBox_tilt2_hardP;
+    QCheckBox *checkBox_tilt2_hardM;
+    QWidget *layoutWidget3;
+    QGridLayout *gridLayout_5;
+    QLabel *label_8;
+    QLineEdit *lineEdit_tilt2_pos;
+    QLabel *label_30;
+    QLabel *label_9;
+    QLineEdit *lineEdit_tilt2_poserr;
+    QLabel *label_31;
+    QLabel *label_10;
+    QLineEdit *lineEdit_tilt2_vel;
+    QLabel *label_36;
+    QGroupBox *groupBox_6;
+    QPushButton *pushButton_tilt2_enable;
+    QPushButton *pushButton_tilt2_go;
+    QPushButton *pushButton_tilt2_dirP;
+    QPushButton *pushButton_tilt2_dirM;
+    QPushButton *pushButton_tilt2_stop;
+    QWidget *layoutWidget4;
+    QGridLayout *gridLayout_7;
+    QLabel *label_11;
+    QLineEdit *lineEdit_tilt2_target;
+    QLabel *label_50;
+    QLabel *label_12;
+    QLineEdit *lineEdit_tilt2_vel_spec;
+    QLabel *label_49;
+    QGroupBox *groupBox_7;
+    QVBoxLayout *verticalLayout_7;
+    QCheckBox *checkBox_tilt3_homed;
+    QCheckBox *checkBox_tilt3_enabled;
+    QLabel *label_13;
+    QGroupBox *groupBox_8;
+    QWidget *layoutWidget_5;
+    QVBoxLayout *verticalLayout_8;
+    QCheckBox *checkBox_tilt3_softP;
+    QCheckBox *checkBox_tilt3_softM;
+    QCheckBox *checkBox_tilt3_hardP;
+    QCheckBox *checkBox_tilt3_hardM;
+    QWidget *layoutWidget5;
+    QGridLayout *gridLayout_4;
+    QLabel *label_14;
+    QLineEdit *lineEdit_tilt3_pos;
+    QLabel *label_37;
+    QLabel *label_16;
+    QLineEdit *lineEdit_tilt3_poserr;
+    QLabel *label_39;
+    QLabel *label_17;
+    QLineEdit *lineEdit_tilt3_vel;
+    QLabel *label_38;
+    QGroupBox *groupBox_9;
+    QPushButton *pushButton_tilt3_enable;
+    QPushButton *pushButton_tilt3_go;
+    QPushButton *pushButton_tilt3_dirP;
+    QPushButton *pushButton_tilt3_dirM;
+    QPushButton *pushButton_tilt3_stop;
+    QWidget *layoutWidget6;
+    QGridLayout *gridLayout_8;
+    QLabel *label_18;
+    QLineEdit *lineEdit_tilt3_target;
+    QLabel *label_52;
+    QLabel *label_19;
+    QLineEdit *lineEdit_tilt3_vel_spec;
+    QLabel *label_51;
+    QGroupBox *groupBox_10;
+    QVBoxLayout *verticalLayout_10;
+    QCheckBox *checkBox_xc_homed;
+    QCheckBox *checkBox_xc_enabled;
+    QLabel *label_20;
+    QGroupBox *groupBox_11;
+    QWidget *layoutWidget_8;
+    QVBoxLayout *verticalLayout_13;
+    QCheckBox *checkBox_xc_softP;
+    QCheckBox *checkBox_xc_softM;
+    QCheckBox *checkBox_xc_hardP;
+    QCheckBox *checkBox_xc_hardM;
+    QWidget *layoutWidget7;
+    QGridLayout *gridLayout_3;
+    QLabel *label_21;
+    QLineEdit *lineEdit_xc_pos;
+    QLabel *label_40;
+    QLabel *label_22;
+    QLineEdit *lineEdit_xc_poserr;
+    QLabel *label_42;
+    QLabel *label_25;
+    QLineEdit *lineEdit_xc_vel;
+    QLabel *label_41;
+    QGroupBox *groupBox_12;
+    QPushButton *pushButton_xc_enable;
+    QPushButton *pushButton_xc_go;
+    QPushButton *pushButton_xc_dirP;
+    QPushButton *pushButton_xc_dirM;
+    QPushButton *pushButton_xc_stop;
+    QWidget *layoutWidget8;
+    QGridLayout *gridLayout_9;
+    QLabel *label_26;
+    QLineEdit *lineEdit_xc_target;
+    QLabel *label_54;
+    QLabel *label_27;
+    QLineEdit *lineEdit_xc_vel_spec;
+    QLabel *label_53;
+    QGroupBox *groupBox_13;
+    QWidget *layoutWidget_11;
+    QVBoxLayout *verticalLayout_15;
+    QCheckBox *checkBox_yc_softP;
+    QCheckBox *checkBox_yc_softM;
+    QCheckBox *checkBox_yc_hardP;
+    QCheckBox *checkBox_yc_hardM;
+    QWidget *layoutWidget9;
+    QGridLayout *gridLayout_2;
+    QLabel *label_28;
+    QLineEdit *lineEdit_yc_pos;
+    QLabel *label_43;
+    QLabel *label_29;
+    QLineEdit *lineEdit_yc_poserr;
+    QLabel *label_45;
+    QLabel *label_32;
+    QLineEdit *lineEdit_yc_vel;
+    QLabel *label_44;
+    QGroupBox *groupBox_14;
+    QVBoxLayout *verticalLayout_16;
+    QCheckBox *checkBox_yc_homed;
+    QCheckBox *checkBox_yc_enabled;
+    QLabel *label_33;
+    QGroupBox *groupBox_15;
+    QPushButton *pushButton_yc_enable;
+    QPushButton *pushButton_yc_go;
+    QPushButton *pushButton_yc_dirP;
+    QPushButton *pushButton_yc_dirM;
+    QPushButton *pushButton_yc_stop;
+    QWidget *layoutWidget10;
+    QGridLayout *gridLayout_10;
+    QLabel *label_34;
+    QLineEdit *lineEdit_yc_target;
+    QLabel *label_56;
+    QLabel *label_35;
+    QLineEdit *lineEdit_yc_vel_spec;
+    QLabel *label_55;
+
+    void setupUi(QScrollArea *DiagM2)
+    {
+        if (DiagM2->objectName().isEmpty())
+            DiagM2->setObjectName(QString::fromUtf8("DiagM2"));
+        DiagM2->resize(1204, 750);
+        QIcon icon;
+        icon.addPixmap(QPixmap(QString::fromUtf8(":/icon/star.png")), QIcon::Normal, QIcon::Off);
+        DiagM2->setWindowIcon(icon);
+        DiagM2->setFrameShape(QFrame::WinPanel);
+        DiagM2->setFrameShadow(QFrame::Sunken);
+        DiagM2->setLineWidth(1);
+        DiagM2->setWidgetResizable(false);
+        scrollAreaWidgetContents = new QWidget();
+        scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 1200, 746));
+        label = new QLabel(scrollAreaWidgetContents);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setGeometry(QRect(90, 0, 101, 31));
+        groupBox = new QGroupBox(scrollAreaWidgetContents);
+        groupBox->setObjectName(QString::fromUtf8("groupBox"));
+        groupBox->setGeometry(QRect(50, 50, 161, 111));
+        verticalLayout = new QVBoxLayout(groupBox);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        checkBox_tilt1_homed = new QCheckBox(groupBox);
+        checkBox_tilt1_homed->setObjectName(QString::fromUtf8("checkBox_tilt1_homed"));
+        checkBox_tilt1_homed->setCheckable(false);
+
+        verticalLayout->addWidget(checkBox_tilt1_homed);
+
+        checkBox_tilt1_enabled = new QCheckBox(groupBox);
+        checkBox_tilt1_enabled->setObjectName(QString::fromUtf8("checkBox_tilt1_enabled"));
+        checkBox_tilt1_enabled->setCheckable(false);
+
+        verticalLayout->addWidget(checkBox_tilt1_enabled);
+
+        groupBox_2 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
+        groupBox_2->setGeometry(QRect(50, 160, 161, 241));
+        layoutWidget = new QWidget(groupBox_2);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(20, 120, 131, 106));
+        verticalLayout_2 = new QVBoxLayout(layoutWidget);
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
+        checkBox_tilt1_softP = new QCheckBox(layoutWidget);
+        checkBox_tilt1_softP->setObjectName(QString::fromUtf8("checkBox_tilt1_softP"));
+        checkBox_tilt1_softP->setCheckable(false);
+
+        verticalLayout_2->addWidget(checkBox_tilt1_softP);
+
+        checkBox_tilt1_softM = new QCheckBox(layoutWidget);
+        checkBox_tilt1_softM->setObjectName(QString::fromUtf8("checkBox_tilt1_softM"));
+        checkBox_tilt1_softM->setCheckable(false);
+
+        verticalLayout_2->addWidget(checkBox_tilt1_softM);
+
+        checkBox_tilt1_hardP = new QCheckBox(layoutWidget);
+        checkBox_tilt1_hardP->setObjectName(QString::fromUtf8("checkBox_tilt1_hardP"));
+        checkBox_tilt1_hardP->setCheckable(false);
+
+        verticalLayout_2->addWidget(checkBox_tilt1_hardP);
+
+        checkBox_tilt1_hardM = new QCheckBox(layoutWidget);
+        checkBox_tilt1_hardM->setObjectName(QString::fromUtf8("checkBox_tilt1_hardM"));
+        checkBox_tilt1_hardM->setCheckable(false);
+
+        verticalLayout_2->addWidget(checkBox_tilt1_hardM);
+
+        layoutWidget1 = new QWidget(groupBox_2);
+        layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
+        layoutWidget1->setGeometry(QRect(20, 30, 131, 85));
+        gridLayout = new QGridLayout(layoutWidget1);
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        gridLayout->setContentsMargins(0, 0, 0, 0);
+        label_3 = new QLabel(layoutWidget1);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setAlignment(Qt::AlignCenter);
+
+        gridLayout->addWidget(label_3, 0, 0, 1, 1);
+
+        lineEdit_tilt1_pos = new QLineEdit(layoutWidget1);
+        lineEdit_tilt1_pos->setObjectName(QString::fromUtf8("lineEdit_tilt1_pos"));
+        lineEdit_tilt1_pos->setReadOnly(true);
+
+        gridLayout->addWidget(lineEdit_tilt1_pos, 0, 1, 1, 1);
+
+        label_15 = new QLabel(layoutWidget1);
+        label_15->setObjectName(QString::fromUtf8("label_15"));
+        label_15->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+
+        gridLayout->addWidget(label_15, 0, 2, 1, 1);
+
+        label_2 = new QLabel(layoutWidget1);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout->addWidget(label_2, 1, 0, 1, 1);
+
+        lineEdit_tilt1_poserr = new QLineEdit(layoutWidget1);
+        lineEdit_tilt1_poserr->setObjectName(QString::fromUtf8("lineEdit_tilt1_poserr"));
+        lineEdit_tilt1_poserr->setReadOnly(true);
+
+        gridLayout->addWidget(lineEdit_tilt1_poserr, 1, 1, 1, 1);
+
+        label_23 = new QLabel(layoutWidget1);
+        label_23->setObjectName(QString::fromUtf8("label_23"));
+
+        gridLayout->addWidget(label_23, 1, 2, 1, 1);
+
+        label_6 = new QLabel(layoutWidget1);
+        label_6->setObjectName(QString::fromUtf8("label_6"));
+        label_6->setAlignment(Qt::AlignCenter);
+
+        gridLayout->addWidget(label_6, 2, 0, 1, 1);
+
+        lineEdit_tilt1_vel = new QLineEdit(layoutWidget1);
+        lineEdit_tilt1_vel->setObjectName(QString::fromUtf8("lineEdit_tilt1_vel"));
+        lineEdit_tilt1_vel->setReadOnly(true);
+
+        gridLayout->addWidget(lineEdit_tilt1_vel, 2, 1, 1, 1);
+
+        label_24 = new QLabel(layoutWidget1);
+        label_24->setObjectName(QString::fromUtf8("label_24"));
+
+        gridLayout->addWidget(label_24, 2, 2, 1, 1);
+
+        groupBox_3 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_3->setObjectName(QString::fromUtf8("groupBox_3"));
+        groupBox_3->setGeometry(QRect(50, 410, 161, 241));
+        pushButton_tilt1_enable = new QPushButton(groupBox_3);
+        pushButton_tilt1_enable->setObjectName(QString::fromUtf8("pushButton_tilt1_enable"));
+        pushButton_tilt1_enable->setGeometry(QRect(50, 132, 68, 31));
+        QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Expanding);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(pushButton_tilt1_enable->sizePolicy().hasHeightForWidth());
+        pushButton_tilt1_enable->setSizePolicy(sizePolicy);
+        pushButton_tilt1_go = new QPushButton(groupBox_3);
+        pushButton_tilt1_go->setObjectName(QString::fromUtf8("pushButton_tilt1_go"));
+        pushButton_tilt1_go->setGeometry(QRect(20, 170, 61, 31));
+        sizePolicy.setHeightForWidth(pushButton_tilt1_go->sizePolicy().hasHeightForWidth());
+        pushButton_tilt1_go->setSizePolicy(sizePolicy);
+        pushButton_tilt1_dirP = new QPushButton(groupBox_3);
+        pushButton_tilt1_dirP->setObjectName(QString::fromUtf8("pushButton_tilt1_dirP"));
+        pushButton_tilt1_dirP->setGeometry(QRect(20, 200, 62, 31));
+        pushButton_tilt1_dirM = new QPushButton(groupBox_3);
+        pushButton_tilt1_dirM->setObjectName(QString::fromUtf8("pushButton_tilt1_dirM"));
+        pushButton_tilt1_dirM->setGeometry(QRect(90, 200, 62, 31));
+        pushButton_tilt1_stop = new QPushButton(groupBox_3);
+        pushButton_tilt1_stop->setObjectName(QString::fromUtf8("pushButton_tilt1_stop"));
+        pushButton_tilt1_stop->setGeometry(QRect(90, 170, 61, 31));
+        sizePolicy.setHeightForWidth(pushButton_tilt1_stop->sizePolicy().hasHeightForWidth());
+        pushButton_tilt1_stop->setSizePolicy(sizePolicy);
+        layoutWidget2 = new QWidget(groupBox_3);
+        layoutWidget2->setObjectName(QString::fromUtf8("layoutWidget2"));
+        layoutWidget2->setGeometry(QRect(21, 26, 131, 101));
+        gridLayout_6 = new QGridLayout(layoutWidget2);
+        gridLayout_6->setObjectName(QString::fromUtf8("gridLayout_6"));
+        gridLayout_6->setContentsMargins(0, 0, 0, 0);
+        label_4 = new QLabel(layoutWidget2);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setAlignment(Qt::AlignCenter);
+
+        gridLayout_6->addWidget(label_4, 0, 0, 1, 1);
+
+        lineEdit_tilt1_target = new QLineEdit(layoutWidget2);
+        lineEdit_tilt1_target->setObjectName(QString::fromUtf8("lineEdit_tilt1_target"));
+
+        gridLayout_6->addWidget(lineEdit_tilt1_target, 1, 0, 1, 1);
+
+        label_48 = new QLabel(layoutWidget2);
+        label_48->setObjectName(QString::fromUtf8("label_48"));
+
+        gridLayout_6->addWidget(label_48, 1, 1, 1, 1);
+
+        label_5 = new QLabel(layoutWidget2);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+        label_5->setAlignment(Qt::AlignCenter);
+
+        gridLayout_6->addWidget(label_5, 2, 0, 1, 1);
+
+        lineEdit_tilt1_vel_spec = new QLineEdit(layoutWidget2);
+        lineEdit_tilt1_vel_spec->setObjectName(QString::fromUtf8("lineEdit_tilt1_vel_spec"));
+
+        gridLayout_6->addWidget(lineEdit_tilt1_vel_spec, 3, 0, 1, 1);
+
+        label_47 = new QLabel(layoutWidget2);
+        label_47->setObjectName(QString::fromUtf8("label_47"));
+
+        gridLayout_6->addWidget(label_47, 3, 1, 1, 1);
+
+        groupBox_4 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_4->setObjectName(QString::fromUtf8("groupBox_4"));
+        groupBox_4->setGeometry(QRect(280, 50, 161, 111));
+        verticalLayout_4 = new QVBoxLayout(groupBox_4);
+        verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
+        checkBox_tilt2_homed = new QCheckBox(groupBox_4);
+        checkBox_tilt2_homed->setObjectName(QString::fromUtf8("checkBox_tilt2_homed"));
+        checkBox_tilt2_homed->setCheckable(false);
+
+        verticalLayout_4->addWidget(checkBox_tilt2_homed);
+
+        checkBox_tilt2_enabled = new QCheckBox(groupBox_4);
+        checkBox_tilt2_enabled->setObjectName(QString::fromUtf8("checkBox_tilt2_enabled"));
+        checkBox_tilt2_enabled->setCheckable(false);
+
+        verticalLayout_4->addWidget(checkBox_tilt2_enabled);
+
+        label_7 = new QLabel(scrollAreaWidgetContents);
+        label_7->setObjectName(QString::fromUtf8("label_7"));
+        label_7->setGeometry(QRect(320, 0, 101, 31));
+        groupBox_5 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_5->setObjectName(QString::fromUtf8("groupBox_5"));
+        groupBox_5->setGeometry(QRect(280, 160, 161, 241));
+        layoutWidget_2 = new QWidget(groupBox_5);
+        layoutWidget_2->setObjectName(QString::fromUtf8("layoutWidget_2"));
+        layoutWidget_2->setGeometry(QRect(20, 120, 131, 106));
+        verticalLayout_5 = new QVBoxLayout(layoutWidget_2);
+        verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
+        verticalLayout_5->setContentsMargins(0, 0, 0, 0);
+        checkBox_tilt2_softP = new QCheckBox(layoutWidget_2);
+        checkBox_tilt2_softP->setObjectName(QString::fromUtf8("checkBox_tilt2_softP"));
+        checkBox_tilt2_softP->setCheckable(false);
+
+        verticalLayout_5->addWidget(checkBox_tilt2_softP);
+
+        checkBox_tilt2_softM = new QCheckBox(layoutWidget_2);
+        checkBox_tilt2_softM->setObjectName(QString::fromUtf8("checkBox_tilt2_softM"));
+        checkBox_tilt2_softM->setCheckable(false);
+
+        verticalLayout_5->addWidget(checkBox_tilt2_softM);
+
+        checkBox_tilt2_hardP = new QCheckBox(layoutWidget_2);
+        checkBox_tilt2_hardP->setObjectName(QString::fromUtf8("checkBox_tilt2_hardP"));
+        checkBox_tilt2_hardP->setCheckable(false);
+
+        verticalLayout_5->addWidget(checkBox_tilt2_hardP);
+
+        checkBox_tilt2_hardM = new QCheckBox(layoutWidget_2);
+        checkBox_tilt2_hardM->setObjectName(QString::fromUtf8("checkBox_tilt2_hardM"));
+        checkBox_tilt2_hardM->setCheckable(false);
+
+        verticalLayout_5->addWidget(checkBox_tilt2_hardM);
+
+        layoutWidget3 = new QWidget(groupBox_5);
+        layoutWidget3->setObjectName(QString::fromUtf8("layoutWidget3"));
+        layoutWidget3->setGeometry(QRect(20, 31, 131, 85));
+        gridLayout_5 = new QGridLayout(layoutWidget3);
+        gridLayout_5->setObjectName(QString::fromUtf8("gridLayout_5"));
+        gridLayout_5->setContentsMargins(0, 0, 0, 0);
+        label_8 = new QLabel(layoutWidget3);
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+        label_8->setAlignment(Qt::AlignCenter);
+
+        gridLayout_5->addWidget(label_8, 0, 0, 1, 1);
+
+        lineEdit_tilt2_pos = new QLineEdit(layoutWidget3);
+        lineEdit_tilt2_pos->setObjectName(QString::fromUtf8("lineEdit_tilt2_pos"));
+        lineEdit_tilt2_pos->setReadOnly(true);
+
+        gridLayout_5->addWidget(lineEdit_tilt2_pos, 0, 1, 1, 1);
+
+        label_30 = new QLabel(layoutWidget3);
+        label_30->setObjectName(QString::fromUtf8("label_30"));
+
+        gridLayout_5->addWidget(label_30, 0, 2, 1, 1);
+
+        label_9 = new QLabel(layoutWidget3);
+        label_9->setObjectName(QString::fromUtf8("label_9"));
+        label_9->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_5->addWidget(label_9, 1, 0, 1, 1);
+
+        lineEdit_tilt2_poserr = new QLineEdit(layoutWidget3);
+        lineEdit_tilt2_poserr->setObjectName(QString::fromUtf8("lineEdit_tilt2_poserr"));
+        lineEdit_tilt2_poserr->setReadOnly(true);
+
+        gridLayout_5->addWidget(lineEdit_tilt2_poserr, 1, 1, 1, 1);
+
+        label_31 = new QLabel(layoutWidget3);
+        label_31->setObjectName(QString::fromUtf8("label_31"));
+
+        gridLayout_5->addWidget(label_31, 1, 2, 1, 1);
+
+        label_10 = new QLabel(layoutWidget3);
+        label_10->setObjectName(QString::fromUtf8("label_10"));
+        label_10->setAlignment(Qt::AlignCenter);
+
+        gridLayout_5->addWidget(label_10, 2, 0, 1, 1);
+
+        lineEdit_tilt2_vel = new QLineEdit(layoutWidget3);
+        lineEdit_tilt2_vel->setObjectName(QString::fromUtf8("lineEdit_tilt2_vel"));
+        lineEdit_tilt2_vel->setReadOnly(true);
+
+        gridLayout_5->addWidget(lineEdit_tilt2_vel, 2, 1, 1, 1);
+
+        label_36 = new QLabel(layoutWidget3);
+        label_36->setObjectName(QString::fromUtf8("label_36"));
+
+        gridLayout_5->addWidget(label_36, 2, 2, 1, 1);
+
+        groupBox_6 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_6->setObjectName(QString::fromUtf8("groupBox_6"));
+        groupBox_6->setGeometry(QRect(280, 410, 161, 241));
+        pushButton_tilt2_enable = new QPushButton(groupBox_6);
+        pushButton_tilt2_enable->setObjectName(QString::fromUtf8("pushButton_tilt2_enable"));
+        pushButton_tilt2_enable->setGeometry(QRect(50, 132, 68, 31));
+        sizePolicy.setHeightForWidth(pushButton_tilt2_enable->sizePolicy().hasHeightForWidth());
+        pushButton_tilt2_enable->setSizePolicy(sizePolicy);
+        pushButton_tilt2_go = new QPushButton(groupBox_6);
+        pushButton_tilt2_go->setObjectName(QString::fromUtf8("pushButton_tilt2_go"));
+        pushButton_tilt2_go->setGeometry(QRect(20, 170, 61, 31));
+        sizePolicy.setHeightForWidth(pushButton_tilt2_go->sizePolicy().hasHeightForWidth());
+        pushButton_tilt2_go->setSizePolicy(sizePolicy);
+        pushButton_tilt2_dirP = new QPushButton(groupBox_6);
+        pushButton_tilt2_dirP->setObjectName(QString::fromUtf8("pushButton_tilt2_dirP"));
+        pushButton_tilt2_dirP->setGeometry(QRect(20, 200, 62, 31));
+        pushButton_tilt2_dirM = new QPushButton(groupBox_6);
+        pushButton_tilt2_dirM->setObjectName(QString::fromUtf8("pushButton_tilt2_dirM"));
+        pushButton_tilt2_dirM->setGeometry(QRect(90, 200, 62, 31));
+        pushButton_tilt2_stop = new QPushButton(groupBox_6);
+        pushButton_tilt2_stop->setObjectName(QString::fromUtf8("pushButton_tilt2_stop"));
+        pushButton_tilt2_stop->setGeometry(QRect(90, 170, 61, 31));
+        sizePolicy.setHeightForWidth(pushButton_tilt2_stop->sizePolicy().hasHeightForWidth());
+        pushButton_tilt2_stop->setSizePolicy(sizePolicy);
+        layoutWidget4 = new QWidget(groupBox_6);
+        layoutWidget4->setObjectName(QString::fromUtf8("layoutWidget4"));
+        layoutWidget4->setGeometry(QRect(21, 33, 131, 94));
+        gridLayout_7 = new QGridLayout(layoutWidget4);
+        gridLayout_7->setObjectName(QString::fromUtf8("gridLayout_7"));
+        gridLayout_7->setContentsMargins(0, 0, 0, 0);
+        label_11 = new QLabel(layoutWidget4);
+        label_11->setObjectName(QString::fromUtf8("label_11"));
+        label_11->setAlignment(Qt::AlignCenter);
+
+        gridLayout_7->addWidget(label_11, 0, 0, 1, 1);
+
+        lineEdit_tilt2_target = new QLineEdit(layoutWidget4);
+        lineEdit_tilt2_target->setObjectName(QString::fromUtf8("lineEdit_tilt2_target"));
+
+        gridLayout_7->addWidget(lineEdit_tilt2_target, 1, 0, 1, 1);
+
+        label_50 = new QLabel(layoutWidget4);
+        label_50->setObjectName(QString::fromUtf8("label_50"));
+
+        gridLayout_7->addWidget(label_50, 1, 1, 1, 1);
+
+        label_12 = new QLabel(layoutWidget4);
+        label_12->setObjectName(QString::fromUtf8("label_12"));
+        label_12->setAlignment(Qt::AlignCenter);
+
+        gridLayout_7->addWidget(label_12, 2, 0, 1, 1);
+
+        lineEdit_tilt2_vel_spec = new QLineEdit(layoutWidget4);
+        lineEdit_tilt2_vel_spec->setObjectName(QString::fromUtf8("lineEdit_tilt2_vel_spec"));
+
+        gridLayout_7->addWidget(lineEdit_tilt2_vel_spec, 3, 0, 1, 1);
+
+        label_49 = new QLabel(layoutWidget4);
+        label_49->setObjectName(QString::fromUtf8("label_49"));
+
+        gridLayout_7->addWidget(label_49, 3, 1, 1, 1);
+
+        groupBox_7 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_7->setObjectName(QString::fromUtf8("groupBox_7"));
+        groupBox_7->setGeometry(QRect(510, 50, 161, 111));
+        verticalLayout_7 = new QVBoxLayout(groupBox_7);
+        verticalLayout_7->setObjectName(QString::fromUtf8("verticalLayout_7"));
+        checkBox_tilt3_homed = new QCheckBox(groupBox_7);
+        checkBox_tilt3_homed->setObjectName(QString::fromUtf8("checkBox_tilt3_homed"));
+        checkBox_tilt3_homed->setCheckable(false);
+
+        verticalLayout_7->addWidget(checkBox_tilt3_homed);
+
+        checkBox_tilt3_enabled = new QCheckBox(groupBox_7);
+        checkBox_tilt3_enabled->setObjectName(QString::fromUtf8("checkBox_tilt3_enabled"));
+        checkBox_tilt3_enabled->setCheckable(false);
+
+        verticalLayout_7->addWidget(checkBox_tilt3_enabled);
+
+        label_13 = new QLabel(scrollAreaWidgetContents);
+        label_13->setObjectName(QString::fromUtf8("label_13"));
+        label_13->setGeometry(QRect(550, 0, 101, 31));
+        groupBox_8 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_8->setObjectName(QString::fromUtf8("groupBox_8"));
+        groupBox_8->setGeometry(QRect(510, 160, 161, 241));
+        layoutWidget_5 = new QWidget(groupBox_8);
+        layoutWidget_5->setObjectName(QString::fromUtf8("layoutWidget_5"));
+        layoutWidget_5->setGeometry(QRect(20, 120, 131, 106));
+        verticalLayout_8 = new QVBoxLayout(layoutWidget_5);
+        verticalLayout_8->setObjectName(QString::fromUtf8("verticalLayout_8"));
+        verticalLayout_8->setContentsMargins(0, 0, 0, 0);
+        checkBox_tilt3_softP = new QCheckBox(layoutWidget_5);
+        checkBox_tilt3_softP->setObjectName(QString::fromUtf8("checkBox_tilt3_softP"));
+        checkBox_tilt3_softP->setCheckable(false);
+
+        verticalLayout_8->addWidget(checkBox_tilt3_softP);
+
+        checkBox_tilt3_softM = new QCheckBox(layoutWidget_5);
+        checkBox_tilt3_softM->setObjectName(QString::fromUtf8("checkBox_tilt3_softM"));
+        checkBox_tilt3_softM->setCheckable(false);
+
+        verticalLayout_8->addWidget(checkBox_tilt3_softM);
+
+        checkBox_tilt3_hardP = new QCheckBox(layoutWidget_5);
+        checkBox_tilt3_hardP->setObjectName(QString::fromUtf8("checkBox_tilt3_hardP"));
+        checkBox_tilt3_hardP->setCheckable(false);
+
+        verticalLayout_8->addWidget(checkBox_tilt3_hardP);
+
+        checkBox_tilt3_hardM = new QCheckBox(layoutWidget_5);
+        checkBox_tilt3_hardM->setObjectName(QString::fromUtf8("checkBox_tilt3_hardM"));
+        checkBox_tilt3_hardM->setCheckable(false);
+
+        verticalLayout_8->addWidget(checkBox_tilt3_hardM);
+
+        layoutWidget5 = new QWidget(groupBox_8);
+        layoutWidget5->setObjectName(QString::fromUtf8("layoutWidget5"));
+        layoutWidget5->setGeometry(QRect(20, 31, 131, 85));
+        gridLayout_4 = new QGridLayout(layoutWidget5);
+        gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
+        gridLayout_4->setContentsMargins(0, 0, 0, 0);
+        label_14 = new QLabel(layoutWidget5);
+        label_14->setObjectName(QString::fromUtf8("label_14"));
+        label_14->setAlignment(Qt::AlignCenter);
+
+        gridLayout_4->addWidget(label_14, 0, 0, 1, 1);
+
+        lineEdit_tilt3_pos = new QLineEdit(layoutWidget5);
+        lineEdit_tilt3_pos->setObjectName(QString::fromUtf8("lineEdit_tilt3_pos"));
+        lineEdit_tilt3_pos->setReadOnly(true);
+
+        gridLayout_4->addWidget(lineEdit_tilt3_pos, 0, 1, 1, 1);
+
+        label_37 = new QLabel(layoutWidget5);
+        label_37->setObjectName(QString::fromUtf8("label_37"));
+
+        gridLayout_4->addWidget(label_37, 0, 2, 1, 1);
+
+        label_16 = new QLabel(layoutWidget5);
+        label_16->setObjectName(QString::fromUtf8("label_16"));
+        label_16->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_4->addWidget(label_16, 1, 0, 1, 1);
+
+        lineEdit_tilt3_poserr = new QLineEdit(layoutWidget5);
+        lineEdit_tilt3_poserr->setObjectName(QString::fromUtf8("lineEdit_tilt3_poserr"));
+        lineEdit_tilt3_poserr->setReadOnly(true);
+
+        gridLayout_4->addWidget(lineEdit_tilt3_poserr, 1, 1, 1, 1);
+
+        label_39 = new QLabel(layoutWidget5);
+        label_39->setObjectName(QString::fromUtf8("label_39"));
+
+        gridLayout_4->addWidget(label_39, 1, 2, 1, 1);
+
+        label_17 = new QLabel(layoutWidget5);
+        label_17->setObjectName(QString::fromUtf8("label_17"));
+        label_17->setAlignment(Qt::AlignCenter);
+
+        gridLayout_4->addWidget(label_17, 2, 0, 1, 1);
+
+        lineEdit_tilt3_vel = new QLineEdit(layoutWidget5);
+        lineEdit_tilt3_vel->setObjectName(QString::fromUtf8("lineEdit_tilt3_vel"));
+        lineEdit_tilt3_vel->setReadOnly(true);
+
+        gridLayout_4->addWidget(lineEdit_tilt3_vel, 2, 1, 1, 1);
+
+        label_38 = new QLabel(layoutWidget5);
+        label_38->setObjectName(QString::fromUtf8("label_38"));
+
+        gridLayout_4->addWidget(label_38, 2, 2, 1, 1);
+
+        groupBox_9 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_9->setObjectName(QString::fromUtf8("groupBox_9"));
+        groupBox_9->setGeometry(QRect(510, 410, 161, 241));
+        pushButton_tilt3_enable = new QPushButton(groupBox_9);
+        pushButton_tilt3_enable->setObjectName(QString::fromUtf8("pushButton_tilt3_enable"));
+        pushButton_tilt3_enable->setGeometry(QRect(40, 132, 68, 31));
+        sizePolicy.setHeightForWidth(pushButton_tilt3_enable->sizePolicy().hasHeightForWidth());
+        pushButton_tilt3_enable->setSizePolicy(sizePolicy);
+        pushButton_tilt3_go = new QPushButton(groupBox_9);
+        pushButton_tilt3_go->setObjectName(QString::fromUtf8("pushButton_tilt3_go"));
+        pushButton_tilt3_go->setGeometry(QRect(20, 170, 61, 31));
+        sizePolicy.setHeightForWidth(pushButton_tilt3_go->sizePolicy().hasHeightForWidth());
+        pushButton_tilt3_go->setSizePolicy(sizePolicy);
+        pushButton_tilt3_dirP = new QPushButton(groupBox_9);
+        pushButton_tilt3_dirP->setObjectName(QString::fromUtf8("pushButton_tilt3_dirP"));
+        pushButton_tilt3_dirP->setGeometry(QRect(20, 200, 62, 31));
+        pushButton_tilt3_dirM = new QPushButton(groupBox_9);
+        pushButton_tilt3_dirM->setObjectName(QString::fromUtf8("pushButton_tilt3_dirM"));
+        pushButton_tilt3_dirM->setGeometry(QRect(90, 200, 62, 31));
+        pushButton_tilt3_stop = new QPushButton(groupBox_9);
+        pushButton_tilt3_stop->setObjectName(QString::fromUtf8("pushButton_tilt3_stop"));
+        pushButton_tilt3_stop->setGeometry(QRect(90, 170, 61, 31));
+        sizePolicy.setHeightForWidth(pushButton_tilt3_stop->sizePolicy().hasHeightForWidth());
+        pushButton_tilt3_stop->setSizePolicy(sizePolicy);
+        layoutWidget6 = new QWidget(groupBox_9);
+        layoutWidget6->setObjectName(QString::fromUtf8("layoutWidget6"));
+        layoutWidget6->setGeometry(QRect(21, 33, 131, 94));
+        gridLayout_8 = new QGridLayout(layoutWidget6);
+        gridLayout_8->setObjectName(QString::fromUtf8("gridLayout_8"));
+        gridLayout_8->setContentsMargins(0, 0, 0, 0);
+        label_18 = new QLabel(layoutWidget6);
+        label_18->setObjectName(QString::fromUtf8("label_18"));
+        label_18->setAlignment(Qt::AlignCenter);
+
+        gridLayout_8->addWidget(label_18, 0, 0, 1, 1);
+
+        lineEdit_tilt3_target = new QLineEdit(layoutWidget6);
+        lineEdit_tilt3_target->setObjectName(QString::fromUtf8("lineEdit_tilt3_target"));
+
+        gridLayout_8->addWidget(lineEdit_tilt3_target, 1, 0, 1, 1);
+
+        label_52 = new QLabel(layoutWidget6);
+        label_52->setObjectName(QString::fromUtf8("label_52"));
+
+        gridLayout_8->addWidget(label_52, 1, 1, 1, 1);
+
+        label_19 = new QLabel(layoutWidget6);
+        label_19->setObjectName(QString::fromUtf8("label_19"));
+        label_19->setAlignment(Qt::AlignCenter);
+
+        gridLayout_8->addWidget(label_19, 2, 0, 1, 1);
+
+        lineEdit_tilt3_vel_spec = new QLineEdit(layoutWidget6);
+        lineEdit_tilt3_vel_spec->setObjectName(QString::fromUtf8("lineEdit_tilt3_vel_spec"));
+
+        gridLayout_8->addWidget(lineEdit_tilt3_vel_spec, 3, 0, 1, 1);
+
+        label_51 = new QLabel(layoutWidget6);
+        label_51->setObjectName(QString::fromUtf8("label_51"));
+
+        gridLayout_8->addWidget(label_51, 3, 1, 1, 1);
+
+        groupBox_10 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_10->setObjectName(QString::fromUtf8("groupBox_10"));
+        groupBox_10->setGeometry(QRect(740, 50, 161, 111));
+        verticalLayout_10 = new QVBoxLayout(groupBox_10);
+        verticalLayout_10->setObjectName(QString::fromUtf8("verticalLayout_10"));
+        checkBox_xc_homed = new QCheckBox(groupBox_10);
+        checkBox_xc_homed->setObjectName(QString::fromUtf8("checkBox_xc_homed"));
+        checkBox_xc_homed->setCheckable(false);
+
+        verticalLayout_10->addWidget(checkBox_xc_homed);
+
+        checkBox_xc_enabled = new QCheckBox(groupBox_10);
+        checkBox_xc_enabled->setObjectName(QString::fromUtf8("checkBox_xc_enabled"));
+        checkBox_xc_enabled->setCheckable(false);
+
+        verticalLayout_10->addWidget(checkBox_xc_enabled);
+
+        label_20 = new QLabel(scrollAreaWidgetContents);
+        label_20->setObjectName(QString::fromUtf8("label_20"));
+        label_20->setGeometry(QRect(780, 0, 101, 31));
+        groupBox_11 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_11->setObjectName(QString::fromUtf8("groupBox_11"));
+        groupBox_11->setGeometry(QRect(740, 160, 161, 241));
+        layoutWidget_8 = new QWidget(groupBox_11);
+        layoutWidget_8->setObjectName(QString::fromUtf8("layoutWidget_8"));
+        layoutWidget_8->setGeometry(QRect(20, 120, 131, 106));
+        verticalLayout_13 = new QVBoxLayout(layoutWidget_8);
+        verticalLayout_13->setObjectName(QString::fromUtf8("verticalLayout_13"));
+        verticalLayout_13->setContentsMargins(0, 0, 0, 0);
+        checkBox_xc_softP = new QCheckBox(layoutWidget_8);
+        checkBox_xc_softP->setObjectName(QString::fromUtf8("checkBox_xc_softP"));
+        checkBox_xc_softP->setCheckable(false);
+
+        verticalLayout_13->addWidget(checkBox_xc_softP);
+
+        checkBox_xc_softM = new QCheckBox(layoutWidget_8);
+        checkBox_xc_softM->setObjectName(QString::fromUtf8("checkBox_xc_softM"));
+        checkBox_xc_softM->setCheckable(false);
+
+        verticalLayout_13->addWidget(checkBox_xc_softM);
+
+        checkBox_xc_hardP = new QCheckBox(layoutWidget_8);
+        checkBox_xc_hardP->setObjectName(QString::fromUtf8("checkBox_xc_hardP"));
+        checkBox_xc_hardP->setCheckable(false);
+
+        verticalLayout_13->addWidget(checkBox_xc_hardP);
+
+        checkBox_xc_hardM = new QCheckBox(layoutWidget_8);
+        checkBox_xc_hardM->setObjectName(QString::fromUtf8("checkBox_xc_hardM"));
+        checkBox_xc_hardM->setCheckable(false);
+
+        verticalLayout_13->addWidget(checkBox_xc_hardM);
+
+        layoutWidget7 = new QWidget(groupBox_11);
+        layoutWidget7->setObjectName(QString::fromUtf8("layoutWidget7"));
+        layoutWidget7->setGeometry(QRect(20, 31, 131, 85));
+        gridLayout_3 = new QGridLayout(layoutWidget7);
+        gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
+        gridLayout_3->setContentsMargins(0, 0, 0, 0);
+        label_21 = new QLabel(layoutWidget7);
+        label_21->setObjectName(QString::fromUtf8("label_21"));
+        label_21->setAlignment(Qt::AlignCenter);
+
+        gridLayout_3->addWidget(label_21, 0, 0, 1, 1);
+
+        lineEdit_xc_pos = new QLineEdit(layoutWidget7);
+        lineEdit_xc_pos->setObjectName(QString::fromUtf8("lineEdit_xc_pos"));
+        lineEdit_xc_pos->setReadOnly(true);
+
+        gridLayout_3->addWidget(lineEdit_xc_pos, 0, 1, 1, 1);
+
+        label_40 = new QLabel(layoutWidget7);
+        label_40->setObjectName(QString::fromUtf8("label_40"));
+
+        gridLayout_3->addWidget(label_40, 0, 2, 1, 1);
+
+        label_22 = new QLabel(layoutWidget7);
+        label_22->setObjectName(QString::fromUtf8("label_22"));
+        label_22->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_3->addWidget(label_22, 1, 0, 1, 1);
+
+        lineEdit_xc_poserr = new QLineEdit(layoutWidget7);
+        lineEdit_xc_poserr->setObjectName(QString::fromUtf8("lineEdit_xc_poserr"));
+        lineEdit_xc_poserr->setReadOnly(true);
+
+        gridLayout_3->addWidget(lineEdit_xc_poserr, 1, 1, 1, 1);
+
+        label_42 = new QLabel(layoutWidget7);
+        label_42->setObjectName(QString::fromUtf8("label_42"));
+
+        gridLayout_3->addWidget(label_42, 1, 2, 1, 1);
+
+        label_25 = new QLabel(layoutWidget7);
+        label_25->setObjectName(QString::fromUtf8("label_25"));
+        label_25->setAlignment(Qt::AlignCenter);
+
+        gridLayout_3->addWidget(label_25, 2, 0, 1, 1);
+
+        lineEdit_xc_vel = new QLineEdit(layoutWidget7);
+        lineEdit_xc_vel->setObjectName(QString::fromUtf8("lineEdit_xc_vel"));
+        lineEdit_xc_vel->setReadOnly(true);
+
+        gridLayout_3->addWidget(lineEdit_xc_vel, 2, 1, 1, 1);
+
+        label_41 = new QLabel(layoutWidget7);
+        label_41->setObjectName(QString::fromUtf8("label_41"));
+
+        gridLayout_3->addWidget(label_41, 2, 2, 1, 1);
+
+        groupBox_12 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_12->setObjectName(QString::fromUtf8("groupBox_12"));
+        groupBox_12->setGeometry(QRect(740, 410, 161, 241));
+        pushButton_xc_enable = new QPushButton(groupBox_12);
+        pushButton_xc_enable->setObjectName(QString::fromUtf8("pushButton_xc_enable"));
+        pushButton_xc_enable->setGeometry(QRect(40, 132, 68, 31));
+        sizePolicy.setHeightForWidth(pushButton_xc_enable->sizePolicy().hasHeightForWidth());
+        pushButton_xc_enable->setSizePolicy(sizePolicy);
+        pushButton_xc_go = new QPushButton(groupBox_12);
+        pushButton_xc_go->setObjectName(QString::fromUtf8("pushButton_xc_go"));
+        pushButton_xc_go->setGeometry(QRect(20, 170, 61, 31));
+        sizePolicy.setHeightForWidth(pushButton_xc_go->sizePolicy().hasHeightForWidth());
+        pushButton_xc_go->setSizePolicy(sizePolicy);
+        pushButton_xc_dirP = new QPushButton(groupBox_12);
+        pushButton_xc_dirP->setObjectName(QString::fromUtf8("pushButton_xc_dirP"));
+        pushButton_xc_dirP->setGeometry(QRect(20, 200, 62, 31));
+        pushButton_xc_dirM = new QPushButton(groupBox_12);
+        pushButton_xc_dirM->setObjectName(QString::fromUtf8("pushButton_xc_dirM"));
+        pushButton_xc_dirM->setGeometry(QRect(90, 200, 62, 31));
+        pushButton_xc_stop = new QPushButton(groupBox_12);
+        pushButton_xc_stop->setObjectName(QString::fromUtf8("pushButton_xc_stop"));
+        pushButton_xc_stop->setGeometry(QRect(90, 170, 61, 31));
+        sizePolicy.setHeightForWidth(pushButton_xc_stop->sizePolicy().hasHeightForWidth());
+        pushButton_xc_stop->setSizePolicy(sizePolicy);
+        layoutWidget8 = new QWidget(groupBox_12);
+        layoutWidget8->setObjectName(QString::fromUtf8("layoutWidget8"));
+        layoutWidget8->setGeometry(QRect(20, 31, 131, 94));
+        gridLayout_9 = new QGridLayout(layoutWidget8);
+        gridLayout_9->setObjectName(QString::fromUtf8("gridLayout_9"));
+        gridLayout_9->setContentsMargins(0, 0, 0, 0);
+        label_26 = new QLabel(layoutWidget8);
+        label_26->setObjectName(QString::fromUtf8("label_26"));
+        label_26->setAlignment(Qt::AlignCenter);
+
+        gridLayout_9->addWidget(label_26, 0, 0, 1, 1);
+
+        lineEdit_xc_target = new QLineEdit(layoutWidget8);
+        lineEdit_xc_target->setObjectName(QString::fromUtf8("lineEdit_xc_target"));
+
+        gridLayout_9->addWidget(lineEdit_xc_target, 1, 0, 1, 1);
+
+        label_54 = new QLabel(layoutWidget8);
+        label_54->setObjectName(QString::fromUtf8("label_54"));
+
+        gridLayout_9->addWidget(label_54, 1, 1, 1, 1);
+
+        label_27 = new QLabel(layoutWidget8);
+        label_27->setObjectName(QString::fromUtf8("label_27"));
+        label_27->setAlignment(Qt::AlignCenter);
+
+        gridLayout_9->addWidget(label_27, 2, 0, 1, 1);
+
+        lineEdit_xc_vel_spec = new QLineEdit(layoutWidget8);
+        lineEdit_xc_vel_spec->setObjectName(QString::fromUtf8("lineEdit_xc_vel_spec"));
+
+        gridLayout_9->addWidget(lineEdit_xc_vel_spec, 3, 0, 1, 1);
+
+        label_53 = new QLabel(layoutWidget8);
+        label_53->setObjectName(QString::fromUtf8("label_53"));
+
+        gridLayout_9->addWidget(label_53, 3, 1, 1, 1);
+
+        groupBox_13 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_13->setObjectName(QString::fromUtf8("groupBox_13"));
+        groupBox_13->setGeometry(QRect(970, 160, 161, 241));
+        layoutWidget_11 = new QWidget(groupBox_13);
+        layoutWidget_11->setObjectName(QString::fromUtf8("layoutWidget_11"));
+        layoutWidget_11->setGeometry(QRect(20, 120, 131, 106));
+        verticalLayout_15 = new QVBoxLayout(layoutWidget_11);
+        verticalLayout_15->setObjectName(QString::fromUtf8("verticalLayout_15"));
+        verticalLayout_15->setContentsMargins(0, 0, 0, 0);
+        checkBox_yc_softP = new QCheckBox(layoutWidget_11);
+        checkBox_yc_softP->setObjectName(QString::fromUtf8("checkBox_yc_softP"));
+        checkBox_yc_softP->setCheckable(false);
+
+        verticalLayout_15->addWidget(checkBox_yc_softP);
+
+        checkBox_yc_softM = new QCheckBox(layoutWidget_11);
+        checkBox_yc_softM->setObjectName(QString::fromUtf8("checkBox_yc_softM"));
+        checkBox_yc_softM->setCheckable(false);
+
+        verticalLayout_15->addWidget(checkBox_yc_softM);
+
+        checkBox_yc_hardP = new QCheckBox(layoutWidget_11);
+        checkBox_yc_hardP->setObjectName(QString::fromUtf8("checkBox_yc_hardP"));
+        checkBox_yc_hardP->setCheckable(false);
+
+        verticalLayout_15->addWidget(checkBox_yc_hardP);
+
+        checkBox_yc_hardM = new QCheckBox(layoutWidget_11);
+        checkBox_yc_hardM->setObjectName(QString::fromUtf8("checkBox_yc_hardM"));
+        checkBox_yc_hardM->setCheckable(false);
+
+        verticalLayout_15->addWidget(checkBox_yc_hardM);
+
+        layoutWidget9 = new QWidget(groupBox_13);
+        layoutWidget9->setObjectName(QString::fromUtf8("layoutWidget9"));
+        layoutWidget9->setGeometry(QRect(20, 31, 131, 85));
+        gridLayout_2 = new QGridLayout(layoutWidget9);
+        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
+        gridLayout_2->setContentsMargins(0, 0, 0, 0);
+        label_28 = new QLabel(layoutWidget9);
+        label_28->setObjectName(QString::fromUtf8("label_28"));
+        label_28->setAlignment(Qt::AlignCenter);
+
+        gridLayout_2->addWidget(label_28, 0, 0, 1, 1);
+
+        lineEdit_yc_pos = new QLineEdit(layoutWidget9);
+        lineEdit_yc_pos->setObjectName(QString::fromUtf8("lineEdit_yc_pos"));
+        lineEdit_yc_pos->setReadOnly(true);
+
+        gridLayout_2->addWidget(lineEdit_yc_pos, 0, 1, 1, 1);
+
+        label_43 = new QLabel(layoutWidget9);
+        label_43->setObjectName(QString::fromUtf8("label_43"));
+
+        gridLayout_2->addWidget(label_43, 0, 2, 1, 1);
+
+        label_29 = new QLabel(layoutWidget9);
+        label_29->setObjectName(QString::fromUtf8("label_29"));
+        label_29->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_2->addWidget(label_29, 1, 0, 1, 1);
+
+        lineEdit_yc_poserr = new QLineEdit(layoutWidget9);
+        lineEdit_yc_poserr->setObjectName(QString::fromUtf8("lineEdit_yc_poserr"));
+        lineEdit_yc_poserr->setReadOnly(true);
+
+        gridLayout_2->addWidget(lineEdit_yc_poserr, 1, 1, 1, 1);
+
+        label_45 = new QLabel(layoutWidget9);
+        label_45->setObjectName(QString::fromUtf8("label_45"));
+
+        gridLayout_2->addWidget(label_45, 1, 2, 1, 1);
+
+        label_32 = new QLabel(layoutWidget9);
+        label_32->setObjectName(QString::fromUtf8("label_32"));
+        label_32->setAlignment(Qt::AlignCenter);
+
+        gridLayout_2->addWidget(label_32, 2, 0, 1, 1);
+
+        lineEdit_yc_vel = new QLineEdit(layoutWidget9);
+        lineEdit_yc_vel->setObjectName(QString::fromUtf8("lineEdit_yc_vel"));
+        lineEdit_yc_vel->setReadOnly(true);
+
+        gridLayout_2->addWidget(lineEdit_yc_vel, 2, 1, 1, 1);
+
+        label_44 = new QLabel(layoutWidget9);
+        label_44->setObjectName(QString::fromUtf8("label_44"));
+
+        gridLayout_2->addWidget(label_44, 2, 2, 1, 1);
+
+        groupBox_14 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_14->setObjectName(QString::fromUtf8("groupBox_14"));
+        groupBox_14->setGeometry(QRect(970, 50, 161, 111));
+        verticalLayout_16 = new QVBoxLayout(groupBox_14);
+        verticalLayout_16->setObjectName(QString::fromUtf8("verticalLayout_16"));
+        checkBox_yc_homed = new QCheckBox(groupBox_14);
+        checkBox_yc_homed->setObjectName(QString::fromUtf8("checkBox_yc_homed"));
+        checkBox_yc_homed->setCheckable(false);
+
+        verticalLayout_16->addWidget(checkBox_yc_homed);
+
+        checkBox_yc_enabled = new QCheckBox(groupBox_14);
+        checkBox_yc_enabled->setObjectName(QString::fromUtf8("checkBox_yc_enabled"));
+        checkBox_yc_enabled->setCheckable(false);
+
+        verticalLayout_16->addWidget(checkBox_yc_enabled);
+
+        label_33 = new QLabel(scrollAreaWidgetContents);
+        label_33->setObjectName(QString::fromUtf8("label_33"));
+        label_33->setGeometry(QRect(1010, 0, 101, 31));
+        groupBox_15 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_15->setObjectName(QString::fromUtf8("groupBox_15"));
+        groupBox_15->setGeometry(QRect(970, 410, 161, 231));
+        pushButton_yc_enable = new QPushButton(groupBox_15);
+        pushButton_yc_enable->setObjectName(QString::fromUtf8("pushButton_yc_enable"));
+        pushButton_yc_enable->setGeometry(QRect(40, 132, 68, 31));
+        sizePolicy.setHeightForWidth(pushButton_yc_enable->sizePolicy().hasHeightForWidth());
+        pushButton_yc_enable->setSizePolicy(sizePolicy);
+        pushButton_yc_go = new QPushButton(groupBox_15);
+        pushButton_yc_go->setObjectName(QString::fromUtf8("pushButton_yc_go"));
+        pushButton_yc_go->setGeometry(QRect(20, 170, 61, 31));
+        sizePolicy.setHeightForWidth(pushButton_yc_go->sizePolicy().hasHeightForWidth());
+        pushButton_yc_go->setSizePolicy(sizePolicy);
+        pushButton_yc_dirP = new QPushButton(groupBox_15);
+        pushButton_yc_dirP->setObjectName(QString::fromUtf8("pushButton_yc_dirP"));
+        pushButton_yc_dirP->setGeometry(QRect(20, 200, 62, 31));
+        pushButton_yc_dirM = new QPushButton(groupBox_15);
+        pushButton_yc_dirM->setObjectName(QString::fromUtf8("pushButton_yc_dirM"));
+        pushButton_yc_dirM->setGeometry(QRect(90, 200, 62, 31));
+        pushButton_yc_stop = new QPushButton(groupBox_15);
+        pushButton_yc_stop->setObjectName(QString::fromUtf8("pushButton_yc_stop"));
+        pushButton_yc_stop->setGeometry(QRect(90, 170, 61, 31));
+        sizePolicy.setHeightForWidth(pushButton_yc_stop->sizePolicy().hasHeightForWidth());
+        pushButton_yc_stop->setSizePolicy(sizePolicy);
+        layoutWidget10 = new QWidget(groupBox_15);
+        layoutWidget10->setObjectName(QString::fromUtf8("layoutWidget10"));
+        layoutWidget10->setGeometry(QRect(21, 31, 131, 94));
+        gridLayout_10 = new QGridLayout(layoutWidget10);
+        gridLayout_10->setObjectName(QString::fromUtf8("gridLayout_10"));
+        gridLayout_10->setContentsMargins(0, 0, 0, 0);
+        label_34 = new QLabel(layoutWidget10);
+        label_34->setObjectName(QString::fromUtf8("label_34"));
+        label_34->setAlignment(Qt::AlignCenter);
+
+        gridLayout_10->addWidget(label_34, 0, 0, 1, 1);
+
+        lineEdit_yc_target = new QLineEdit(layoutWidget10);
+        lineEdit_yc_target->setObjectName(QString::fromUtf8("lineEdit_yc_target"));
+
+        gridLayout_10->addWidget(lineEdit_yc_target, 1, 0, 1, 1);
+
+        label_56 = new QLabel(layoutWidget10);
+        label_56->setObjectName(QString::fromUtf8("label_56"));
+
+        gridLayout_10->addWidget(label_56, 1, 1, 1, 1);
+
+        label_35 = new QLabel(layoutWidget10);
+        label_35->setObjectName(QString::fromUtf8("label_35"));
+        label_35->setAlignment(Qt::AlignCenter);
+
+        gridLayout_10->addWidget(label_35, 2, 0, 1, 1);
+
+        lineEdit_yc_vel_spec = new QLineEdit(layoutWidget10);
+        lineEdit_yc_vel_spec->setObjectName(QString::fromUtf8("lineEdit_yc_vel_spec"));
+
+        gridLayout_10->addWidget(lineEdit_yc_vel_spec, 3, 0, 1, 1);
+
+        label_55 = new QLabel(layoutWidget10);
+        label_55->setObjectName(QString::fromUtf8("label_55"));
+
+        gridLayout_10->addWidget(label_55, 3, 1, 1, 1);
+
+        DiagM2->setWidget(scrollAreaWidgetContents);
+
+        retranslateUi(DiagM2);
+
+        QMetaObject::connectSlotsByName(DiagM2);
+    } // setupUi
+
+    void retranslateUi(QScrollArea *DiagM2)
+    {
+        DiagM2->setWindowTitle(QApplication::translate("DiagM2", "Diagnosis M2", 0, QApplication::UnicodeUTF8));
+        label->setText(QApplication::translate("DiagM2", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt; color:#ff0000;\">TILT1</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        groupBox->setTitle(QApplication::translate("DiagM2", "General status", 0, QApplication::UnicodeUTF8));
+        checkBox_tilt1_homed->setText(QApplication::translate("DiagM2", "Homed", 0, QApplication::UnicodeUTF8));
+        checkBox_tilt1_enabled->setText(QApplication::translate("DiagM2", "Ampli enabled", 0, QApplication::UnicodeUTF8));
+        groupBox_2->setTitle(QApplication::translate("DiagM2", "Position status", 0, QApplication::UnicodeUTF8));
+        checkBox_tilt1_softP->setText(QApplication::translate("DiagM2", "Soft limit +", 0, QApplication::UnicodeUTF8));
+        checkBox_tilt1_softM->setText(QApplication::translate("DiagM2", "Soft limit -", 0, QApplication::UnicodeUTF8));
+        checkBox_tilt1_hardP->setText(QApplication::translate("DiagM2", "Hard limit +", 0, QApplication::UnicodeUTF8));
+        checkBox_tilt1_hardM->setText(QApplication::translate("DiagM2", "Hard limit -", 0, QApplication::UnicodeUTF8));
+        label_3->setText(QApplication::translate("DiagM2", "Pos", 0, QApplication::UnicodeUTF8));
+        label_15->setText(QApplication::translate("DiagM2", "mm", 0, QApplication::UnicodeUTF8));
+        label_2->setText(QApplication::translate("DiagM2", "Pos err", 0, QApplication::UnicodeUTF8));
+        label_23->setText(QApplication::translate("DiagM2", "mm", 0, QApplication::UnicodeUTF8));
+        label_6->setText(QApplication::translate("DiagM2", "Vel", 0, QApplication::UnicodeUTF8));
+        label_24->setText(QApplication::translate("DiagM2", "mm/s", 0, QApplication::UnicodeUTF8));
+        groupBox_3->setTitle(QApplication::translate("DiagM2", "Motion test", 0, QApplication::UnicodeUTF8));
+        pushButton_tilt1_enable->setText(QApplication::translate("DiagM2", "Enable", 0, QApplication::UnicodeUTF8));
+        pushButton_tilt1_go->setText(QApplication::translate("DiagM2", "Go", 0, QApplication::UnicodeUTF8));
+        pushButton_tilt1_dirP->setText(QApplication::translate("DiagM2", "+ Dir", 0, QApplication::UnicodeUTF8));
+        pushButton_tilt1_dirM->setText(QApplication::translate("DiagM2", "- Dir", 0, QApplication::UnicodeUTF8));
+        pushButton_tilt1_stop->setText(QApplication::translate("DiagM2", "Stop", 0, QApplication::UnicodeUTF8));
+        label_4->setText(QApplication::translate("DiagM2", "Position", 0, QApplication::UnicodeUTF8));
+        label_48->setText(QApplication::translate("DiagM2", "mm", 0, QApplication::UnicodeUTF8));
+        label_5->setText(QApplication::translate("DiagM2", "Velocity", 0, QApplication::UnicodeUTF8));
+        label_47->setText(QApplication::translate("DiagM2", "mm/s", 0, QApplication::UnicodeUTF8));
+        groupBox_4->setTitle(QApplication::translate("DiagM2", "General status", 0, QApplication::UnicodeUTF8));
+        checkBox_tilt2_homed->setText(QApplication::translate("DiagM2", "Homed", 0, QApplication::UnicodeUTF8));
+        checkBox_tilt2_enabled->setText(QApplication::translate("DiagM2", "Ampli enabled", 0, QApplication::UnicodeUTF8));
+        label_7->setText(QApplication::translate("DiagM2", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt; color:#ff0000;\">TILT2</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        groupBox_5->setTitle(QApplication::translate("DiagM2", "Position status", 0, QApplication::UnicodeUTF8));
+        checkBox_tilt2_softP->setText(QApplication::translate("DiagM2", "Soft limit +", 0, QApplication::UnicodeUTF8));
+        checkBox_tilt2_softM->setText(QApplication::translate("DiagM2", "Soft limit -", 0, QApplication::UnicodeUTF8));
+        checkBox_tilt2_hardP->setText(QApplication::translate("DiagM2", "Hard limit +", 0, QApplication::UnicodeUTF8));
+        checkBox_tilt2_hardM->setText(QApplication::translate("DiagM2", "Hard limit -", 0, QApplication::UnicodeUTF8));
+        label_8->setText(QApplication::translate("DiagM2", "Pos", 0, QApplication::UnicodeUTF8));
+        label_30->setText(QApplication::translate("DiagM2", "mm", 0, QApplication::UnicodeUTF8));
+        label_9->setText(QApplication::translate("DiagM2", "Pos err", 0, QApplication::UnicodeUTF8));
+        label_31->setText(QApplication::translate("DiagM2", "mm", 0, QApplication::UnicodeUTF8));
+        label_10->setText(QApplication::translate("DiagM2", "Vel", 0, QApplication::UnicodeUTF8));
+        label_36->setText(QApplication::translate("DiagM2", "mm/s", 0, QApplication::UnicodeUTF8));
+        groupBox_6->setTitle(QApplication::translate("DiagM2", "Motion test", 0, QApplication::UnicodeUTF8));
+        pushButton_tilt2_enable->setText(QApplication::translate("DiagM2", "Enable", 0, QApplication::UnicodeUTF8));
+        pushButton_tilt2_go->setText(QApplication::translate("DiagM2", "Go", 0, QApplication::UnicodeUTF8));
+        pushButton_tilt2_dirP->setText(QApplication::translate("DiagM2", "+ Dir", 0, QApplication::UnicodeUTF8));
+        pushButton_tilt2_dirM->setText(QApplication::translate("DiagM2", "- Dir", 0, QApplication::UnicodeUTF8));
+        pushButton_tilt2_stop->setText(QApplication::translate("DiagM2", "Stop", 0, QApplication::UnicodeUTF8));
+        label_11->setText(QApplication::translate("DiagM2", "Position", 0, QApplication::UnicodeUTF8));
+        label_50->setText(QApplication::translate("DiagM2", "mm", 0, QApplication::UnicodeUTF8));
+        label_12->setText(QApplication::translate("DiagM2", "Velocity", 0, QApplication::UnicodeUTF8));
+        label_49->setText(QApplication::translate("DiagM2", "mm/s", 0, QApplication::UnicodeUTF8));
+        groupBox_7->setTitle(QApplication::translate("DiagM2", "General status", 0, QApplication::UnicodeUTF8));
+        checkBox_tilt3_homed->setText(QApplication::translate("DiagM2", "Homed", 0, QApplication::UnicodeUTF8));
+        checkBox_tilt3_enabled->setText(QApplication::translate("DiagM2", "Ampli enabled", 0, QApplication::UnicodeUTF8));
+        label_13->setText(QApplication::translate("DiagM2", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt; color:#ff0000;\">TILT3</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        groupBox_8->setTitle(QApplication::translate("DiagM2", "Position status", 0, QApplication::UnicodeUTF8));
+        checkBox_tilt3_softP->setText(QApplication::translate("DiagM2", "Soft limit +", 0, QApplication::UnicodeUTF8));
+        checkBox_tilt3_softM->setText(QApplication::translate("DiagM2", "Soft limit -", 0, QApplication::UnicodeUTF8));
+        checkBox_tilt3_hardP->setText(QApplication::translate("DiagM2", "Hard limit +", 0, QApplication::UnicodeUTF8));
+        checkBox_tilt3_hardM->setText(QApplication::translate("DiagM2", "Hard limit -", 0, QApplication::UnicodeUTF8));
+        label_14->setText(QApplication::translate("DiagM2", "Pos", 0, QApplication::UnicodeUTF8));
+        label_37->setText(QApplication::translate("DiagM2", "mm", 0, QApplication::UnicodeUTF8));
+        label_16->setText(QApplication::translate("DiagM2", "Pos err", 0, QApplication::UnicodeUTF8));
+        label_39->setText(QApplication::translate("DiagM2", "mm", 0, QApplication::UnicodeUTF8));
+        label_17->setText(QApplication::translate("DiagM2", "Vel", 0, QApplication::UnicodeUTF8));
+        label_38->setText(QApplication::translate("DiagM2", "mm/s", 0, QApplication::UnicodeUTF8));
+        groupBox_9->setTitle(QApplication::translate("DiagM2", "Motion test", 0, QApplication::UnicodeUTF8));
+        pushButton_tilt3_enable->setText(QApplication::translate("DiagM2", "Enable", 0, QApplication::UnicodeUTF8));
+        pushButton_tilt3_go->setText(QApplication::translate("DiagM2", "Go", 0, QApplication::UnicodeUTF8));
+        pushButton_tilt3_dirP->setText(QApplication::translate("DiagM2", "+ Dir", 0, QApplication::UnicodeUTF8));
+        pushButton_tilt3_dirM->setText(QApplication::translate("DiagM2", "- Dir", 0, QApplication::UnicodeUTF8));
+        pushButton_tilt3_stop->setText(QApplication::translate("DiagM2", "Stop", 0, QApplication::UnicodeUTF8));
+        label_18->setText(QApplication::translate("DiagM2", "Position", 0, QApplication::UnicodeUTF8));
+        label_52->setText(QApplication::translate("DiagM2", "mm", 0, QApplication::UnicodeUTF8));
+        label_19->setText(QApplication::translate("DiagM2", "Velocity", 0, QApplication::UnicodeUTF8));
+        label_51->setText(QApplication::translate("DiagM2", "mm/s", 0, QApplication::UnicodeUTF8));
+        groupBox_10->setTitle(QApplication::translate("DiagM2", "General status", 0, QApplication::UnicodeUTF8));
+        checkBox_xc_homed->setText(QApplication::translate("DiagM2", "Homed", 0, QApplication::UnicodeUTF8));
+        checkBox_xc_enabled->setText(QApplication::translate("DiagM2", "Ampli enabled", 0, QApplication::UnicodeUTF8));
+        label_20->setText(QApplication::translate("DiagM2", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt; color:#ff0000;\">X CENTER</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        groupBox_11->setTitle(QApplication::translate("DiagM2", "Position status", 0, QApplication::UnicodeUTF8));
+        checkBox_xc_softP->setText(QApplication::translate("DiagM2", "Soft limit +", 0, QApplication::UnicodeUTF8));
+        checkBox_xc_softM->setText(QApplication::translate("DiagM2", "Soft limit -", 0, QApplication::UnicodeUTF8));
+        checkBox_xc_hardP->setText(QApplication::translate("DiagM2", "Hard limit +", 0, QApplication::UnicodeUTF8));
+        checkBox_xc_hardM->setText(QApplication::translate("DiagM2", "Hard limit -", 0, QApplication::UnicodeUTF8));
+        label_21->setText(QApplication::translate("DiagM2", "Pos", 0, QApplication::UnicodeUTF8));
+        label_40->setText(QApplication::translate("DiagM2", "mm", 0, QApplication::UnicodeUTF8));
+        label_22->setText(QApplication::translate("DiagM2", "Pos err", 0, QApplication::UnicodeUTF8));
+        label_42->setText(QApplication::translate("DiagM2", "mm", 0, QApplication::UnicodeUTF8));
+        label_25->setText(QApplication::translate("DiagM2", "Vel", 0, QApplication::UnicodeUTF8));
+        label_41->setText(QApplication::translate("DiagM2", "mm/s", 0, QApplication::UnicodeUTF8));
+        groupBox_12->setTitle(QApplication::translate("DiagM2", "Motion test", 0, QApplication::UnicodeUTF8));
+        pushButton_xc_enable->setText(QApplication::translate("DiagM2", "Enable", 0, QApplication::UnicodeUTF8));
+        pushButton_xc_go->setText(QApplication::translate("DiagM2", "Go", 0, QApplication::UnicodeUTF8));
+        pushButton_xc_dirP->setText(QApplication::translate("DiagM2", "+ Dir", 0, QApplication::UnicodeUTF8));
+        pushButton_xc_dirM->setText(QApplication::translate("DiagM2", "- Dir", 0, QApplication::UnicodeUTF8));
+        pushButton_xc_stop->setText(QApplication::translate("DiagM2", "Stop", 0, QApplication::UnicodeUTF8));
+        label_26->setText(QApplication::translate("DiagM2", "Position", 0, QApplication::UnicodeUTF8));
+        label_54->setText(QApplication::translate("DiagM2", "mm", 0, QApplication::UnicodeUTF8));
+        label_27->setText(QApplication::translate("DiagM2", "Velocity", 0, QApplication::UnicodeUTF8));
+        label_53->setText(QApplication::translate("DiagM2", "mm/s", 0, QApplication::UnicodeUTF8));
+        groupBox_13->setTitle(QApplication::translate("DiagM2", "Position status", 0, QApplication::UnicodeUTF8));
+        checkBox_yc_softP->setText(QApplication::translate("DiagM2", "Soft limit +", 0, QApplication::UnicodeUTF8));
+        checkBox_yc_softM->setText(QApplication::translate("DiagM2", "Soft limit -", 0, QApplication::UnicodeUTF8));
+        checkBox_yc_hardP->setText(QApplication::translate("DiagM2", "Hard limit +", 0, QApplication::UnicodeUTF8));
+        checkBox_yc_hardM->setText(QApplication::translate("DiagM2", "Hard limit -", 0, QApplication::UnicodeUTF8));
+        label_28->setText(QApplication::translate("DiagM2", "Pos", 0, QApplication::UnicodeUTF8));
+        label_43->setText(QApplication::translate("DiagM2", "mm", 0, QApplication::UnicodeUTF8));
+        label_29->setText(QApplication::translate("DiagM2", "Pos err", 0, QApplication::UnicodeUTF8));
+        label_45->setText(QApplication::translate("DiagM2", "mm", 0, QApplication::UnicodeUTF8));
+        label_32->setText(QApplication::translate("DiagM2", "Vel", 0, QApplication::UnicodeUTF8));
+        label_44->setText(QApplication::translate("DiagM2", "mm/s", 0, QApplication::UnicodeUTF8));
+        groupBox_14->setTitle(QApplication::translate("DiagM2", "General status", 0, QApplication::UnicodeUTF8));
+        checkBox_yc_homed->setText(QApplication::translate("DiagM2", "Homed", 0, QApplication::UnicodeUTF8));
+        checkBox_yc_enabled->setText(QApplication::translate("DiagM2", "Ampli enabled", 0, QApplication::UnicodeUTF8));
+        label_33->setText(QApplication::translate("DiagM2", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt; color:#ff0000;\">Y CENTER</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        groupBox_15->setTitle(QApplication::translate("DiagM2", "Motion test", 0, QApplication::UnicodeUTF8));
+        pushButton_yc_enable->setText(QApplication::translate("DiagM2", "Enable", 0, QApplication::UnicodeUTF8));
+        pushButton_yc_go->setText(QApplication::translate("DiagM2", "Go", 0, QApplication::UnicodeUTF8));
+        pushButton_yc_dirP->setText(QApplication::translate("DiagM2", "+ Dir", 0, QApplication::UnicodeUTF8));
+        pushButton_yc_dirM->setText(QApplication::translate("DiagM2", "- Dir", 0, QApplication::UnicodeUTF8));
+        pushButton_yc_stop->setText(QApplication::translate("DiagM2", "Stop", 0, QApplication::UnicodeUTF8));
+        label_34->setText(QApplication::translate("DiagM2", "Position", 0, QApplication::UnicodeUTF8));
+        label_56->setText(QApplication::translate("DiagM2", "mm", 0, QApplication::UnicodeUTF8));
+        label_35->setText(QApplication::translate("DiagM2", "Velocity", 0, QApplication::UnicodeUTF8));
+        label_55->setText(QApplication::translate("DiagM2", "mm/s", 0, QApplication::UnicodeUTF8));
+        Q_UNUSED(DiagM2);
+    } // retranslateUi
+
+};
+
+namespace Ui {
+    class DiagM2: public Ui_DiagM2 {};
+} // namespace Ui
+
+QT_END_NAMESPACE
+
+#endif // UI_DIAG_M2_H

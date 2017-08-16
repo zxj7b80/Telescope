@@ -1,0 +1,48 @@
+//
+// C++ Interface: diag_m2
+//
+// Description: 
+//
+//
+
+//
+// Copyright: See COPYING file that comes with this distribution
+//
+//
+#ifndef DIAG_M2_H
+#define DIAG_M2_H
+#include <QtGui>
+#include "ui_diag_m2.h"
+class MainWindow;
+struct velTar 
+{
+    double vel;
+    double target;
+};
+class DiagM2:public QScrollArea,private Ui::DiagM2
+{
+    Q_OBJECT
+public:
+    DiagM2 ( MainWindow *parent );
+    virtual ~DiagM2();
+    MainWindow *m_parent;
+protected:
+    virtual void closeEvent ( QCloseEvent *event );
+private:
+    void initUi();
+    void connectDevice();
+private slots:
+    void updateInterface(std::vector<char> );
+
+    void on_pushButton_tilt1_go_clicked();
+    void on_pushButton_tilt2_go_clicked();
+    void on_pushButton_tilt3_go_clicked();
+    void on_pushButton_xc_go_clicked();
+    void on_pushButton_yc_go_clicked();
+    void on_pushButton_tilt1_stop_clicked();
+    void on_pushButton_tilt2_stop_clicked();
+    void on_pushButton_tilt3_stop_clicked();
+    void on_pushButton_xc_stop_clicked();
+    void on_pushButton_yc_stop_clicked();
+};
+#endif

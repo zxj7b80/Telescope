@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>162.png</file>
+        <file>star7.png</file>
+        <file>in1.txt</file>
+        <file>zoomin.png</file>
+        <file>zoomout.png</file>
+    </qresource>
+</RCC>

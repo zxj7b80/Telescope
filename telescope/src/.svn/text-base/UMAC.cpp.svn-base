@@ -1,0 +1,308 @@
+//
+// C++ Implementation: UMAC
+//
+// Description:
+//
+//
+// Author: donglongchao <donglongchao@163.com>, (C) 2009
+//
+// Copyright: See COPYING file that comes with this distribution
+//
+//
+#include "UMAC.h"
+
+/*The constructor of UMAC class.You can use it to create an object with a connection to the device.The default timeout is 5 second and that means if there is anything wrong on hardware(bad cabel,failed power supply,incorrect ip adress,etc..),the soft will try to connect it within 5 seconds.After that,if still unconnected,a QString except will be thrown out with the infomation on the error.You can catch and handle it in youe app.You can only create one in your app and that should be enough.*/
+UMAC::UMAC ( const std::string& ip_address,const unsigned int port )
+{
+	client.sin_addr.s_addr = inet_addr ( ip_address.c_str() );
+	client.sin_family = PF_INET;
+	client.sin_port = htons ( port );
+
+	if(connectDevice()==ERROR)
+		throw QString(strerror(errno));
+}
+UMAC::~UMAC()
+{
+	clean_close();
+	qDebug("UMAC");
+}
+/*This is a private one to be invoked by the constructor to implement the connection to the device.DO NOT call it in your app directly via some hack way. */
+int UMAC::connectDevice() //for the timeout of connect,use select
+{
+	int length,result;
+	unsigned long block = 1;
+	fd_set set;
+	struct timeval time_out;
+	int ret = 0;
+	length = sizeof ( client );
+
+	if ( ( sock = socket ( PF_INET,SOCK_STREAM, 0 ) ) ==-1 )
+		goto unsocketed;
+
+	if ( setTimeoutForSendRecv() )
+		return ERROR;
+	ioctl ( sock,FIONBIO,&block );
+	result = connect ( sock, ( __CONST_SOCKADDR_ARG ) &client, ( socklen_t ) length );
+	if ( result ==-1 )
+	{
+		if ( errno!=EINPROGRESS )
+			return ( perror ( "connectDevice(connect):error" ),ERROR );;//need to check late.this is caused by time out.incorrect ip adress?maybe...
+		time_out.tv_sec = CONNECT_TIME_OUT;
+		time_out.tv_usec = 0;
+		FD_ZERO ( &set );
+		FD_SET ( sock,&set );
+		ret = select ( sock+1,NULL,&set,NULL,&time_out );//Check if it is writable.
+		if ( ret==0 )              //timeout error
+			goto unconnected;
+		else if ( ret==-1 )      //select error
+			goto unconnected;
+		else goto connected;     //only one sock,do not need FD_ISSET...
+	}
+connected:
+	block = 0;
+	ioctl ( sock,FIONBIO,&block );
+	return 0;
+unsocketed:
+	clean_close();
+	return ( perror ( "connectDevice(socket):error" ),ERROR );
+unconnected:
+	clean_close();
+	return ( perror ( "connectDevice(connect):error" ),ERROR );
+}
+
+/*This function is for user to send proper commands to the device and receive the corresponsed responses.The first parameter is for your command and you will have the answer in the second parameter which is a QString.If sent command success completely,0 is returned,else if any error occurs,-1 will return and the errno will be set to show the info of this error.NOTES 1.The max bytes of the command sent to the device is 255.If more,the fun will return ERROR with a message show on the console.2.Only common command is allowed here.If you want to send ctrl charactors,please refer to ctrlCmdPMAC(...).3.More than one commands sent in one string is supported and you have to separate the answers with each other yourself from cResponse if you need.*/
+int UMAC::commCmdPMAC ( const char cCommand[],QString& cResponse ) //cCommand max is 255.
+{
+	if ( !cCommand || strlen ( cCommand ) >256 )
+		return ( perror ( "Invalid parameter.Should not be NULL or more than 255 charactors" ),ERROR );
+	cResponse.clear();
+
+	ETHERNETCMD EthCmd;
+	char temp[MAXDATA+1];
+	int ret;
+
+	EthCmd.RequestType = VR_DOWNLOAD;
+	EthCmd.Request     = VR_PMAC_GETRESPONSE;
+	EthCmd.wValue      = 0;
+	EthCmd.wIndex      = 0;
+	EthCmd.wLength     = htons ( ( u_int16_t ) strlen ( ( const char* ) cCommand ) );
+	strncpy ( &EthCmd.bData[0],cCommand,strlen ( cCommand ) );
+
+#ifdef CHECK_DATA
+	if ( ( cleanDataAvailable() ) ==-1 )
+		return ERROR;
+#endif
+
+	if ( send ( sock,&EthCmd,ETHERNETCMDSIZE + strlen ( cCommand ),0 ) ==-1 )
+		return ( perror ( "commCmdPMAC(send):error" ),ERROR );
+	do // i do not know if i should use GETBUFFER or use like this to get all available data.need to check late.
+	{
+		memset ( temp,'\0',sizeof ( temp ) );
+		ret=recv ( sock,temp,MAXDATA,0 );
+		if ( ret == -1 )
+			return ( perror ( "commCmdPMAC(recv):error" ),ERROR );
+//		printf("%d",strlen(temp));
+		temp[strlen(temp)-2]='\0';//to delete the ACK charactor 
+		cResponse += temp;
+	}
+	while ( ret == MAXDATA );
+	return 0;
+}
+
+/*This function is for user to send control commands to the device.Just use any command you want list in UMAC.h as the first parameter and you can get the answer in the second parameter which is a QString.If your first input is invalid(not refered in the head file),-1 will return without sending anything.If success,0 return,if any error,-1 return with the error info set in errno.*/
+int UMAC::ctrlCmdPMAC ( const int cCommand,QString& cResponse )
+{
+	if ( cCommand < 0 || cCommand > 26 )
+		return ( perror ( "Invalid parameter.Should not be less than 0 or more than 26." ),ERROR );
+	cResponse.clear();
+
+	ETHERNETCMD EthCmd;
+	char temp[MAXDATA+1];
+	int ret = 0;
+	EthCmd.RequestType = VR_UPLOAD;
+	EthCmd.Request     = VR_CTRL_RESPONSE;
+	EthCmd.wValue      = htons ( cCommand );//here i do not know
+	EthCmd.wIndex      = 0;
+	EthCmd.wLength     = htons ( MAXDATA );
+
+#ifdef CHECK_DATA
+	if ( ( cleanDataAvailable() ) ==-1 )
+		return ERROR;
+#endif
+
+	if ( send ( sock,&EthCmd,ETHERNETCMDSIZE,0 ) ==-1 )
+		return ( perror ( "ctrlCmdPMAC(send):error" ),ERROR );
+	do // i do not know if i should use GETBUFFER or use like this to get all available data.need to check late.
+	{
+		memset ( temp,'\0',sizeof ( temp ) );
+		ret=recv ( sock,temp,MAXDATA,0 );
+		if ( ret == -1 )
+			return ( perror ( "ctrlCmdPMAC(recv):error" ),ERROR );
+		temp[strlen(temp)-2]='\0';//to delete the ACK charactor 
+		cResponse += temp;
+	}
+	while ( ret == MAXDATA );
+	return 0;
+}
+
+/*This function is for user to send some datas to DPRAM.The first parameter is the buffer for tha datas to be sent and the second one is the address you want to put your data which is the offset from the base address of the DPRAM.Success and fail handle are as the same as above.*/
+int UMAC::sendDataDPRAM ( const char cData[],long offset )
+{
+	int data_length = strlen ( cData );
+	int len=0;//to decide where the copy start that is the offset
+	char data;//for repley
+
+	ETHERNETCMD EthCmd;
+	EthCmd.RequestType = VR_UPLOAD;
+	EthCmd.Request     = VR_PMAC_SETMEM;
+	EthCmd.wIndex      = 0;
+
+#ifdef CHECK_DATA
+	if ( ( cleanDataAvailable() ) ==-1 )
+		return ERROR;
+#endif
+
+	do
+	{
+		EthCmd.wValue= htons ( offset ); //
+		EthCmd.wLength= htons ( data_length >= MAXDATA ? ( offset+=MAXDATA,data_length-=MAXDATA,MAXDATA ) : data_length );
+		strncpy ( &EthCmd.bData[0],cData+len,EthCmd.wLength );
+		len+=EthCmd.wLength;
+		if ( send ( sock, &EthCmd,ETHERNETCMDSIZE+ EthCmd.wLength,0 ) ==-1 )
+			return ( perror ( "sendDataDPRAM(send):error" ),ERROR );
+		if ( recv ( sock, &data,MAXDATA,0 ) ==-1 )
+			return ( perror ( "sendDataDPRAM(recv):error" ),ERROR );
+
+	}
+	while ( EthCmd.wLength==MAXDATA && data_length );//both for more than 1400 and equal 1400 :-)
+	return 0;
+}
+
+/*This function is for people to get some datas from a proper address of DPRAM.The first parameter is for the storage of the coming datas and the second one is the base address where the copy start which is an offset value with the same meaning descriputed above in sendDataDPRAM and last is the length of the datas you want to copy.No specical for success and fail handle.*/
+int UMAC::getDataDPRAM ( QString& data,long offset,int data_length )
+{
+	char temp[MAXDATA+1];
+	data.clear();
+
+	ETHERNETCMD EthCmd;
+	EthCmd.RequestType = VR_UPLOAD;
+	EthCmd.Request     = VR_PMAC_GETMEM;
+	EthCmd.wIndex      = 0;
+
+#ifdef CHECK_DATA
+	if ( ( cleanDataAvailable() ) ==-1 )
+		return ERROR;
+#endif
+
+	do
+	{
+		memset ( temp,'\0',sizeof ( temp ) );
+		EthCmd.wValue= htons ( offset ); //i do not know if this variable is const or not,need to be check late.
+		EthCmd.wLength= htons ( data_length >= MAXDATA ? ( offset+=MAXDATA,data_length-=MAXDATA,MAXDATA ) : data_length );
+		if ( send ( sock,&EthCmd,ETHERNETCMDSIZE,0 ) ==-1 )
+			return ( perror ( "getDataDPRAM(send):error" ),ERROR );
+		if ( recv ( sock, temp,MAXDATA,0 ) == -1 ) //blocked ,timeout 1 second.
+			return ( perror ( "getDataDPRAM(recv):error" ),ERROR );
+		temp[strlen(temp)-2]='\0';//to delete the ACK charactor 
+		data+=temp;
+	}
+	while ( EthCmd.wLength==MAXDATA && data_length );
+	return 0;
+}
+
+// int UMAC::download_file ( char * file_path )
+// {
+//
+// }
+
+/*This is for user to clean any available data inside the UMAC and close the connection to it.You can call it before the end of you app.*/
+void UMAC::clean_close()
+{
+	int i = 0;
+	char buf[100];
+	shutdown ( sock, SHUT_WR );
+	do
+	{
+		i = recv ( sock, buf, 100, 0 );
+	}
+	while ( i > 0 );
+	shutdown ( sock, SHUT_RD );
+
+	close ( sock );
+}
+
+/*This is a private function to set timeout value for send() and recv().Only for library developer,not for library user.*/
+int UMAC::setTimeoutForSendRecv()
+{
+	struct timeval send_time_out;
+	send_time_out.tv_sec=SEND_TIME_OUT;
+	send_time_out.tv_usec=0;
+	if ( setsockopt ( sock,SOL_SOCKET,SO_SNDTIMEO, ( char * ) &send_time_out.tv_sec,sizeof ( struct timeval ) ) ==-1 )
+		return 1;
+	struct timeval recv_time_out;
+	recv_time_out.tv_sec=RECV_TIME_OUT;
+	recv_time_out.tv_usec=0;
+	if ( setsockopt ( sock,SOL_SOCKET,SO_RCVTIMEO, ( char * ) &recv_time_out.tv_sec,sizeof ( struct timeval ) ) ==-1 )
+		return 1;
+
+	int send_buffed = 0;//for performance
+	if ( setsockopt ( sock,SOL_SOCKET,SO_SNDBUF, ( char * ) &send_buffed,sizeof ( send_buffed ) ) ==-1 )
+		return 1;
+
+	int recv_buffed = 0; //for performance
+	if ( setsockopt ( sock,SOL_SOCKET,SO_RCVBUF, ( char * ) &recv_buffed,sizeof ( recv_buffed ) ) ==-1 )
+		return 1;
+
+	return 0;
+}
+
+/*Check if there is any data inside the UMAC.Private fun only for library developer.*/
+int UMAC::isDataAvailable()
+{
+	char data[2];
+	ETHERNETCMD EthCmd;
+	EthCmd.RequestType = VR_UPLOAD;
+	EthCmd.Request     = VR_PMAC_READREADY;
+	EthCmd.wValue      = 0;
+	EthCmd.wIndex      = 0;
+	EthCmd.wLength     = htons ( 2 );
+
+	if ( send ( sock,&EthCmd,ETHERNETCMDSIZE,0 ) ==-1 )
+		return ( perror ( "isDataAvailable(send):error" ),ERROR );
+	if ( recv ( sock, data,2,0 ) == -1 ) //blocked ,timeout 1 second.
+		return ( perror ( "isDataAvailable(recv):error" ),ERROR );
+	return data[0];
+}
+
+/*Get all available data inside the UMAC.Private fun only for library developer.*/
+int UMAC::getDataAvailable()
+{
+	char data[MAXDATA+1];
+	memset ( data,'\0',sizeof ( data ) );
+
+	ETHERNETCMD EthCmd;
+	EthCmd.RequestType = VR_DOWNLOAD;
+	EthCmd.Request     = VR_PMAC_GETBUFFER;
+	EthCmd.wValue      = 0;
+	EthCmd.wIndex      = 0;
+	EthCmd.wLength     = htons ( strlen ( "a" ) );//here i am not very sure...
+
+	if ( send ( sock,&EthCmd,ETHERNETCMDSIZE,0 ) ==-1 )
+		return ( perror ( "getDataAvailable(send):error" ),ERROR );
+	if ( recv ( sock, data,MAXDATA,0 ) == -1 ) //blocked ,timeout 1 second.
+		return ( perror ( "getDataAvailable(recv):error" ),ERROR );
+	return data[0];
+}
+
+/*A light package of the above two funs to check and clean any available data in the UMAC.These three funs is only an insurence before we send command to the device and it is not a must.To make sure there is no other unrelated data which may affect the coming sent command's response stuffs .If you want it work in the library,just add #define CHECK_DATA in your app.By default,it will be forbidden for performance reason.Because one call will cause send two different packages whick may delay the app.*/
+int UMAC::cleanDataAvailable()
+{
+	int ret;
+
+	if ( ( ret=isDataAvailable() ) ==-1 )
+		return ERROR;
+	else if ( ret )
+		if ( cleanDataAvailable() ==-1 )
+			return ERROR;
+	return 0;
+}

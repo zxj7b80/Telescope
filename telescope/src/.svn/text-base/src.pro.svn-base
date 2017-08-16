@@ -1,0 +1,59 @@
+#include (/home/dong/log4qt/src/log4qt/log4qt.pri)
+SOURCES += main.cpp \
+ main_window.cpp \
+ direct_azalt.cpp \
+ direct_m3.cpp \
+ UMAC.cpp \
+ qumac.cpp \
+ direct_m2.cpp \
+ diag_m2.cpp \
+ plot_m3.cpp \
+ terminal.cpp \
+ qgalil.cpp \
+ tracking.cpp
+TEMPLATE = app
+CONFIG += warn_on \
+	  thread \
+          qt
+TARGET = telescope
+DESTDIR = ../bin
+RESOURCES = application.qrc \
+ ../resource/toobar.qrc
+FORMS += telescope.ui \
+ direct_azalt.ui \
+ direct_m3.ui \
+ direct_m2.ui \
+ direct_dome.ui \
+ diag_m2.ui \
+ plot_m3.ui \
+ terminal.ui \
+ tracking.ui
+HEADERS += main_window.h \
+ui_telescope.h \
+ ui_direct_azalt.h \
+ direct_azalt.h \
+ Galil.h \
+ direct_m3.h \
+ UMAC.h \
+ ui_direct_m3.h \
+ signs.h \
+ direct_m2.h \
+ ui_direct_m2.h \
+ diag_m2.h \
+ plot_m3.h \
+ ui_plot_m3.h \
+ singleton.h \
+ terminal.h \
+ ui_terminal.h \
+ qgalil.h \
+ tracking.h
+#LIBS += /usr/local/qwt-5.2.0/lib/libqwt.so
+LIBS += -lqwt #if you want to use like this style,you must copy your library into /lib or /usr/lib .  And ld.so.conf.cache will not work here.i do not know why.
+LIBS += -lGalil
+INCLUDEPATH += /usr/local/qwt-5.2.0/include
+#UI_DIR = ../temp
+MOC_DIR = ../temp
+OBJECTS_DIR = ../temp
+CONFIG +=exceptions
+QT += network
+

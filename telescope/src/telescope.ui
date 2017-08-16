@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1440</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>SONG Telescope</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../resource/toobar.qrc">
+    <normaloff>:/icon/star7.png</normaloff>:/icon/star7.png</iconset>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QMdiArea" name="mdiArea">
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="viewMode">
+       <enum>QMdiArea::SubWindowView</enum>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Triangular</enum>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::South</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1440</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDirect_D">
+    <property name="title">
+     <string>Direct</string>
+    </property>
+    <addaction name="actionAz_Alt"/>
+    <addaction name="actionDerotator"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuTracking">
+    <property name="title">
+     <string>Tracking</string>
+    </property>
+    <addaction name="actionTracking"/>
+   </widget>
+   <widget class="QMenu" name="menuDiagnosis">
+    <property name="title">
+     <string>Diagnosis</string>
+    </property>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuSetup">
+    <property name="title">
+     <string>Setup</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionSetup"/>
+   </widget>
+   <widget class="QMenu" name="menuStyle">
+    <property name="title">
+     <string>Style</string>
+    </property>
+    <addaction name="actionWindows"/>
+    <addaction name="actionMotif"/>
+    <addaction name="actionGtk"/>
+    <addaction name="actionCDE"/>
+   </widget>
+   <widget class="QMenu" name="menuSimulation">
+    <property name="title">
+     <string>Simulation</string>
+    </property>
+    <addaction name="actionSimulationOCS"/>
+   </widget>
+   <addaction name="menuDirect_D"/>
+   <addaction name="menuTracking"/>
+   <addaction name="menuDiagnosis"/>
+   <addaction name="menuSetup"/>
+   <addaction name="menuSimulation"/>
+   <addaction name="menuStyle"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolbar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAz_Alt"/>
+   <addaction name="actionDero"/>
+   <addaction name="actionADC"/>
+   <addaction name="actionM2"/>
+   <addaction name="separator"/>
+   <addaction name="actionTracking"/>
+   <addaction name="separator"/>
+   <addaction name="actionSetup"/>
+   <addaction name="actionSimulationOCS"/>
+   <addaction name="separator"/>
+   <addaction name="actionTerminal"/>
+   <addaction name="separator"/>
+   <addaction name="actionPloter"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_data">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1440</width>
+     <height>200</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1440</width>
+     <height>200</height>
+    </size>
+   </property>
+   <property name="floating">
+    <bool>false</bool>
+   </property>
+   <property name="features">
+    <set>QDockWidget::DockWidgetFeatureMask</set>
+   </property>
+   <property name="windowTitle">
+    <string>Information</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>8</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_data">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="2" column="0">
+      <widget class="QSplitter" name="splitter">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="QTableView" name="tableView_tracking">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>100</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>1440</width>
+          <height>900</height>
+         </size>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Panel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <property name="dragEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="textElideMode">
+         <enum>Qt::ElideMiddle</enum>
+        </property>
+        <property name="verticalScrollMode">
+         <enum>QAbstractItemView::ScrollPerPixel</enum>
+        </property>
+        <property name="horizontalScrollMode">
+         <enum>QAbstractItemView::ScrollPerPixel</enum>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QTableWidget" name="NettableWidget">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>1440</width>
+         <height>900</height>
+        </size>
+       </property>
+       <property name="rowCount">
+        <number>4</number>
+       </property>
+       <property name="columnCount">
+        <number>2</number>
+       </property>
+       <attribute name="verticalHeaderCascadingSectionResizes">
+        <bool>true</bool>
+       </attribute>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <column/>
+       <column/>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actionAz_Alt">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource/toobar.qrc">
+     <normaloff>:/icon/望远镜.png</normaloff>:/icon/望远镜.png</iconset>
+   </property>
+   <property name="text">
+    <string>Az/Alt</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::TextHeuristicRole</enum>
+   </property>
+  </action>
+  <action name="actionSetup">
+   <property name="icon">
+    <iconset resource="../resource/toobar.qrc">
+     <normaloff>:/icon/Settings.png</normaloff>:/icon/Settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>Setup</string>
+   </property>
+  </action>
+  <action name="actionTerminal">
+   <property name="icon">
+    <iconset resource="../resource/toobar.qrc">
+     <normaloff>:/icon/ter.png</normaloff>:/icon/ter.png</iconset>
+   </property>
+   <property name="text">
+    <string>Terminal</string>
+   </property>
+  </action>
+  <action name="actionWindows">
+   <property name="text">
+    <string>Windows</string>
+   </property>
+  </action>
+  <action name="actionMotif">
+   <property name="text">
+    <string>Motif</string>
+   </property>
+  </action>
+  <action name="actionGtk">
+   <property name="text">
+    <string>Gtk</string>
+   </property>
+  </action>
+  <action name="actionCDE">
+   <property name="text">
+    <string>CDE</string>
+   </property>
+  </action>
+  <action name="actionTracking">
+   <property name="icon">
+    <iconset resource="../resource/toobar.qrc">
+     <normaloff>:/icon/望远镜5.png</normaloff>:/icon/望远镜5.png</iconset>
+   </property>
+   <property name="text">
+    <string>Tracking</string>
+   </property>
+  </action>
+  <action name="actionDerotator">
+   <property name="icon">
+    <iconset resource="../resource/toobar.qrc">
+     <normaloff>:/icon/star.png</normaloff>:/icon/star.png</iconset>
+   </property>
+   <property name="text">
+    <string>Derotator</string>
+   </property>
+  </action>
+  <action name="actionSimulationOCS">
+   <property name="icon">
+    <iconset resource="../resource/toobar.qrc">
+     <normaloff>:/icon/H.png</normaloff>:/icon/H.png</iconset>
+   </property>
+   <property name="text">
+    <string>OCS Simulation</string>
+   </property>
+  </action>
+  <action name="actionDero">
+   <property name="icon">
+    <iconset>
+     <normaloff>../resource/星球.png</normaloff>../resource/星球.png</iconset>
+   </property>
+   <property name="text">
+    <string>Miscellaneous</string>
+   </property>
+   <property name="toolTip">
+    <string>Open Derotator</string>
+   </property>
+  </action>
+  <action name="actionADC">
+   <property name="icon">
+    <iconset>
+     <normaloff>../resource/20071128105357345.png</normaloff>../resource/20071128105357345.png</iconset>
+   </property>
+   <property name="text">
+    <string>ADC</string>
+   </property>
+   <property name="toolTip">
+    <string>Open ADC</string>
+   </property>
+  </action>
+  <action name="actionM2">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../resource/rigui.png</normaloff>../resource/rigui.png</iconset>
+   </property>
+   <property name="text">
+    <string>M2</string>
+   </property>
+   <property name="toolTip">
+    <string>M2</string>
+   </property>
+  </action>
+  <action name="actionPloter">
+   <property name="text">
+    <string>Ploter</string>
+   </property>
+   <property name="toolTip">
+    <string>Ploter</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../resource/toobar.qrc"/>
+ </resources>
+ <connections/>
+</ui>

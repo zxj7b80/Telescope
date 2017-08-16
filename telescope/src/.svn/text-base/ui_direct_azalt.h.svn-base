@@ -1,0 +1,1516 @@
+/********************************************************************************
+** Form generated from reading ui file 'direct_azalt.ui'
+**
+** Created: Mon Jan 18 18:27:40 2010
+**      by: Qt User Interface Compiler version 4.5.0
+**
+** WARNING! All changes made in this file will be lost when recompiling ui file!
+********************************************************************************/
+
+#ifndef UI_DIRECT_AZALT_H
+#define UI_DIRECT_AZALT_H
+
+#include <QtCore/QVariant>
+#include <QtGui/QAction>
+#include <QtGui/QApplication>
+#include <QtGui/QButtonGroup>
+#include <QtGui/QGridLayout>
+#include <QtGui/QGroupBox>
+#include <QtGui/QHBoxLayout>
+#include <QtGui/QHeaderView>
+#include <QtGui/QLabel>
+#include <QtGui/QLineEdit>
+#include <QtGui/QPushButton>
+#include <QtGui/QRadioButton>
+#include <QtGui/QScrollArea>
+#include <QtGui/QSpacerItem>
+#include <QtGui/QWidget>
+
+QT_BEGIN_NAMESPACE
+
+class Ui_DirectAzalt
+{
+public:
+    QWidget *scrollAreaWidgetContents;
+    QGroupBox *groupBox_19;
+    QWidget *layoutWidget;
+    QHBoxLayout *horizontalLayout_23;
+    QLabel *label_20;
+    QLabel *label_28;
+    QLabel *label_38;
+    QLabel *label_40;
+    QWidget *layoutWidget1;
+    QGridLayout *gridLayout_5;
+    QLabel *label_alt_homed;
+    QLabel *label_29;
+    QLabel *label_alt_soft_limitP;
+    QLabel *label_36;
+    QLabel *label_alt_motor1_brake;
+    QLabel *label_30;
+    QLabel *label_alt_soft_limitM;
+    QLabel *label_37;
+    QLabel *label_alt_vel_limit;
+    QLabel *label_33;
+    QLabel *label_alt_hard_limitP;
+    QLabel *label_41;
+    QLabel *label_alt_acc_limit;
+    QLabel *label_34;
+    QLabel *label_alt_hard_limitM;
+    QLabel *label_39;
+    QLabel *label_alt_ampli1_fault;
+    QLabel *label_35;
+    QLabel *label_alt_ampli2_fault;
+    QLabel *label_42;
+    QWidget *layoutWidget2;
+    QGridLayout *gridLayout_4;
+    QLabel *label_alt_loop1;
+    QLabel *label_alt_loop2;
+    QLabel *label_16;
+    QLabel *label_alt_error1;
+    QLabel *label_alt_error2;
+    QLabel *label_alt_err;
+    QLabel *label_alt_warning1;
+    QLabel *label_alt_warning2;
+    QLabel *label_alt_warning;
+    QGroupBox *groupBox_16;
+    QLabel *label_12;
+    QPushButton *pushButton_az_go;
+    QWidget *layoutWidget3;
+    QHBoxLayout *horizontalLayout_18;
+    QHBoxLayout *horizontalLayout_16;
+    QLineEdit *lineEdit_az_targetD;
+    QLabel *label_10;
+    QHBoxLayout *horizontalLayout_17;
+    QLineEdit *lineEdit_az_targetM;
+    QLabel *label_14;
+    QHBoxLayout *horizontalLayout_15;
+    QLineEdit *lineEdit_az_targetS;
+    QLabel *label_9;
+    QLabel *label_21;
+    QGroupBox *groupBox_13;
+    QWidget *layoutWidget4;
+    QGridLayout *gridLayout_7;
+    QLabel *label_az_loop;
+    QLabel *label_17;
+    QLabel *label_az_error;
+    QLabel *label_alt_err_2;
+    QLabel *label_az_warning;
+    QLabel *label_alt_warning_2;
+    QGroupBox *groupBox_15;
+    QWidget *layoutWidget_11;
+    QGridLayout *gridLayout_15;
+    QRadioButton *radioButton_az_acc_default;
+    QRadioButton *radioButton_az_acc_spec;
+    QLineEdit *lineEdit_az_acc_spec;
+    QGroupBox *groupBox_17;
+    QWidget *layoutWidget_13;
+    QHBoxLayout *horizontalLayout_3;
+    QPushButton *pushButton_az_dirM;
+    QPushButton *pushButton_az_dirP;
+    QGroupBox *groupBox_20;
+    QWidget *layoutWidget_17;
+    QHBoxLayout *horizontalLayout_4;
+    QPushButton *pushButton_alt_dirM;
+    QPushButton *pushButton_alt_dirP;
+    QPushButton *pushButton_alt_stop;
+    QGroupBox *groupBox_14;
+    QWidget *layoutWidget5;
+    QGridLayout *gridLayout;
+    QRadioButton *radioButton_az_vel_fast;
+    QRadioButton *radioButton_az_vel_mid;
+    QRadioButton *radioButton_az_vel_slow;
+    QRadioButton *radioButton_az_vel_spec;
+    QLineEdit *lineEdit_az_vel_spec;
+    QLabel *label_11;
+    QGroupBox *groupBox_22;
+    QWidget *layoutWidget_19;
+    QGridLayout *gridLayout_19;
+    QRadioButton *radioButton_alt_step1;
+    QPushButton *pushButton_alt_stepM;
+    QRadioButton *radioButton_alt_step01;
+    QPushButton *pushButton_alt_stepP;
+    QRadioButton *radioButton_alt_step001;
+    QRadioButton *radioButton_alt_step_spec;
+    QLineEdit *lineEdit_alt_step_spec;
+    QGroupBox *groupBox_18;
+    QWidget *layoutWidget_14;
+    QGridLayout *gridLayout_16;
+    QRadioButton *radioButton_az_step1;
+    QPushButton *pushButton_az_stepM;
+    QRadioButton *radioButton_az_step01;
+    QPushButton *pushButton_az_stepP;
+    QRadioButton *radioButton_az_step001;
+    QRadioButton *radioButton_az_step_spec;
+    QLineEdit *lineEdit_az_step_spec;
+    QPushButton *pushButton_az_stop;
+    QGroupBox *groupBox_23;
+    QWidget *layoutWidget_6;
+    QHBoxLayout *horizontalLayout_19;
+    QHBoxLayout *horizontalLayout_20;
+    QLineEdit *lineEdit_alt_targetD;
+    QLabel *label_15;
+    QHBoxLayout *horizontalLayout_21;
+    QLineEdit *lineEdit_alt_targetM;
+    QLabel *label_18;
+    QHBoxLayout *horizontalLayout_22;
+    QLineEdit *lineEdit_alt_targetS;
+    QLabel *label_19;
+    QLabel *label_13;
+    QPushButton *pushButton_alt_go;
+    QGroupBox *groupBox_21;
+    QWidget *layoutWidget_18;
+    QGridLayout *gridLayout_18;
+    QRadioButton *radioButton_alt_vel_fast;
+    QRadioButton *radioButton_alt_vel_mid;
+    QRadioButton *radioButton_alt_vel_slow;
+    QRadioButton *radioButton_alt_vel_spec;
+    QLineEdit *lineEdit_alt_vel_spec;
+    QGroupBox *groupBox_24;
+    QWidget *layoutWidget_22;
+    QGridLayout *gridLayout_21;
+    QRadioButton *radioButton_alt_acc_default;
+    QRadioButton *radioButton_alt_acc_spec;
+    QLineEdit *lineEdit_alt_acc_spec;
+    QWidget *layoutWidget6;
+    QHBoxLayout *horizontalLayout_2;
+    QSpacerItem *horizontalSpacer_2;
+    QPushButton *pushButton_alt_enable;
+    QPushButton *pushButton_alt_home;
+    QPushButton *pushButton_alt_disable;
+    QWidget *layoutWidget7;
+    QHBoxLayout *horizontalLayout;
+    QSpacerItem *horizontalSpacer;
+    QPushButton *pushButton_az_enable;
+    QPushButton *pushButton_az_home;
+    QPushButton *pushButton_az_disable;
+    QWidget *layoutWidget_2;
+    QGridLayout *gridLayout_3;
+    QLabel *label_25;
+    QHBoxLayout *horizontalLayout_10;
+    QLineEdit *lineEdit_alt_posD;
+    QLabel *label_5;
+    QHBoxLayout *horizontalLayout_11;
+    QLineEdit *lineEdit_alt_posM;
+    QLabel *label_6;
+    QHBoxLayout *horizontalLayout_12;
+    QLineEdit *lineEdit_alt_posS;
+    QLabel *label_7;
+    QLabel *label_26;
+    QHBoxLayout *horizontalLayout_13;
+    QLineEdit *lineEdit_alt_vel;
+    QLabel *label_32;
+    QLabel *label_27;
+    QHBoxLayout *horizontalLayout_14;
+    QLineEdit *lineEdit_alt_poserr;
+    QLabel *label_8;
+    QSpacerItem *horizontalSpacer_4;
+    QWidget *layoutWidget8;
+    QGridLayout *gridLayout_2;
+    QLabel *label_22;
+    QHBoxLayout *horizontalLayout_5;
+    QLineEdit *lineEdit_az_posD;
+    QLabel *label_2;
+    QHBoxLayout *horizontalLayout_6;
+    QLineEdit *lineEdit_az_posM;
+    QLabel *label;
+    QHBoxLayout *horizontalLayout_7;
+    QLineEdit *lineEdit_az_posS;
+    QLabel *label_3;
+    QLabel *label_23;
+    QHBoxLayout *horizontalLayout_9;
+    QLineEdit *lineEdit_az_vel;
+    QLabel *label_31;
+    QLabel *label_24;
+    QHBoxLayout *horizontalLayout_8;
+    QLineEdit *lineEdit_az_poserr;
+    QLabel *label_4;
+    QSpacerItem *horizontalSpacer_3;
+    QWidget *layoutWidget_3;
+    QGridLayout *gridLayout_6;
+    QLabel *label_az_homed;
+    QLabel *label_43;
+    QLabel *label_az_soft_limitP;
+    QLabel *label_44;
+    QLabel *label_az_brake;
+    QLabel *label_45;
+    QLabel *label_az_soft_limitM;
+    QLabel *label_46;
+    QLabel *label_az_vel_limit;
+    QLabel *label_47;
+    QLabel *label_az_hard_limitP;
+    QLabel *label_48;
+    QLabel *label_az_acc_limit;
+    QLabel *label_49;
+    QLabel *label_az_hard_limitM;
+    QLabel *label_50;
+    QLabel *label_az_ampli_fault;
+    QLabel *label_51;
+
+    void setupUi(QScrollArea *DirectAzalt)
+    {
+        if (DirectAzalt->objectName().isEmpty())
+            DirectAzalt->setObjectName(QString::fromUtf8("DirectAzalt"));
+        DirectAzalt->resize(1208, 745);
+        QIcon icon;
+        icon.addPixmap(QPixmap(QString::fromUtf8(":/icon/star7.png")), QIcon::Normal, QIcon::Off);
+        DirectAzalt->setWindowIcon(icon);
+        DirectAzalt->setFrameShape(QFrame::WinPanel);
+        DirectAzalt->setFrameShadow(QFrame::Sunken);
+        DirectAzalt->setWidgetResizable(false);
+        scrollAreaWidgetContents = new QWidget();
+        scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 1200, 700));
+        scrollAreaWidgetContents->setAutoFillBackground(true);
+        groupBox_19 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_19->setObjectName(QString::fromUtf8("groupBox_19"));
+        groupBox_19->setGeometry(QRect(660, 160, 411, 171));
+        layoutWidget = new QWidget(groupBox_19);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(270, 0, 71, 17));
+        horizontalLayout_23 = new QHBoxLayout(layoutWidget);
+        horizontalLayout_23->setObjectName(QString::fromUtf8("horizontalLayout_23"));
+        horizontalLayout_23->setContentsMargins(0, 0, 0, 0);
+        label_20 = new QLabel(layoutWidget);
+        label_20->setObjectName(QString::fromUtf8("label_20"));
+
+        horizontalLayout_23->addWidget(label_20);
+
+        label_28 = new QLabel(layoutWidget);
+        label_28->setObjectName(QString::fromUtf8("label_28"));
+
+        horizontalLayout_23->addWidget(label_28);
+
+        label_38 = new QLabel(groupBox_19);
+        label_38->setObjectName(QString::fromUtf8("label_38"));
+        label_38->setGeometry(QRect(840, 240, 81, 16));
+        label_40 = new QLabel(groupBox_19);
+        label_40->setObjectName(QString::fromUtf8("label_40"));
+        label_40->setGeometry(QRect(850, 250, 81, 16));
+        layoutWidget1 = new QWidget(groupBox_19);
+        layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
+        layoutWidget1->setGeometry(QRect(10, 20, 231, 131));
+        gridLayout_5 = new QGridLayout(layoutWidget1);
+        gridLayout_5->setObjectName(QString::fromUtf8("gridLayout_5"));
+        gridLayout_5->setContentsMargins(0, 0, 0, 0);
+        label_alt_homed = new QLabel(layoutWidget1);
+        label_alt_homed->setObjectName(QString::fromUtf8("label_alt_homed"));
+
+        gridLayout_5->addWidget(label_alt_homed, 0, 0, 1, 1);
+
+        label_29 = new QLabel(layoutWidget1);
+        label_29->setObjectName(QString::fromUtf8("label_29"));
+
+        gridLayout_5->addWidget(label_29, 0, 1, 1, 1);
+
+        label_alt_soft_limitP = new QLabel(layoutWidget1);
+        label_alt_soft_limitP->setObjectName(QString::fromUtf8("label_alt_soft_limitP"));
+
+        gridLayout_5->addWidget(label_alt_soft_limitP, 0, 2, 1, 1);
+
+        label_36 = new QLabel(layoutWidget1);
+        label_36->setObjectName(QString::fromUtf8("label_36"));
+
+        gridLayout_5->addWidget(label_36, 0, 3, 1, 1);
+
+        label_alt_motor1_brake = new QLabel(layoutWidget1);
+        label_alt_motor1_brake->setObjectName(QString::fromUtf8("label_alt_motor1_brake"));
+
+        gridLayout_5->addWidget(label_alt_motor1_brake, 1, 0, 1, 1);
+
+        label_30 = new QLabel(layoutWidget1);
+        label_30->setObjectName(QString::fromUtf8("label_30"));
+
+        gridLayout_5->addWidget(label_30, 1, 1, 1, 1);
+
+        label_alt_soft_limitM = new QLabel(layoutWidget1);
+        label_alt_soft_limitM->setObjectName(QString::fromUtf8("label_alt_soft_limitM"));
+
+        gridLayout_5->addWidget(label_alt_soft_limitM, 1, 2, 1, 1);
+
+        label_37 = new QLabel(layoutWidget1);
+        label_37->setObjectName(QString::fromUtf8("label_37"));
+
+        gridLayout_5->addWidget(label_37, 1, 3, 1, 1);
+
+        label_alt_vel_limit = new QLabel(layoutWidget1);
+        label_alt_vel_limit->setObjectName(QString::fromUtf8("label_alt_vel_limit"));
+
+        gridLayout_5->addWidget(label_alt_vel_limit, 2, 0, 1, 1);
+
+        label_33 = new QLabel(layoutWidget1);
+        label_33->setObjectName(QString::fromUtf8("label_33"));
+
+        gridLayout_5->addWidget(label_33, 2, 1, 1, 1);
+
+        label_alt_hard_limitP = new QLabel(layoutWidget1);
+        label_alt_hard_limitP->setObjectName(QString::fromUtf8("label_alt_hard_limitP"));
+
+        gridLayout_5->addWidget(label_alt_hard_limitP, 2, 2, 1, 1);
+
+        label_41 = new QLabel(layoutWidget1);
+        label_41->setObjectName(QString::fromUtf8("label_41"));
+
+        gridLayout_5->addWidget(label_41, 2, 3, 1, 1);
+
+        label_alt_acc_limit = new QLabel(layoutWidget1);
+        label_alt_acc_limit->setObjectName(QString::fromUtf8("label_alt_acc_limit"));
+
+        gridLayout_5->addWidget(label_alt_acc_limit, 3, 0, 1, 1);
+
+        label_34 = new QLabel(layoutWidget1);
+        label_34->setObjectName(QString::fromUtf8("label_34"));
+
+        gridLayout_5->addWidget(label_34, 3, 1, 1, 1);
+
+        label_alt_hard_limitM = new QLabel(layoutWidget1);
+        label_alt_hard_limitM->setObjectName(QString::fromUtf8("label_alt_hard_limitM"));
+
+        gridLayout_5->addWidget(label_alt_hard_limitM, 3, 2, 1, 1);
+
+        label_39 = new QLabel(layoutWidget1);
+        label_39->setObjectName(QString::fromUtf8("label_39"));
+
+        gridLayout_5->addWidget(label_39, 3, 3, 1, 1);
+
+        label_alt_ampli1_fault = new QLabel(layoutWidget1);
+        label_alt_ampli1_fault->setObjectName(QString::fromUtf8("label_alt_ampli1_fault"));
+
+        gridLayout_5->addWidget(label_alt_ampli1_fault, 4, 0, 1, 1);
+
+        label_35 = new QLabel(layoutWidget1);
+        label_35->setObjectName(QString::fromUtf8("label_35"));
+
+        gridLayout_5->addWidget(label_35, 4, 1, 1, 1);
+
+        label_alt_ampli2_fault = new QLabel(layoutWidget1);
+        label_alt_ampli2_fault->setObjectName(QString::fromUtf8("label_alt_ampli2_fault"));
+
+        gridLayout_5->addWidget(label_alt_ampli2_fault, 4, 2, 1, 1);
+
+        label_42 = new QLabel(layoutWidget1);
+        label_42->setObjectName(QString::fromUtf8("label_42"));
+
+        gridLayout_5->addWidget(label_42, 4, 3, 1, 1);
+
+        layoutWidget2 = new QWidget(groupBox_19);
+        layoutWidget2->setObjectName(QString::fromUtf8("layoutWidget2"));
+        layoutWidget2->setGeometry(QRect(270, 20, 121, 81));
+        gridLayout_4 = new QGridLayout(layoutWidget2);
+        gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
+        gridLayout_4->setContentsMargins(0, 0, 0, 0);
+        label_alt_loop1 = new QLabel(layoutWidget2);
+        label_alt_loop1->setObjectName(QString::fromUtf8("label_alt_loop1"));
+
+        gridLayout_4->addWidget(label_alt_loop1, 0, 0, 1, 1);
+
+        label_alt_loop2 = new QLabel(layoutWidget2);
+        label_alt_loop2->setObjectName(QString::fromUtf8("label_alt_loop2"));
+
+        gridLayout_4->addWidget(label_alt_loop2, 0, 1, 1, 1);
+
+        label_16 = new QLabel(layoutWidget2);
+        label_16->setObjectName(QString::fromUtf8("label_16"));
+
+        gridLayout_4->addWidget(label_16, 0, 2, 1, 1);
+
+        label_alt_error1 = new QLabel(layoutWidget2);
+        label_alt_error1->setObjectName(QString::fromUtf8("label_alt_error1"));
+
+        gridLayout_4->addWidget(label_alt_error1, 1, 0, 1, 1);
+
+        label_alt_error2 = new QLabel(layoutWidget2);
+        label_alt_error2->setObjectName(QString::fromUtf8("label_alt_error2"));
+
+        gridLayout_4->addWidget(label_alt_error2, 1, 1, 1, 1);
+
+        label_alt_err = new QLabel(layoutWidget2);
+        label_alt_err->setObjectName(QString::fromUtf8("label_alt_err"));
+
+        gridLayout_4->addWidget(label_alt_err, 1, 2, 1, 1);
+
+        label_alt_warning1 = new QLabel(layoutWidget2);
+        label_alt_warning1->setObjectName(QString::fromUtf8("label_alt_warning1"));
+
+        gridLayout_4->addWidget(label_alt_warning1, 2, 0, 1, 1);
+
+        label_alt_warning2 = new QLabel(layoutWidget2);
+        label_alt_warning2->setObjectName(QString::fromUtf8("label_alt_warning2"));
+
+        gridLayout_4->addWidget(label_alt_warning2, 2, 1, 1, 1);
+
+        label_alt_warning = new QLabel(layoutWidget2);
+        label_alt_warning->setObjectName(QString::fromUtf8("label_alt_warning"));
+
+        gridLayout_4->addWidget(label_alt_warning, 2, 2, 1, 1);
+
+        groupBox_16 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_16->setObjectName(QString::fromUtf8("groupBox_16"));
+        groupBox_16->setGeometry(QRect(80, 450, 201, 121));
+        groupBox_16->setAutoFillBackground(false);
+        label_12 = new QLabel(groupBox_16);
+        label_12->setObjectName(QString::fromUtf8("label_12"));
+        label_12->setGeometry(QRect(60, 31, 90, 16));
+        pushButton_az_go = new QPushButton(groupBox_16);
+        pushButton_az_go->setObjectName(QString::fromUtf8("pushButton_az_go"));
+        pushButton_az_go->setGeometry(QRect(60, 80, 91, 31));
+        layoutWidget3 = new QWidget(groupBox_16);
+        layoutWidget3->setObjectName(QString::fromUtf8("layoutWidget3"));
+        layoutWidget3->setGeometry(QRect(10, 50, 191, 29));
+        horizontalLayout_18 = new QHBoxLayout(layoutWidget3);
+        horizontalLayout_18->setObjectName(QString::fromUtf8("horizontalLayout_18"));
+        horizontalLayout_18->setContentsMargins(0, 0, 0, 0);
+        horizontalLayout_16 = new QHBoxLayout();
+        horizontalLayout_16->setObjectName(QString::fromUtf8("horizontalLayout_16"));
+        lineEdit_az_targetD = new QLineEdit(layoutWidget3);
+        lineEdit_az_targetD->setObjectName(QString::fromUtf8("lineEdit_az_targetD"));
+        lineEdit_az_targetD->setEnabled(true);
+        lineEdit_az_targetD->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        horizontalLayout_16->addWidget(lineEdit_az_targetD);
+
+        label_10 = new QLabel(layoutWidget3);
+        label_10->setObjectName(QString::fromUtf8("label_10"));
+
+        horizontalLayout_16->addWidget(label_10);
+
+
+        horizontalLayout_18->addLayout(horizontalLayout_16);
+
+        horizontalLayout_17 = new QHBoxLayout();
+        horizontalLayout_17->setObjectName(QString::fromUtf8("horizontalLayout_17"));
+        lineEdit_az_targetM = new QLineEdit(layoutWidget3);
+        lineEdit_az_targetM->setObjectName(QString::fromUtf8("lineEdit_az_targetM"));
+        lineEdit_az_targetM->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        horizontalLayout_17->addWidget(lineEdit_az_targetM);
+
+        label_14 = new QLabel(layoutWidget3);
+        label_14->setObjectName(QString::fromUtf8("label_14"));
+
+        horizontalLayout_17->addWidget(label_14);
+
+
+        horizontalLayout_18->addLayout(horizontalLayout_17);
+
+        horizontalLayout_15 = new QHBoxLayout();
+        horizontalLayout_15->setObjectName(QString::fromUtf8("horizontalLayout_15"));
+        lineEdit_az_targetS = new QLineEdit(layoutWidget3);
+        lineEdit_az_targetS->setObjectName(QString::fromUtf8("lineEdit_az_targetS"));
+        lineEdit_az_targetS->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        horizontalLayout_15->addWidget(lineEdit_az_targetS);
+
+        label_9 = new QLabel(layoutWidget3);
+        label_9->setObjectName(QString::fromUtf8("label_9"));
+
+        horizontalLayout_15->addWidget(label_9);
+
+
+        horizontalLayout_18->addLayout(horizontalLayout_15);
+
+        label_21 = new QLabel(scrollAreaWidgetContents);
+        label_21->setObjectName(QString::fromUtf8("label_21"));
+        label_21->setGeometry(QRect(784, 10, 121, 31));
+        label_21->setTextFormat(Qt::RichText);
+        groupBox_13 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_13->setObjectName(QString::fromUtf8("groupBox_13"));
+        groupBox_13->setGeometry(QRect(80, 160, 401, 171));
+        layoutWidget4 = new QWidget(groupBox_13);
+        layoutWidget4->setObjectName(QString::fromUtf8("layoutWidget4"));
+        layoutWidget4->setGeometry(QRect(270, 30, 91, 81));
+        gridLayout_7 = new QGridLayout(layoutWidget4);
+        gridLayout_7->setObjectName(QString::fromUtf8("gridLayout_7"));
+        gridLayout_7->setContentsMargins(0, 0, 0, 0);
+        label_az_loop = new QLabel(layoutWidget4);
+        label_az_loop->setObjectName(QString::fromUtf8("label_az_loop"));
+
+        gridLayout_7->addWidget(label_az_loop, 0, 0, 1, 1);
+
+        label_17 = new QLabel(layoutWidget4);
+        label_17->setObjectName(QString::fromUtf8("label_17"));
+
+        gridLayout_7->addWidget(label_17, 0, 1, 1, 1);
+
+        label_az_error = new QLabel(layoutWidget4);
+        label_az_error->setObjectName(QString::fromUtf8("label_az_error"));
+
+        gridLayout_7->addWidget(label_az_error, 1, 0, 1, 1);
+
+        label_alt_err_2 = new QLabel(layoutWidget4);
+        label_alt_err_2->setObjectName(QString::fromUtf8("label_alt_err_2"));
+
+        gridLayout_7->addWidget(label_alt_err_2, 1, 1, 1, 1);
+
+        label_az_warning = new QLabel(layoutWidget4);
+        label_az_warning->setObjectName(QString::fromUtf8("label_az_warning"));
+
+        gridLayout_7->addWidget(label_az_warning, 2, 0, 1, 1);
+
+        label_alt_warning_2 = new QLabel(layoutWidget4);
+        label_alt_warning_2->setObjectName(QString::fromUtf8("label_alt_warning_2"));
+
+        gridLayout_7->addWidget(label_alt_warning_2, 2, 1, 1, 1);
+
+        groupBox_15 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_15->setObjectName(QString::fromUtf8("groupBox_15"));
+        groupBox_15->setGeometry(QRect(290, 320, 191, 131));
+        layoutWidget_11 = new QWidget(groupBox_15);
+        layoutWidget_11->setObjectName(QString::fromUtf8("layoutWidget_11"));
+        layoutWidget_11->setGeometry(QRect(10, 30, 161, 91));
+        gridLayout_15 = new QGridLayout(layoutWidget_11);
+        gridLayout_15->setObjectName(QString::fromUtf8("gridLayout_15"));
+        gridLayout_15->setContentsMargins(0, 0, 0, 0);
+        radioButton_az_acc_default = new QRadioButton(layoutWidget_11);
+        radioButton_az_acc_default->setObjectName(QString::fromUtf8("radioButton_az_acc_default"));
+        radioButton_az_acc_default->setChecked(true);
+
+        gridLayout_15->addWidget(radioButton_az_acc_default, 0, 0, 1, 2);
+
+        radioButton_az_acc_spec = new QRadioButton(layoutWidget_11);
+        radioButton_az_acc_spec->setObjectName(QString::fromUtf8("radioButton_az_acc_spec"));
+
+        gridLayout_15->addWidget(radioButton_az_acc_spec, 1, 0, 1, 1);
+
+        lineEdit_az_acc_spec = new QLineEdit(layoutWidget_11);
+        lineEdit_az_acc_spec->setObjectName(QString::fromUtf8("lineEdit_az_acc_spec"));
+        lineEdit_az_acc_spec->setEnabled(false);
+
+        gridLayout_15->addWidget(lineEdit_az_acc_spec, 1, 1, 1, 1);
+
+        groupBox_17 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_17->setObjectName(QString::fromUtf8("groupBox_17"));
+        groupBox_17->setGeometry(QRect(290, 450, 191, 111));
+        layoutWidget_13 = new QWidget(groupBox_17);
+        layoutWidget_13->setObjectName(QString::fromUtf8("layoutWidget_13"));
+        layoutWidget_13->setGeometry(QRect(20, 40, 156, 61));
+        horizontalLayout_3 = new QHBoxLayout(layoutWidget_13);
+        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
+        horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
+        pushButton_az_dirM = new QPushButton(layoutWidget_13);
+        pushButton_az_dirM->setObjectName(QString::fromUtf8("pushButton_az_dirM"));
+
+        horizontalLayout_3->addWidget(pushButton_az_dirM);
+
+        pushButton_az_dirP = new QPushButton(layoutWidget_13);
+        pushButton_az_dirP->setObjectName(QString::fromUtf8("pushButton_az_dirP"));
+
+        horizontalLayout_3->addWidget(pushButton_az_dirP);
+
+        groupBox_20 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_20->setObjectName(QString::fromUtf8("groupBox_20"));
+        groupBox_20->setGeometry(QRect(870, 450, 201, 111));
+        layoutWidget_17 = new QWidget(groupBox_20);
+        layoutWidget_17->setObjectName(QString::fromUtf8("layoutWidget_17"));
+        layoutWidget_17->setGeometry(QRect(20, 40, 156, 61));
+        horizontalLayout_4 = new QHBoxLayout(layoutWidget_17);
+        horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
+        horizontalLayout_4->setContentsMargins(0, 0, 0, 0);
+        pushButton_alt_dirM = new QPushButton(layoutWidget_17);
+        pushButton_alt_dirM->setObjectName(QString::fromUtf8("pushButton_alt_dirM"));
+
+        horizontalLayout_4->addWidget(pushButton_alt_dirM);
+
+        pushButton_alt_dirP = new QPushButton(layoutWidget_17);
+        pushButton_alt_dirP->setObjectName(QString::fromUtf8("pushButton_alt_dirP"));
+
+        horizontalLayout_4->addWidget(pushButton_alt_dirP);
+
+        pushButton_alt_stop = new QPushButton(scrollAreaWidgetContents);
+        pushButton_alt_stop->setObjectName(QString::fromUtf8("pushButton_alt_stop"));
+        pushButton_alt_stop->setGeometry(QRect(940, 600, 71, 61));
+        groupBox_14 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_14->setObjectName(QString::fromUtf8("groupBox_14"));
+        groupBox_14->setGeometry(QRect(80, 320, 201, 131));
+        layoutWidget5 = new QWidget(groupBox_14);
+        layoutWidget5->setObjectName(QString::fromUtf8("layoutWidget5"));
+        layoutWidget5->setGeometry(QRect(12, 23, 161, 102));
+        gridLayout = new QGridLayout(layoutWidget5);
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        gridLayout->setContentsMargins(0, 0, 0, 0);
+        radioButton_az_vel_fast = new QRadioButton(layoutWidget5);
+        radioButton_az_vel_fast->setObjectName(QString::fromUtf8("radioButton_az_vel_fast"));
+        radioButton_az_vel_fast->setCheckable(true);
+        radioButton_az_vel_fast->setChecked(false);
+
+        gridLayout->addWidget(radioButton_az_vel_fast, 0, 0, 1, 1);
+
+        radioButton_az_vel_mid = new QRadioButton(layoutWidget5);
+        radioButton_az_vel_mid->setObjectName(QString::fromUtf8("radioButton_az_vel_mid"));
+
+        gridLayout->addWidget(radioButton_az_vel_mid, 1, 0, 1, 1);
+
+        radioButton_az_vel_slow = new QRadioButton(layoutWidget5);
+        radioButton_az_vel_slow->setObjectName(QString::fromUtf8("radioButton_az_vel_slow"));
+        radioButton_az_vel_slow->setChecked(true);
+
+        gridLayout->addWidget(radioButton_az_vel_slow, 2, 0, 1, 1);
+
+        radioButton_az_vel_spec = new QRadioButton(layoutWidget5);
+        radioButton_az_vel_spec->setObjectName(QString::fromUtf8("radioButton_az_vel_spec"));
+
+        gridLayout->addWidget(radioButton_az_vel_spec, 3, 0, 1, 1);
+
+        lineEdit_az_vel_spec = new QLineEdit(layoutWidget5);
+        lineEdit_az_vel_spec->setObjectName(QString::fromUtf8("lineEdit_az_vel_spec"));
+        lineEdit_az_vel_spec->setEnabled(false);
+        lineEdit_az_vel_spec->setMaxLength(32767);
+
+        gridLayout->addWidget(lineEdit_az_vel_spec, 3, 1, 1, 1);
+
+        label_11 = new QLabel(scrollAreaWidgetContents);
+        label_11->setObjectName(QString::fromUtf8("label_11"));
+        label_11->setGeometry(QRect(204, 10, 95, 31));
+        label_11->setTextFormat(Qt::RichText);
+        groupBox_22 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_22->setObjectName(QString::fromUtf8("groupBox_22"));
+        groupBox_22->setGeometry(QRect(660, 570, 201, 131));
+        layoutWidget_19 = new QWidget(groupBox_22);
+        layoutWidget_19->setObjectName(QString::fromUtf8("layoutWidget_19"));
+        layoutWidget_19->setGeometry(QRect(10, 20, 160, 102));
+        gridLayout_19 = new QGridLayout(layoutWidget_19);
+        gridLayout_19->setObjectName(QString::fromUtf8("gridLayout_19"));
+        gridLayout_19->setContentsMargins(0, 0, 0, 0);
+        radioButton_alt_step1 = new QRadioButton(layoutWidget_19);
+        radioButton_alt_step1->setObjectName(QString::fromUtf8("radioButton_alt_step1"));
+        radioButton_alt_step1->setChecked(true);
+
+        gridLayout_19->addWidget(radioButton_alt_step1, 0, 0, 1, 1);
+
+        pushButton_alt_stepM = new QPushButton(layoutWidget_19);
+        pushButton_alt_stepM->setObjectName(QString::fromUtf8("pushButton_alt_stepM"));
+
+        gridLayout_19->addWidget(pushButton_alt_stepM, 0, 1, 2, 1);
+
+        radioButton_alt_step01 = new QRadioButton(layoutWidget_19);
+        radioButton_alt_step01->setObjectName(QString::fromUtf8("radioButton_alt_step01"));
+
+        gridLayout_19->addWidget(radioButton_alt_step01, 1, 0, 2, 1);
+
+        pushButton_alt_stepP = new QPushButton(layoutWidget_19);
+        pushButton_alt_stepP->setObjectName(QString::fromUtf8("pushButton_alt_stepP"));
+
+        gridLayout_19->addWidget(pushButton_alt_stepP, 2, 1, 2, 1);
+
+        radioButton_alt_step001 = new QRadioButton(layoutWidget_19);
+        radioButton_alt_step001->setObjectName(QString::fromUtf8("radioButton_alt_step001"));
+
+        gridLayout_19->addWidget(radioButton_alt_step001, 3, 0, 1, 1);
+
+        radioButton_alt_step_spec = new QRadioButton(layoutWidget_19);
+        radioButton_alt_step_spec->setObjectName(QString::fromUtf8("radioButton_alt_step_spec"));
+
+        gridLayout_19->addWidget(radioButton_alt_step_spec, 4, 0, 1, 1);
+
+        lineEdit_alt_step_spec = new QLineEdit(layoutWidget_19);
+        lineEdit_alt_step_spec->setObjectName(QString::fromUtf8("lineEdit_alt_step_spec"));
+        lineEdit_alt_step_spec->setEnabled(false);
+
+        gridLayout_19->addWidget(lineEdit_alt_step_spec, 4, 1, 1, 1);
+
+        groupBox_18 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_18->setObjectName(QString::fromUtf8("groupBox_18"));
+        groupBox_18->setGeometry(QRect(80, 570, 201, 131));
+        layoutWidget_14 = new QWidget(groupBox_18);
+        layoutWidget_14->setObjectName(QString::fromUtf8("layoutWidget_14"));
+        layoutWidget_14->setGeometry(QRect(10, 20, 160, 102));
+        gridLayout_16 = new QGridLayout(layoutWidget_14);
+        gridLayout_16->setObjectName(QString::fromUtf8("gridLayout_16"));
+        gridLayout_16->setContentsMargins(0, 0, 0, 0);
+        radioButton_az_step1 = new QRadioButton(layoutWidget_14);
+        radioButton_az_step1->setObjectName(QString::fromUtf8("radioButton_az_step1"));
+        radioButton_az_step1->setChecked(true);
+
+        gridLayout_16->addWidget(radioButton_az_step1, 0, 0, 1, 1);
+
+        pushButton_az_stepM = new QPushButton(layoutWidget_14);
+        pushButton_az_stepM->setObjectName(QString::fromUtf8("pushButton_az_stepM"));
+
+        gridLayout_16->addWidget(pushButton_az_stepM, 0, 1, 2, 1);
+
+        radioButton_az_step01 = new QRadioButton(layoutWidget_14);
+        radioButton_az_step01->setObjectName(QString::fromUtf8("radioButton_az_step01"));
+
+        gridLayout_16->addWidget(radioButton_az_step01, 1, 0, 2, 1);
+
+        pushButton_az_stepP = new QPushButton(layoutWidget_14);
+        pushButton_az_stepP->setObjectName(QString::fromUtf8("pushButton_az_stepP"));
+
+        gridLayout_16->addWidget(pushButton_az_stepP, 2, 1, 2, 1);
+
+        radioButton_az_step001 = new QRadioButton(layoutWidget_14);
+        radioButton_az_step001->setObjectName(QString::fromUtf8("radioButton_az_step001"));
+
+        gridLayout_16->addWidget(radioButton_az_step001, 3, 0, 1, 1);
+
+        radioButton_az_step_spec = new QRadioButton(layoutWidget_14);
+        radioButton_az_step_spec->setObjectName(QString::fromUtf8("radioButton_az_step_spec"));
+
+        gridLayout_16->addWidget(radioButton_az_step_spec, 4, 0, 1, 1);
+
+        lineEdit_az_step_spec = new QLineEdit(layoutWidget_14);
+        lineEdit_az_step_spec->setObjectName(QString::fromUtf8("lineEdit_az_step_spec"));
+        lineEdit_az_step_spec->setEnabled(false);
+
+        gridLayout_16->addWidget(lineEdit_az_step_spec, 4, 1, 1, 1);
+
+        pushButton_az_stop = new QPushButton(scrollAreaWidgetContents);
+        pushButton_az_stop->setObjectName(QString::fromUtf8("pushButton_az_stop"));
+        pushButton_az_stop->setGeometry(QRect(350, 600, 71, 61));
+        groupBox_23 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_23->setObjectName(QString::fromUtf8("groupBox_23"));
+        groupBox_23->setGeometry(QRect(660, 450, 201, 121));
+        layoutWidget_6 = new QWidget(groupBox_23);
+        layoutWidget_6->setObjectName(QString::fromUtf8("layoutWidget_6"));
+        layoutWidget_6->setGeometry(QRect(10, 50, 191, 29));
+        horizontalLayout_19 = new QHBoxLayout(layoutWidget_6);
+        horizontalLayout_19->setObjectName(QString::fromUtf8("horizontalLayout_19"));
+        horizontalLayout_19->setContentsMargins(0, 0, 0, 0);
+        horizontalLayout_20 = new QHBoxLayout();
+        horizontalLayout_20->setObjectName(QString::fromUtf8("horizontalLayout_20"));
+        lineEdit_alt_targetD = new QLineEdit(layoutWidget_6);
+        lineEdit_alt_targetD->setObjectName(QString::fromUtf8("lineEdit_alt_targetD"));
+        lineEdit_alt_targetD->setEnabled(true);
+        lineEdit_alt_targetD->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        horizontalLayout_20->addWidget(lineEdit_alt_targetD);
+
+        label_15 = new QLabel(layoutWidget_6);
+        label_15->setObjectName(QString::fromUtf8("label_15"));
+
+        horizontalLayout_20->addWidget(label_15);
+
+
+        horizontalLayout_19->addLayout(horizontalLayout_20);
+
+        horizontalLayout_21 = new QHBoxLayout();
+        horizontalLayout_21->setObjectName(QString::fromUtf8("horizontalLayout_21"));
+        lineEdit_alt_targetM = new QLineEdit(layoutWidget_6);
+        lineEdit_alt_targetM->setObjectName(QString::fromUtf8("lineEdit_alt_targetM"));
+        lineEdit_alt_targetM->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        horizontalLayout_21->addWidget(lineEdit_alt_targetM);
+
+        label_18 = new QLabel(layoutWidget_6);
+        label_18->setObjectName(QString::fromUtf8("label_18"));
+
+        horizontalLayout_21->addWidget(label_18);
+
+
+        horizontalLayout_19->addLayout(horizontalLayout_21);
+
+        horizontalLayout_22 = new QHBoxLayout();
+        horizontalLayout_22->setObjectName(QString::fromUtf8("horizontalLayout_22"));
+        lineEdit_alt_targetS = new QLineEdit(layoutWidget_6);
+        lineEdit_alt_targetS->setObjectName(QString::fromUtf8("lineEdit_alt_targetS"));
+        lineEdit_alt_targetS->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        horizontalLayout_22->addWidget(lineEdit_alt_targetS);
+
+        label_19 = new QLabel(layoutWidget_6);
+        label_19->setObjectName(QString::fromUtf8("label_19"));
+
+        horizontalLayout_22->addWidget(label_19);
+
+
+        horizontalLayout_19->addLayout(horizontalLayout_22);
+
+        label_13 = new QLabel(groupBox_23);
+        label_13->setObjectName(QString::fromUtf8("label_13"));
+        label_13->setGeometry(QRect(60, 31, 90, 16));
+        pushButton_alt_go = new QPushButton(groupBox_23);
+        pushButton_alt_go->setObjectName(QString::fromUtf8("pushButton_alt_go"));
+        pushButton_alt_go->setGeometry(QRect(60, 79, 81, 31));
+        groupBox_21 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_21->setObjectName(QString::fromUtf8("groupBox_21"));
+        groupBox_21->setGeometry(QRect(660, 310, 201, 131));
+        layoutWidget_18 = new QWidget(groupBox_21);
+        layoutWidget_18->setObjectName(QString::fromUtf8("layoutWidget_18"));
+        layoutWidget_18->setGeometry(QRect(10, 20, 161, 111));
+        gridLayout_18 = new QGridLayout(layoutWidget_18);
+        gridLayout_18->setObjectName(QString::fromUtf8("gridLayout_18"));
+        gridLayout_18->setContentsMargins(0, 0, 0, 0);
+        radioButton_alt_vel_fast = new QRadioButton(layoutWidget_18);
+        radioButton_alt_vel_fast->setObjectName(QString::fromUtf8("radioButton_alt_vel_fast"));
+        radioButton_alt_vel_fast->setChecked(false);
+
+        gridLayout_18->addWidget(radioButton_alt_vel_fast, 0, 0, 1, 2);
+
+        radioButton_alt_vel_mid = new QRadioButton(layoutWidget_18);
+        radioButton_alt_vel_mid->setObjectName(QString::fromUtf8("radioButton_alt_vel_mid"));
+
+        gridLayout_18->addWidget(radioButton_alt_vel_mid, 1, 0, 1, 2);
+
+        radioButton_alt_vel_slow = new QRadioButton(layoutWidget_18);
+        radioButton_alt_vel_slow->setObjectName(QString::fromUtf8("radioButton_alt_vel_slow"));
+        radioButton_alt_vel_slow->setChecked(true);
+
+        gridLayout_18->addWidget(radioButton_alt_vel_slow, 2, 0, 1, 2);
+
+        radioButton_alt_vel_spec = new QRadioButton(layoutWidget_18);
+        radioButton_alt_vel_spec->setObjectName(QString::fromUtf8("radioButton_alt_vel_spec"));
+
+        gridLayout_18->addWidget(radioButton_alt_vel_spec, 3, 0, 1, 1);
+
+        lineEdit_alt_vel_spec = new QLineEdit(layoutWidget_18);
+        lineEdit_alt_vel_spec->setObjectName(QString::fromUtf8("lineEdit_alt_vel_spec"));
+        lineEdit_alt_vel_spec->setEnabled(false);
+
+        gridLayout_18->addWidget(lineEdit_alt_vel_spec, 3, 1, 1, 1);
+
+        groupBox_24 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_24->setObjectName(QString::fromUtf8("groupBox_24"));
+        groupBox_24->setGeometry(QRect(870, 310, 201, 131));
+        layoutWidget_22 = new QWidget(groupBox_24);
+        layoutWidget_22->setObjectName(QString::fromUtf8("layoutWidget_22"));
+        layoutWidget_22->setGeometry(QRect(10, 30, 161, 91));
+        gridLayout_21 = new QGridLayout(layoutWidget_22);
+        gridLayout_21->setObjectName(QString::fromUtf8("gridLayout_21"));
+        gridLayout_21->setContentsMargins(0, 0, 0, 0);
+        radioButton_alt_acc_default = new QRadioButton(layoutWidget_22);
+        radioButton_alt_acc_default->setObjectName(QString::fromUtf8("radioButton_alt_acc_default"));
+        radioButton_alt_acc_default->setChecked(true);
+
+        gridLayout_21->addWidget(radioButton_alt_acc_default, 0, 0, 1, 2);
+
+        radioButton_alt_acc_spec = new QRadioButton(layoutWidget_22);
+        radioButton_alt_acc_spec->setObjectName(QString::fromUtf8("radioButton_alt_acc_spec"));
+
+        gridLayout_21->addWidget(radioButton_alt_acc_spec, 1, 0, 1, 1);
+
+        lineEdit_alt_acc_spec = new QLineEdit(layoutWidget_22);
+        lineEdit_alt_acc_spec->setObjectName(QString::fromUtf8("lineEdit_alt_acc_spec"));
+        lineEdit_alt_acc_spec->setEnabled(false);
+
+        gridLayout_21->addWidget(lineEdit_alt_acc_spec, 1, 1, 1, 1);
+
+        layoutWidget6 = new QWidget(scrollAreaWidgetContents);
+        layoutWidget6->setObjectName(QString::fromUtf8("layoutWidget6"));
+        layoutWidget6->setGeometry(QRect(660, 120, 421, 41));
+        horizontalLayout_2 = new QHBoxLayout(layoutWidget6);
+        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
+        horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
+        horizontalSpacer_2 = new QSpacerItem(88, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_2->addItem(horizontalSpacer_2);
+
+        pushButton_alt_enable = new QPushButton(layoutWidget6);
+        pushButton_alt_enable->setObjectName(QString::fromUtf8("pushButton_alt_enable"));
+
+        horizontalLayout_2->addWidget(pushButton_alt_enable);
+
+        pushButton_alt_home = new QPushButton(layoutWidget6);
+        pushButton_alt_home->setObjectName(QString::fromUtf8("pushButton_alt_home"));
+        QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(pushButton_alt_home->sizePolicy().hasHeightForWidth());
+        pushButton_alt_home->setSizePolicy(sizePolicy);
+
+        horizontalLayout_2->addWidget(pushButton_alt_home);
+
+        pushButton_alt_disable = new QPushButton(layoutWidget6);
+        pushButton_alt_disable->setObjectName(QString::fromUtf8("pushButton_alt_disable"));
+        sizePolicy.setHeightForWidth(pushButton_alt_disable->sizePolicy().hasHeightForWidth());
+        pushButton_alt_disable->setSizePolicy(sizePolicy);
+
+        horizontalLayout_2->addWidget(pushButton_alt_disable);
+
+        layoutWidget7 = new QWidget(scrollAreaWidgetContents);
+        layoutWidget7->setObjectName(QString::fromUtf8("layoutWidget7"));
+        layoutWidget7->setGeometry(QRect(70, 120, 421, 41));
+        horizontalLayout = new QHBoxLayout(layoutWidget7);
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
+        horizontalSpacer = new QSpacerItem(88, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer);
+
+        pushButton_az_enable = new QPushButton(layoutWidget7);
+        pushButton_az_enable->setObjectName(QString::fromUtf8("pushButton_az_enable"));
+        pushButton_az_enable->setAutoFillBackground(false);
+
+        horizontalLayout->addWidget(pushButton_az_enable);
+
+        pushButton_az_home = new QPushButton(layoutWidget7);
+        pushButton_az_home->setObjectName(QString::fromUtf8("pushButton_az_home"));
+        sizePolicy.setHeightForWidth(pushButton_az_home->sizePolicy().hasHeightForWidth());
+        pushButton_az_home->setSizePolicy(sizePolicy);
+
+        horizontalLayout->addWidget(pushButton_az_home);
+
+        pushButton_az_disable = new QPushButton(layoutWidget7);
+        pushButton_az_disable->setObjectName(QString::fromUtf8("pushButton_az_disable"));
+        sizePolicy.setHeightForWidth(pushButton_az_disable->sizePolicy().hasHeightForWidth());
+        pushButton_az_disable->setSizePolicy(sizePolicy);
+
+        horizontalLayout->addWidget(pushButton_az_disable);
+
+        layoutWidget_2 = new QWidget(scrollAreaWidgetContents);
+        layoutWidget_2->setObjectName(QString::fromUtf8("layoutWidget_2"));
+        layoutWidget_2->setGeometry(QRect(630, 50, 481, 71));
+        gridLayout_3 = new QGridLayout(layoutWidget_2);
+        gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
+        gridLayout_3->setContentsMargins(0, 0, 0, 0);
+        label_25 = new QLabel(layoutWidget_2);
+        label_25->setObjectName(QString::fromUtf8("label_25"));
+
+        gridLayout_3->addWidget(label_25, 0, 0, 1, 1);
+
+        horizontalLayout_10 = new QHBoxLayout();
+        horizontalLayout_10->setObjectName(QString::fromUtf8("horizontalLayout_10"));
+        lineEdit_alt_posD = new QLineEdit(layoutWidget_2);
+        lineEdit_alt_posD->setObjectName(QString::fromUtf8("lineEdit_alt_posD"));
+        lineEdit_alt_posD->setEnabled(true);
+        lineEdit_alt_posD->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_alt_posD->setReadOnly(true);
+
+        horizontalLayout_10->addWidget(lineEdit_alt_posD);
+
+        label_5 = new QLabel(layoutWidget_2);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+
+        horizontalLayout_10->addWidget(label_5);
+
+
+        gridLayout_3->addLayout(horizontalLayout_10, 0, 1, 1, 1);
+
+        horizontalLayout_11 = new QHBoxLayout();
+        horizontalLayout_11->setObjectName(QString::fromUtf8("horizontalLayout_11"));
+        lineEdit_alt_posM = new QLineEdit(layoutWidget_2);
+        lineEdit_alt_posM->setObjectName(QString::fromUtf8("lineEdit_alt_posM"));
+        lineEdit_alt_posM->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_alt_posM->setReadOnly(true);
+
+        horizontalLayout_11->addWidget(lineEdit_alt_posM);
+
+        label_6 = new QLabel(layoutWidget_2);
+        label_6->setObjectName(QString::fromUtf8("label_6"));
+
+        horizontalLayout_11->addWidget(label_6);
+
+
+        gridLayout_3->addLayout(horizontalLayout_11, 0, 2, 1, 1);
+
+        horizontalLayout_12 = new QHBoxLayout();
+        horizontalLayout_12->setObjectName(QString::fromUtf8("horizontalLayout_12"));
+        lineEdit_alt_posS = new QLineEdit(layoutWidget_2);
+        lineEdit_alt_posS->setObjectName(QString::fromUtf8("lineEdit_alt_posS"));
+        lineEdit_alt_posS->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_alt_posS->setReadOnly(true);
+
+        horizontalLayout_12->addWidget(lineEdit_alt_posS);
+
+        label_7 = new QLabel(layoutWidget_2);
+        label_7->setObjectName(QString::fromUtf8("label_7"));
+
+        horizontalLayout_12->addWidget(label_7);
+
+
+        gridLayout_3->addLayout(horizontalLayout_12, 0, 3, 1, 1);
+
+        label_26 = new QLabel(layoutWidget_2);
+        label_26->setObjectName(QString::fromUtf8("label_26"));
+
+        gridLayout_3->addWidget(label_26, 0, 4, 1, 1);
+
+        horizontalLayout_13 = new QHBoxLayout();
+        horizontalLayout_13->setObjectName(QString::fromUtf8("horizontalLayout_13"));
+        lineEdit_alt_vel = new QLineEdit(layoutWidget_2);
+        lineEdit_alt_vel->setObjectName(QString::fromUtf8("lineEdit_alt_vel"));
+        lineEdit_alt_vel->setCursor(QCursor(Qt::BlankCursor));
+        lineEdit_alt_vel->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_alt_vel->setReadOnly(true);
+
+        horizontalLayout_13->addWidget(lineEdit_alt_vel);
+
+        label_32 = new QLabel(layoutWidget_2);
+        label_32->setObjectName(QString::fromUtf8("label_32"));
+
+        horizontalLayout_13->addWidget(label_32);
+
+
+        gridLayout_3->addLayout(horizontalLayout_13, 0, 5, 1, 1);
+
+        label_27 = new QLabel(layoutWidget_2);
+        label_27->setObjectName(QString::fromUtf8("label_27"));
+
+        gridLayout_3->addWidget(label_27, 1, 0, 1, 1);
+
+        horizontalLayout_14 = new QHBoxLayout();
+        horizontalLayout_14->setObjectName(QString::fromUtf8("horizontalLayout_14"));
+        lineEdit_alt_poserr = new QLineEdit(layoutWidget_2);
+        lineEdit_alt_poserr->setObjectName(QString::fromUtf8("lineEdit_alt_poserr"));
+        lineEdit_alt_poserr->setCursor(QCursor(Qt::BlankCursor));
+        lineEdit_alt_poserr->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_alt_poserr->setReadOnly(true);
+
+        horizontalLayout_14->addWidget(lineEdit_alt_poserr);
+
+        label_8 = new QLabel(layoutWidget_2);
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+
+        horizontalLayout_14->addWidget(label_8);
+
+        horizontalSpacer_4 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_14->addItem(horizontalSpacer_4);
+
+
+        gridLayout_3->addLayout(horizontalLayout_14, 1, 1, 1, 2);
+
+        layoutWidget8 = new QWidget(scrollAreaWidgetContents);
+        layoutWidget8->setObjectName(QString::fromUtf8("layoutWidget8"));
+        layoutWidget8->setGeometry(QRect(40, 50, 481, 71));
+        gridLayout_2 = new QGridLayout(layoutWidget8);
+        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
+        gridLayout_2->setContentsMargins(0, 0, 0, 0);
+        label_22 = new QLabel(layoutWidget8);
+        label_22->setObjectName(QString::fromUtf8("label_22"));
+
+        gridLayout_2->addWidget(label_22, 0, 0, 1, 1);
+
+        horizontalLayout_5 = new QHBoxLayout();
+        horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
+        lineEdit_az_posD = new QLineEdit(layoutWidget8);
+        lineEdit_az_posD->setObjectName(QString::fromUtf8("lineEdit_az_posD"));
+        lineEdit_az_posD->setEnabled(true);
+        lineEdit_az_posD->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_az_posD->setReadOnly(true);
+
+        horizontalLayout_5->addWidget(lineEdit_az_posD);
+
+        label_2 = new QLabel(layoutWidget8);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+
+        horizontalLayout_5->addWidget(label_2);
+
+
+        gridLayout_2->addLayout(horizontalLayout_5, 0, 1, 1, 1);
+
+        horizontalLayout_6 = new QHBoxLayout();
+        horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
+        lineEdit_az_posM = new QLineEdit(layoutWidget8);
+        lineEdit_az_posM->setObjectName(QString::fromUtf8("lineEdit_az_posM"));
+        lineEdit_az_posM->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_az_posM->setReadOnly(true);
+
+        horizontalLayout_6->addWidget(lineEdit_az_posM);
+
+        label = new QLabel(layoutWidget8);
+        label->setObjectName(QString::fromUtf8("label"));
+
+        horizontalLayout_6->addWidget(label);
+
+
+        gridLayout_2->addLayout(horizontalLayout_6, 0, 2, 1, 1);
+
+        horizontalLayout_7 = new QHBoxLayout();
+        horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
+        lineEdit_az_posS = new QLineEdit(layoutWidget8);
+        lineEdit_az_posS->setObjectName(QString::fromUtf8("lineEdit_az_posS"));
+        lineEdit_az_posS->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_az_posS->setReadOnly(true);
+
+        horizontalLayout_7->addWidget(lineEdit_az_posS);
+
+        label_3 = new QLabel(layoutWidget8);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+
+        horizontalLayout_7->addWidget(label_3);
+
+
+        gridLayout_2->addLayout(horizontalLayout_7, 0, 3, 1, 1);
+
+        label_23 = new QLabel(layoutWidget8);
+        label_23->setObjectName(QString::fromUtf8("label_23"));
+
+        gridLayout_2->addWidget(label_23, 0, 4, 1, 1);
+
+        horizontalLayout_9 = new QHBoxLayout();
+        horizontalLayout_9->setObjectName(QString::fromUtf8("horizontalLayout_9"));
+        lineEdit_az_vel = new QLineEdit(layoutWidget8);
+        lineEdit_az_vel->setObjectName(QString::fromUtf8("lineEdit_az_vel"));
+        lineEdit_az_vel->setCursor(QCursor(Qt::BlankCursor));
+        lineEdit_az_vel->setLayoutDirection(Qt::LeftToRight);
+        lineEdit_az_vel->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_az_vel->setReadOnly(true);
+
+        horizontalLayout_9->addWidget(lineEdit_az_vel);
+
+        label_31 = new QLabel(layoutWidget8);
+        label_31->setObjectName(QString::fromUtf8("label_31"));
+
+        horizontalLayout_9->addWidget(label_31);
+
+
+        gridLayout_2->addLayout(horizontalLayout_9, 0, 5, 1, 1);
+
+        label_24 = new QLabel(layoutWidget8);
+        label_24->setObjectName(QString::fromUtf8("label_24"));
+
+        gridLayout_2->addWidget(label_24, 1, 0, 1, 1);
+
+        horizontalLayout_8 = new QHBoxLayout();
+        horizontalLayout_8->setObjectName(QString::fromUtf8("horizontalLayout_8"));
+        lineEdit_az_poserr = new QLineEdit(layoutWidget8);
+        lineEdit_az_poserr->setObjectName(QString::fromUtf8("lineEdit_az_poserr"));
+        lineEdit_az_poserr->setCursor(QCursor(Qt::BlankCursor));
+        lineEdit_az_poserr->setLayoutDirection(Qt::LeftToRight);
+        lineEdit_az_poserr->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_az_poserr->setReadOnly(true);
+
+        horizontalLayout_8->addWidget(lineEdit_az_poserr);
+
+        label_4 = new QLabel(layoutWidget8);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+
+        horizontalLayout_8->addWidget(label_4);
+
+        horizontalSpacer_3 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_8->addItem(horizontalSpacer_3);
+
+
+        gridLayout_2->addLayout(horizontalLayout_8, 1, 1, 1, 2);
+
+        layoutWidget_3 = new QWidget(scrollAreaWidgetContents);
+        layoutWidget_3->setObjectName(QString::fromUtf8("layoutWidget_3"));
+        layoutWidget_3->setGeometry(QRect(90, 190, 231, 131));
+        gridLayout_6 = new QGridLayout(layoutWidget_3);
+        gridLayout_6->setObjectName(QString::fromUtf8("gridLayout_6"));
+        gridLayout_6->setContentsMargins(0, 0, 0, 0);
+        label_az_homed = new QLabel(layoutWidget_3);
+        label_az_homed->setObjectName(QString::fromUtf8("label_az_homed"));
+
+        gridLayout_6->addWidget(label_az_homed, 0, 0, 1, 1);
+
+        label_43 = new QLabel(layoutWidget_3);
+        label_43->setObjectName(QString::fromUtf8("label_43"));
+
+        gridLayout_6->addWidget(label_43, 0, 1, 1, 1);
+
+        label_az_soft_limitP = new QLabel(layoutWidget_3);
+        label_az_soft_limitP->setObjectName(QString::fromUtf8("label_az_soft_limitP"));
+
+        gridLayout_6->addWidget(label_az_soft_limitP, 0, 2, 1, 1);
+
+        label_44 = new QLabel(layoutWidget_3);
+        label_44->setObjectName(QString::fromUtf8("label_44"));
+
+        gridLayout_6->addWidget(label_44, 0, 3, 1, 1);
+
+        label_az_brake = new QLabel(layoutWidget_3);
+        label_az_brake->setObjectName(QString::fromUtf8("label_az_brake"));
+
+        gridLayout_6->addWidget(label_az_brake, 1, 0, 1, 1);
+
+        label_45 = new QLabel(layoutWidget_3);
+        label_45->setObjectName(QString::fromUtf8("label_45"));
+
+        gridLayout_6->addWidget(label_45, 1, 1, 1, 1);
+
+        label_az_soft_limitM = new QLabel(layoutWidget_3);
+        label_az_soft_limitM->setObjectName(QString::fromUtf8("label_az_soft_limitM"));
+
+        gridLayout_6->addWidget(label_az_soft_limitM, 1, 2, 1, 1);
+
+        label_46 = new QLabel(layoutWidget_3);
+        label_46->setObjectName(QString::fromUtf8("label_46"));
+
+        gridLayout_6->addWidget(label_46, 1, 3, 1, 1);
+
+        label_az_vel_limit = new QLabel(layoutWidget_3);
+        label_az_vel_limit->setObjectName(QString::fromUtf8("label_az_vel_limit"));
+
+        gridLayout_6->addWidget(label_az_vel_limit, 2, 0, 1, 1);
+
+        label_47 = new QLabel(layoutWidget_3);
+        label_47->setObjectName(QString::fromUtf8("label_47"));
+
+        gridLayout_6->addWidget(label_47, 2, 1, 1, 1);
+
+        label_az_hard_limitP = new QLabel(layoutWidget_3);
+        label_az_hard_limitP->setObjectName(QString::fromUtf8("label_az_hard_limitP"));
+
+        gridLayout_6->addWidget(label_az_hard_limitP, 2, 2, 1, 1);
+
+        label_48 = new QLabel(layoutWidget_3);
+        label_48->setObjectName(QString::fromUtf8("label_48"));
+
+        gridLayout_6->addWidget(label_48, 2, 3, 1, 1);
+
+        label_az_acc_limit = new QLabel(layoutWidget_3);
+        label_az_acc_limit->setObjectName(QString::fromUtf8("label_az_acc_limit"));
+
+        gridLayout_6->addWidget(label_az_acc_limit, 3, 0, 1, 1);
+
+        label_49 = new QLabel(layoutWidget_3);
+        label_49->setObjectName(QString::fromUtf8("label_49"));
+
+        gridLayout_6->addWidget(label_49, 3, 1, 1, 1);
+
+        label_az_hard_limitM = new QLabel(layoutWidget_3);
+        label_az_hard_limitM->setObjectName(QString::fromUtf8("label_az_hard_limitM"));
+
+        gridLayout_6->addWidget(label_az_hard_limitM, 3, 2, 1, 1);
+
+        label_50 = new QLabel(layoutWidget_3);
+        label_50->setObjectName(QString::fromUtf8("label_50"));
+
+        gridLayout_6->addWidget(label_50, 3, 3, 1, 1);
+
+        label_az_ampli_fault = new QLabel(layoutWidget_3);
+        label_az_ampli_fault->setObjectName(QString::fromUtf8("label_az_ampli_fault"));
+
+        gridLayout_6->addWidget(label_az_ampli_fault, 4, 0, 1, 1);
+
+        label_51 = new QLabel(layoutWidget_3);
+        label_51->setObjectName(QString::fromUtf8("label_51"));
+
+        gridLayout_6->addWidget(label_51, 4, 1, 1, 1);
+
+        DirectAzalt->setWidget(scrollAreaWidgetContents);
+
+        retranslateUi(DirectAzalt);
+        QObject::connect(radioButton_az_vel_spec, SIGNAL(toggled(bool)), lineEdit_az_vel_spec, SLOT(setEnabled(bool)));
+        QObject::connect(radioButton_az_acc_spec, SIGNAL(toggled(bool)), lineEdit_az_acc_spec, SLOT(setEnabled(bool)));
+        QObject::connect(radioButton_az_step_spec, SIGNAL(toggled(bool)), lineEdit_az_step_spec, SLOT(setEnabled(bool)));
+        QObject::connect(radioButton_alt_vel_spec, SIGNAL(toggled(bool)), lineEdit_alt_vel_spec, SLOT(setEnabled(bool)));
+        QObject::connect(radioButton_alt_acc_spec, SIGNAL(toggled(bool)), lineEdit_alt_acc_spec, SLOT(setEnabled(bool)));
+        QObject::connect(radioButton_alt_step_spec, SIGNAL(toggled(bool)), lineEdit_alt_step_spec, SLOT(setEnabled(bool)));
+
+        QMetaObject::connectSlotsByName(DirectAzalt);
+    } // setupUi
+
+    void retranslateUi(QScrollArea *DirectAzalt)
+    {
+        DirectAzalt->setWindowTitle(QApplication::translate("DirectAzalt", "AZ/ALT DIRECT MODE", 0, QApplication::UnicodeUTF8));
+        groupBox_19->setTitle(QApplication::translate("DirectAzalt", "Altitude status", 0, QApplication::UnicodeUTF8));
+        label_20->setText(QApplication::translate("DirectAzalt", "m1", 0, QApplication::UnicodeUTF8));
+        label_28->setText(QApplication::translate("DirectAzalt", "m2", 0, QApplication::UnicodeUTF8));
+        label_38->setText(QApplication::translate("DirectAzalt", "Soft limit +", 0, QApplication::UnicodeUTF8));
+        label_40->setText(QApplication::translate("DirectAzalt", "Soft limit +", 0, QApplication::UnicodeUTF8));
+        label_alt_homed->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(255, 0, 0);", 0, QApplication::UnicodeUTF8));
+        label_alt_homed->setText(QString());
+        label_29->setText(QApplication::translate("DirectAzalt", "Homed", 0, QApplication::UnicodeUTF8));
+        label_alt_soft_limitP->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(0, 255, 0);", 0, QApplication::UnicodeUTF8));
+        label_alt_soft_limitP->setText(QString());
+        label_36->setText(QApplication::translate("DirectAzalt", "Soft limit +", 0, QApplication::UnicodeUTF8));
+        label_alt_motor1_brake->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(255, 0, 0);", 0, QApplication::UnicodeUTF8));
+        label_alt_motor1_brake->setText(QString());
+        label_30->setText(QApplication::translate("DirectAzalt", "Brake on", 0, QApplication::UnicodeUTF8));
+        label_alt_soft_limitM->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(0, 255, 0);", 0, QApplication::UnicodeUTF8));
+        label_alt_soft_limitM->setText(QString());
+        label_37->setText(QApplication::translate("DirectAzalt", "Soft limit -", 0, QApplication::UnicodeUTF8));
+        label_alt_vel_limit->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(0, 255, 0);", 0, QApplication::UnicodeUTF8));
+        label_alt_vel_limit->setText(QString());
+        label_33->setText(QApplication::translate("DirectAzalt", "Vel limit reached", 0, QApplication::UnicodeUTF8));
+        label_alt_hard_limitP->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(0, 255, 0);", 0, QApplication::UnicodeUTF8));
+        label_alt_hard_limitP->setText(QString());
+        label_41->setText(QApplication::translate("DirectAzalt", "Hard limit +", 0, QApplication::UnicodeUTF8));
+        label_alt_acc_limit->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(0, 255, 0);", 0, QApplication::UnicodeUTF8));
+        label_alt_acc_limit->setText(QString());
+        label_34->setText(QApplication::translate("DirectAzalt", "Acc limit reached", 0, QApplication::UnicodeUTF8));
+        label_alt_hard_limitM->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(0, 255, 0);", 0, QApplication::UnicodeUTF8));
+        label_alt_hard_limitM->setText(QString());
+        label_39->setText(QApplication::translate("DirectAzalt", "Hard limit -", 0, QApplication::UnicodeUTF8));
+        label_alt_ampli1_fault->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(0, 255, 0);", 0, QApplication::UnicodeUTF8));
+        label_alt_ampli1_fault->setText(QString());
+        label_35->setText(QApplication::translate("DirectAzalt", "Ampli1 fault", 0, QApplication::UnicodeUTF8));
+        label_alt_ampli2_fault->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(0, 255, 0);", 0, QApplication::UnicodeUTF8));
+        label_alt_ampli2_fault->setText(QString());
+        label_42->setText(QApplication::translate("DirectAzalt", "Ampli2 fault", 0, QApplication::UnicodeUTF8));
+        label_alt_loop1->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(255, 0, 0);", 0, QApplication::UnicodeUTF8));
+        label_alt_loop1->setText(QString());
+        label_alt_loop2->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(255, 0, 0);", 0, QApplication::UnicodeUTF8));
+        label_alt_loop2->setText(QString());
+        label_16->setText(QApplication::translate("DirectAzalt", "Loop status", 0, QApplication::UnicodeUTF8));
+        label_alt_error1->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(0, 255, 0);", 0, QApplication::UnicodeUTF8));
+        label_alt_error1->setText(QString());
+        label_alt_error2->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(0, 255, 0);", 0, QApplication::UnicodeUTF8));
+        label_alt_error2->setText(QString());
+        label_alt_err->setText(QApplication::translate("DirectAzalt", "Error", 0, QApplication::UnicodeUTF8));
+        label_alt_warning1->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(0, 255, 0);", 0, QApplication::UnicodeUTF8));
+        label_alt_warning1->setText(QString());
+        label_alt_warning2->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(0, 255, 0);", 0, QApplication::UnicodeUTF8));
+        label_alt_warning2->setText(QString());
+        label_alt_warning->setText(QApplication::translate("DirectAzalt", "Warning", 0, QApplication::UnicodeUTF8));
+        groupBox_16->setTitle(QApplication::translate("DirectAzalt", "Positionning", 0, QApplication::UnicodeUTF8));
+        label_12->setText(QApplication::translate("DirectAzalt", "Az target point", 0, QApplication::UnicodeUTF8));
+        pushButton_az_go->setText(QApplication::translate("DirectAzalt", "Go", 0, QApplication::UnicodeUTF8));
+        lineEdit_az_targetD->setText(QApplication::translate("DirectAzalt", "0", 0, QApplication::UnicodeUTF8));
+        label_10->setText(QApplication::translate("DirectAzalt", "\302\260", 0, QApplication::UnicodeUTF8));
+        lineEdit_az_targetM->setText(QApplication::translate("DirectAzalt", "0", 0, QApplication::UnicodeUTF8));
+        label_14->setText(QApplication::translate("DirectAzalt", "\342\200\262", 0, QApplication::UnicodeUTF8));
+        lineEdit_az_targetS->setText(QApplication::translate("DirectAzalt", "0", 0, QApplication::UnicodeUTF8));
+        label_9->setText(QApplication::translate("DirectAzalt", "\342\200\263", 0, QApplication::UnicodeUTF8));
+        label_21->setText(QApplication::translate("DirectAzalt", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:20pt; font-weight:600; color:#ff0000;\">ALTITUDE</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        groupBox_13->setTitle(QApplication::translate("DirectAzalt", "Azimuth status", 0, QApplication::UnicodeUTF8));
+        label_az_loop->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(255, 0, 0);", 0, QApplication::UnicodeUTF8));
+        label_az_loop->setText(QString());
+        label_17->setText(QApplication::translate("DirectAzalt", "Loop status", 0, QApplication::UnicodeUTF8));
+        label_az_error->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(0, 255, 0);", 0, QApplication::UnicodeUTF8));
+        label_az_error->setText(QString());
+        label_alt_err_2->setText(QApplication::translate("DirectAzalt", "Error", 0, QApplication::UnicodeUTF8));
+        label_az_warning->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(0, 255, 0);", 0, QApplication::UnicodeUTF8));
+        label_az_warning->setText(QString());
+        label_alt_warning_2->setText(QApplication::translate("DirectAzalt", "Warning", 0, QApplication::UnicodeUTF8));
+        groupBox_15->setTitle(QApplication::translate("DirectAzalt", "Acceleration", 0, QApplication::UnicodeUTF8));
+        radioButton_az_acc_default->setText(QApplication::translate("DirectAzalt", "Default value", 0, QApplication::UnicodeUTF8));
+        radioButton_az_acc_spec->setText(QApplication::translate("DirectAzalt", "Specified", 0, QApplication::UnicodeUTF8));
+        groupBox_17->setTitle(QApplication::translate("DirectAzalt", "Continuous", 0, QApplication::UnicodeUTF8));
+        pushButton_az_dirM->setText(QApplication::translate("DirectAzalt", "- Dir", 0, QApplication::UnicodeUTF8));
+        pushButton_az_dirP->setText(QApplication::translate("DirectAzalt", "+ Dir", 0, QApplication::UnicodeUTF8));
+        groupBox_20->setTitle(QApplication::translate("DirectAzalt", "Continuous", 0, QApplication::UnicodeUTF8));
+        pushButton_alt_dirM->setText(QApplication::translate("DirectAzalt", "- Dir", 0, QApplication::UnicodeUTF8));
+        pushButton_alt_dirP->setText(QApplication::translate("DirectAzalt", "+ Dir", 0, QApplication::UnicodeUTF8));
+        pushButton_alt_stop->setText(QApplication::translate("DirectAzalt", "STOP", 0, QApplication::UnicodeUTF8));
+        groupBox_14->setTitle(QApplication::translate("DirectAzalt", "Velocity (\342\200\263/s)", 0, QApplication::UnicodeUTF8));
+        radioButton_az_vel_fast->setText(QApplication::translate("DirectAzalt", "Fast", 0, QApplication::UnicodeUTF8));
+        radioButton_az_vel_mid->setText(QApplication::translate("DirectAzalt", "Mid", 0, QApplication::UnicodeUTF8));
+        radioButton_az_vel_slow->setText(QApplication::translate("DirectAzalt", "Slow", 0, QApplication::UnicodeUTF8));
+        radioButton_az_vel_spec->setText(QApplication::translate("DirectAzalt", "Specified", 0, QApplication::UnicodeUTF8));
+        lineEdit_az_vel_spec->setInputMask(QString());
+        label_11->setText(QApplication::translate("DirectAzalt", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:20pt; font-weight:600; color:#ff0000;\">AZIMUTH</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        groupBox_22->setTitle(QApplication::translate("DirectAzalt", "Step", 0, QApplication::UnicodeUTF8));
+        radioButton_alt_step1->setText(QApplication::translate("DirectAzalt", "0.1", 0, QApplication::UnicodeUTF8));
+        pushButton_alt_stepM->setText(QApplication::translate("DirectAzalt", "Step -", 0, QApplication::UnicodeUTF8));
+        radioButton_alt_step01->setText(QApplication::translate("DirectAzalt", "0.01", 0, QApplication::UnicodeUTF8));
+        pushButton_alt_stepP->setText(QApplication::translate("DirectAzalt", "Step +", 0, QApplication::UnicodeUTF8));
+        radioButton_alt_step001->setText(QApplication::translate("DirectAzalt", "0.001", 0, QApplication::UnicodeUTF8));
+        radioButton_alt_step_spec->setText(QApplication::translate("DirectAzalt", "Specified", 0, QApplication::UnicodeUTF8));
+        groupBox_18->setTitle(QApplication::translate("DirectAzalt", "Step", 0, QApplication::UnicodeUTF8));
+        radioButton_az_step1->setText(QApplication::translate("DirectAzalt", "0.1", 0, QApplication::UnicodeUTF8));
+        pushButton_az_stepM->setText(QApplication::translate("DirectAzalt", "Step -", 0, QApplication::UnicodeUTF8));
+        radioButton_az_step01->setText(QApplication::translate("DirectAzalt", "0.01", 0, QApplication::UnicodeUTF8));
+        pushButton_az_stepP->setText(QApplication::translate("DirectAzalt", "Step +", 0, QApplication::UnicodeUTF8));
+        radioButton_az_step001->setText(QApplication::translate("DirectAzalt", "0.001", 0, QApplication::UnicodeUTF8));
+        radioButton_az_step_spec->setText(QApplication::translate("DirectAzalt", "Specified", 0, QApplication::UnicodeUTF8));
+        pushButton_az_stop->setText(QApplication::translate("DirectAzalt", "STOP", 0, QApplication::UnicodeUTF8));
+        groupBox_23->setTitle(QApplication::translate("DirectAzalt", "Positionning", 0, QApplication::UnicodeUTF8));
+        lineEdit_alt_targetD->setText(QApplication::translate("DirectAzalt", "0", 0, QApplication::UnicodeUTF8));
+        label_15->setText(QApplication::translate("DirectAzalt", "\302\260", 0, QApplication::UnicodeUTF8));
+        lineEdit_alt_targetM->setText(QApplication::translate("DirectAzalt", "0", 0, QApplication::UnicodeUTF8));
+        label_18->setText(QApplication::translate("DirectAzalt", "\342\200\262", 0, QApplication::UnicodeUTF8));
+        lineEdit_alt_targetS->setText(QApplication::translate("DirectAzalt", "0", 0, QApplication::UnicodeUTF8));
+        label_19->setText(QApplication::translate("DirectAzalt", "\342\200\263", 0, QApplication::UnicodeUTF8));
+        label_13->setText(QApplication::translate("DirectAzalt", "Az target point", 0, QApplication::UnicodeUTF8));
+        pushButton_alt_go->setText(QApplication::translate("DirectAzalt", "Go", 0, QApplication::UnicodeUTF8));
+        groupBox_21->setTitle(QApplication::translate("DirectAzalt", "Velocity (\342\200\263/s)", 0, QApplication::UnicodeUTF8));
+        radioButton_alt_vel_fast->setText(QApplication::translate("DirectAzalt", "Fast", 0, QApplication::UnicodeUTF8));
+        radioButton_alt_vel_mid->setText(QApplication::translate("DirectAzalt", "Mid", 0, QApplication::UnicodeUTF8));
+        radioButton_alt_vel_slow->setText(QApplication::translate("DirectAzalt", "Slow", 0, QApplication::UnicodeUTF8));
+        radioButton_alt_vel_spec->setText(QApplication::translate("DirectAzalt", "Specified", 0, QApplication::UnicodeUTF8));
+        groupBox_24->setTitle(QApplication::translate("DirectAzalt", "Acceleration", 0, QApplication::UnicodeUTF8));
+        radioButton_alt_acc_default->setText(QApplication::translate("DirectAzalt", "Default value", 0, QApplication::UnicodeUTF8));
+        radioButton_alt_acc_spec->setText(QApplication::translate("DirectAzalt", "Specified", 0, QApplication::UnicodeUTF8));
+        pushButton_alt_enable->setText(QApplication::translate("DirectAzalt", "Axis\n"
+"Enable", 0, QApplication::UnicodeUTF8));
+        pushButton_alt_home->setText(QApplication::translate("DirectAzalt", "Home", 0, QApplication::UnicodeUTF8));
+        pushButton_alt_disable->setText(QApplication::translate("DirectAzalt", "Axis\n"
+"Disable", 0, QApplication::UnicodeUTF8));
+#ifndef QT_NO_ACCESSIBILITY
+        pushButton_az_enable->setAccessibleName(QString());
+#endif // QT_NO_ACCESSIBILITY
+        pushButton_az_enable->setText(QApplication::translate("DirectAzalt", "Axis\n"
+"Enable", 0, QApplication::UnicodeUTF8));
+        pushButton_az_home->setText(QApplication::translate("DirectAzalt", "Home", 0, QApplication::UnicodeUTF8));
+        pushButton_az_disable->setText(QApplication::translate("DirectAzalt", "Axis\n"
+"Disable", 0, QApplication::UnicodeUTF8));
+        label_25->setText(QApplication::translate("DirectAzalt", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#0055ff;\">Position:</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        lineEdit_alt_posD->setText(QApplication::translate("DirectAzalt", "0", 0, QApplication::UnicodeUTF8));
+        label_5->setText(QApplication::translate("DirectAzalt", "\302\260", 0, QApplication::UnicodeUTF8));
+        lineEdit_alt_posM->setText(QApplication::translate("DirectAzalt", "0", 0, QApplication::UnicodeUTF8));
+        label_6->setText(QApplication::translate("DirectAzalt", "\342\200\262", 0, QApplication::UnicodeUTF8));
+        lineEdit_alt_posS->setText(QApplication::translate("DirectAzalt", "0", 0, QApplication::UnicodeUTF8));
+        label_7->setText(QApplication::translate("DirectAzalt", "\342\200\263", 0, QApplication::UnicodeUTF8));
+        label_26->setText(QApplication::translate("DirectAzalt", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#0055ff;\">Velocity:</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        lineEdit_alt_vel->setText(QApplication::translate("DirectAzalt", "0", 0, QApplication::UnicodeUTF8));
+        label_32->setText(QApplication::translate("DirectAzalt", "\342\200\263/s", 0, QApplication::UnicodeUTF8));
+        label_27->setText(QApplication::translate("DirectAzalt", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#0055ff;\">Pos error:</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        lineEdit_alt_poserr->setText(QApplication::translate("DirectAzalt", "0", 0, QApplication::UnicodeUTF8));
+        label_8->setText(QApplication::translate("DirectAzalt", "\342\200\263", 0, QApplication::UnicodeUTF8));
+        label_22->setText(QApplication::translate("DirectAzalt", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#0055ff;\">Position:</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        lineEdit_az_posD->setText(QApplication::translate("DirectAzalt", "0", 0, QApplication::UnicodeUTF8));
+        label_2->setText(QApplication::translate("DirectAzalt", "\302\260", 0, QApplication::UnicodeUTF8));
+        lineEdit_az_posM->setText(QApplication::translate("DirectAzalt", "0", 0, QApplication::UnicodeUTF8));
+        label->setText(QApplication::translate("DirectAzalt", "\342\200\262", 0, QApplication::UnicodeUTF8));
+        lineEdit_az_posS->setText(QApplication::translate("DirectAzalt", "0", 0, QApplication::UnicodeUTF8));
+        label_3->setText(QApplication::translate("DirectAzalt", "\342\200\263", 0, QApplication::UnicodeUTF8));
+        label_23->setText(QApplication::translate("DirectAzalt", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#0055ff;\">Velocity:</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        lineEdit_az_vel->setText(QApplication::translate("DirectAzalt", "0", 0, QApplication::UnicodeUTF8));
+        label_31->setText(QApplication::translate("DirectAzalt", "\342\200\263/s", 0, QApplication::UnicodeUTF8));
+        label_24->setText(QApplication::translate("DirectAzalt", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#0055ff;\">Pos error:</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        lineEdit_az_poserr->setText(QApplication::translate("DirectAzalt", "0", 0, QApplication::UnicodeUTF8));
+        label_4->setText(QApplication::translate("DirectAzalt", "\342\200\263", 0, QApplication::UnicodeUTF8));
+        label_az_homed->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(255, 0, 0);", 0, QApplication::UnicodeUTF8));
+        label_az_homed->setText(QString());
+        label_43->setText(QApplication::translate("DirectAzalt", "Homed", 0, QApplication::UnicodeUTF8));
+        label_az_soft_limitP->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(0, 255, 0);", 0, QApplication::UnicodeUTF8));
+        label_az_soft_limitP->setText(QString());
+        label_44->setText(QApplication::translate("DirectAzalt", "Soft limit +", 0, QApplication::UnicodeUTF8));
+        label_az_brake->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(255, 0, 0);", 0, QApplication::UnicodeUTF8));
+        label_az_brake->setText(QString());
+        label_45->setText(QApplication::translate("DirectAzalt", "Brake on", 0, QApplication::UnicodeUTF8));
+        label_az_soft_limitM->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(0, 255, 0);", 0, QApplication::UnicodeUTF8));
+        label_az_soft_limitM->setText(QString());
+        label_46->setText(QApplication::translate("DirectAzalt", "Soft limit -", 0, QApplication::UnicodeUTF8));
+        label_az_vel_limit->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(0, 255, 0);", 0, QApplication::UnicodeUTF8));
+        label_az_vel_limit->setText(QString());
+        label_47->setText(QApplication::translate("DirectAzalt", "Vel limit reached", 0, QApplication::UnicodeUTF8));
+        label_az_hard_limitP->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(0, 255, 0);", 0, QApplication::UnicodeUTF8));
+        label_az_hard_limitP->setText(QString());
+        label_48->setText(QApplication::translate("DirectAzalt", "Hard limit +", 0, QApplication::UnicodeUTF8));
+        label_az_acc_limit->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(0, 255, 0);", 0, QApplication::UnicodeUTF8));
+        label_az_acc_limit->setText(QString());
+        label_49->setText(QApplication::translate("DirectAzalt", "Acc limit reached", 0, QApplication::UnicodeUTF8));
+        label_az_hard_limitM->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(0, 255, 0);", 0, QApplication::UnicodeUTF8));
+        label_az_hard_limitM->setText(QString());
+        label_50->setText(QApplication::translate("DirectAzalt", "Hard limit -", 0, QApplication::UnicodeUTF8));
+        label_az_ampli_fault->setStyleSheet(QApplication::translate("DirectAzalt", "background-color: rgb(0, 255, 0);", 0, QApplication::UnicodeUTF8));
+        label_az_ampli_fault->setText(QString());
+        label_51->setText(QApplication::translate("DirectAzalt", "Ampli1 fault", 0, QApplication::UnicodeUTF8));
+        Q_UNUSED(DirectAzalt);
+    } // retranslateUi
+
+};
+
+namespace Ui {
+    class DirectAzalt: public Ui_DirectAzalt {};
+} // namespace Ui
+
+QT_END_NAMESPACE
+
+#endif // UI_DIRECT_AZALT_H

@@ -1,0 +1,21 @@
+<RCC>
+  <qresource prefix="icon" >
+    <file>close.png</file>
+    <file>process_lock.png</file>
+    <file>unlock.png</file>
+    <file>Three-bars-512.png</file>
+    <file>Going-up-two-bars-512.png</file>
+    <file>H.png</file>
+    <file>FocalPlane.png</file>
+    <file>指南针3.png</file>
+    <file>ter.png</file>
+    <file>星球.png</file>
+    <file>望远镜5.png</file>
+    <file>望远镜.png</file>
+    <file>20071128105357345.png</file>
+    <file>162.png</file>
+    <file>star.png</file>
+    <file>Settings.png</file>
+    <file>star7.png</file>
+  </qresource>
+</RCC>

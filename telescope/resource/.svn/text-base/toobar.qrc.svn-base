@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>20071128105357345.png</file>
+    <file>star.png</file>
+    <file>star7.png</file>
+  </qresource>
+</RCC>

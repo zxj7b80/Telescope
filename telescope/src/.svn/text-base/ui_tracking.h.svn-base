@@ -1,0 +1,989 @@
+/********************************************************************************
+** Form generated from reading ui file 'tracking.ui'
+**
+** Created: Fri Jan 15 18:11:59 2010
+**      by: Qt User Interface Compiler version 4.5.0
+**
+** WARNING! All changes made in this file will be lost when recompiling ui file!
+********************************************************************************/
+
+#ifndef UI_TRACKING_H
+#define UI_TRACKING_H
+
+#include <QtCore/QVariant>
+#include <QtGui/QAction>
+#include <QtGui/QApplication>
+#include <QtGui/QButtonGroup>
+#include <QtGui/QCheckBox>
+#include <QtGui/QFrame>
+#include <QtGui/QHBoxLayout>
+#include <QtGui/QHeaderView>
+#include <QtGui/QLabel>
+#include <QtGui/QLineEdit>
+#include <QtGui/QPushButton>
+#include <QtGui/QScrollArea>
+#include <QtGui/QSpacerItem>
+#include <QtGui/QVBoxLayout>
+#include <QtGui/QWidget>
+
+QT_BEGIN_NAMESPACE
+
+class Ui_Tracking
+{
+public:
+    QWidget *scrollAreaWidgetContents;
+    QLabel *label_11;
+    QFrame *frame;
+    QLabel *label;
+    QLabel *label_2;
+    QFrame *frame_2;
+    QWidget *layoutWidget;
+    QVBoxLayout *verticalLayout;
+    QLabel *label_8;
+    QCheckBox *checkBox_az_ampli_enable;
+    QCheckBox *checkBox_az_homed;
+    QFrame *frame_3;
+    QWidget *layoutWidget1;
+    QVBoxLayout *verticalLayout_2;
+    QLabel *label_9;
+    QCheckBox *checkBox_alt_ampli1_enable;
+    QCheckBox *checkBox_alt_ampli2_enable;
+    QCheckBox *checkBox_alt_homed;
+    QPushButton *pushButton_track;
+    QPushButton *pushButton_stop;
+    QWidget *layoutWidget2;
+    QVBoxLayout *verticalLayout_3;
+    QHBoxLayout *horizontalLayout;
+    QHBoxLayout *horizontalLayout_5;
+    QLineEdit *lineEdit_az_posD;
+    QLabel *label_14;
+    QHBoxLayout *horizontalLayout_7;
+    QLineEdit *lineEdit_az_posM;
+    QLabel *label_13;
+    QHBoxLayout *horizontalLayout_6;
+    QLineEdit *lineEdit_az_posS;
+    QLabel *label_12;
+    QHBoxLayout *horizontalLayout_12;
+    QHBoxLayout *horizontalLayout_11;
+    QLineEdit *lineEdit_az_starD;
+    QLabel *label_18;
+    QHBoxLayout *horizontalLayout_3;
+    QLineEdit *lineEdit_az_starM;
+    QLabel *label_19;
+    QHBoxLayout *horizontalLayout_13;
+    QLineEdit *lineEdit_az_starS;
+    QLabel *label_20;
+    QHBoxLayout *horizontalLayout_17;
+    QHBoxLayout *horizontalLayout_18;
+    QLineEdit *lineEdit_az_targetD;
+    QLabel *label_24;
+    QHBoxLayout *horizontalLayout_19;
+    QLineEdit *lineEdit_az_targetM;
+    QLabel *label_25;
+    QHBoxLayout *horizontalLayout_20;
+    QLineEdit *lineEdit_az_targetS;
+    QLabel *label_26;
+    QHBoxLayout *horizontalLayout_30;
+    QSpacerItem *horizontalSpacer;
+    QSpacerItem *horizontalSpacer_4;
+    QHBoxLayout *horizontalLayout_25;
+    QLineEdit *lineEdit_az_auto;
+    QLabel *label_30;
+    QHBoxLayout *horizontalLayout_32;
+    QSpacerItem *horizontalSpacer_3;
+    QSpacerItem *horizontalSpacer_6;
+    QHBoxLayout *horizontalLayout_27;
+    QLineEdit *lineEdit_az_trackerr;
+    QLabel *label_32;
+    QWidget *layoutWidget3;
+    QVBoxLayout *verticalLayout_4;
+    QHBoxLayout *horizontalLayout_2;
+    QHBoxLayout *horizontalLayout_8;
+    QLineEdit *lineEdit_alt_posD;
+    QLabel *label_15;
+    QHBoxLayout *horizontalLayout_9;
+    QLineEdit *lineEdit_alt_posM;
+    QLabel *label_16;
+    QHBoxLayout *horizontalLayout_10;
+    QLineEdit *lineEdit_alt_posS;
+    QLabel *label_17;
+    QHBoxLayout *horizontalLayout_4;
+    QHBoxLayout *horizontalLayout_14;
+    QLineEdit *lineEdit_alt_starD;
+    QLabel *label_21;
+    QHBoxLayout *horizontalLayout_15;
+    QLineEdit *lineEdit_alt_starM;
+    QLabel *label_22;
+    QHBoxLayout *horizontalLayout_16;
+    QLineEdit *lineEdit_alt_starS;
+    QLabel *label_23;
+    QHBoxLayout *horizontalLayout_21;
+    QHBoxLayout *horizontalLayout_22;
+    QLineEdit *lineEdit_alt_targetD;
+    QLabel *label_27;
+    QHBoxLayout *horizontalLayout_23;
+    QLineEdit *lineEdit_alt_targetM;
+    QLabel *label_28;
+    QHBoxLayout *horizontalLayout_24;
+    QLineEdit *lineEdit_alt_targetS;
+    QLabel *label_29;
+    QHBoxLayout *horizontalLayout_31;
+    QSpacerItem *horizontalSpacer_2;
+    QSpacerItem *horizontalSpacer_5;
+    QHBoxLayout *horizontalLayout_26;
+    QLineEdit *lineEdit_alt_auto;
+    QLabel *label_31;
+    QHBoxLayout *horizontalLayout_33;
+    QSpacerItem *horizontalSpacer_7;
+    QSpacerItem *horizontalSpacer_8;
+    QHBoxLayout *horizontalLayout_28;
+    QLineEdit *lineEdit_alt_trackerr;
+    QLabel *label_33;
+    QWidget *layoutWidget4;
+    QVBoxLayout *verticalLayout_5;
+    QLabel *label_3;
+    QLabel *label_4;
+    QLabel *label_5;
+    QLabel *label_6;
+    QLabel *label_7;
+    QFrame *frame_4;
+    QLabel *label_10;
+    QLabel *label_35;
+    QLabel *label_36;
+    QLineEdit *lineEdit;
+    QLineEdit *lineEdit_2;
+    QLineEdit *lineEdit_3;
+    QLineEdit *lineEdit_4;
+    QLineEdit *lineEdit_5;
+    QLineEdit *lineEdit_6;
+    QLabel *label_37;
+    QLabel *label_38;
+    QLabel *label_39;
+    QLabel *label_40;
+    QLabel *label_48;
+    QLineEdit *lineEdit_13;
+    QLineEdit *lineEdit_14;
+    QLineEdit *lineEdit_15;
+    QLineEdit *lineEdit_16;
+    QLineEdit *lineEdit_17;
+    QPushButton *pushButton_caculate;
+
+    void setupUi(QScrollArea *Tracking)
+    {
+        if (Tracking->objectName().isEmpty())
+            Tracking->setObjectName(QString::fromUtf8("Tracking"));
+        Tracking->resize(963, 662);
+        Tracking->setWidgetResizable(true);
+        scrollAreaWidgetContents = new QWidget();
+        scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 957, 656));
+        scrollAreaWidgetContents->setAutoFillBackground(true);
+        label_11 = new QLabel(scrollAreaWidgetContents);
+        label_11->setObjectName(QString::fromUtf8("label_11"));
+        label_11->setGeometry(QRect(280, 20, 181, 31));
+        label_11->setTextFormat(Qt::RichText);
+        frame = new QFrame(scrollAreaWidgetContents);
+        frame->setObjectName(QString::fromUtf8("frame"));
+        frame->setGeometry(QRect(10, 70, 611, 551));
+        frame->setFrameShape(QFrame::WinPanel);
+        frame->setFrameShadow(QFrame::Plain);
+        label = new QLabel(frame);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setGeometry(QRect(220, 30, 101, 31));
+        label_2 = new QLabel(frame);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setGeometry(QRect(430, 30, 101, 31));
+        frame_2 = new QFrame(frame);
+        frame_2->setObjectName(QString::fromUtf8("frame_2"));
+        frame_2->setGeometry(QRect(160, 310, 201, 131));
+        frame_2->setFrameShape(QFrame::StyledPanel);
+        frame_2->setFrameShadow(QFrame::Raised);
+        layoutWidget = new QWidget(frame_2);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(11, 10, 131, 111));
+        verticalLayout = new QVBoxLayout(layoutWidget);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
+        label_8 = new QLabel(layoutWidget);
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+
+        verticalLayout->addWidget(label_8);
+
+        checkBox_az_ampli_enable = new QCheckBox(layoutWidget);
+        checkBox_az_ampli_enable->setObjectName(QString::fromUtf8("checkBox_az_ampli_enable"));
+        checkBox_az_ampli_enable->setCheckable(false);
+
+        verticalLayout->addWidget(checkBox_az_ampli_enable);
+
+        checkBox_az_homed = new QCheckBox(layoutWidget);
+        checkBox_az_homed->setObjectName(QString::fromUtf8("checkBox_az_homed"));
+        checkBox_az_homed->setCheckable(false);
+
+        verticalLayout->addWidget(checkBox_az_homed);
+
+        frame_3 = new QFrame(frame);
+        frame_3->setObjectName(QString::fromUtf8("frame_3"));
+        frame_3->setGeometry(QRect(390, 310, 201, 131));
+        frame_3->setFrameShape(QFrame::StyledPanel);
+        frame_3->setFrameShadow(QFrame::Raised);
+        layoutWidget1 = new QWidget(frame_3);
+        layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
+        layoutWidget1->setGeometry(QRect(20, 7, 137, 121));
+        verticalLayout_2 = new QVBoxLayout(layoutWidget1);
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
+        label_9 = new QLabel(layoutWidget1);
+        label_9->setObjectName(QString::fromUtf8("label_9"));
+
+        verticalLayout_2->addWidget(label_9);
+
+        checkBox_alt_ampli1_enable = new QCheckBox(layoutWidget1);
+        checkBox_alt_ampli1_enable->setObjectName(QString::fromUtf8("checkBox_alt_ampli1_enable"));
+        checkBox_alt_ampli1_enable->setCheckable(false);
+
+        verticalLayout_2->addWidget(checkBox_alt_ampli1_enable);
+
+        checkBox_alt_ampli2_enable = new QCheckBox(layoutWidget1);
+        checkBox_alt_ampli2_enable->setObjectName(QString::fromUtf8("checkBox_alt_ampli2_enable"));
+        checkBox_alt_ampli2_enable->setCheckable(false);
+
+        verticalLayout_2->addWidget(checkBox_alt_ampli2_enable);
+
+        checkBox_alt_homed = new QCheckBox(layoutWidget1);
+        checkBox_alt_homed->setObjectName(QString::fromUtf8("checkBox_alt_homed"));
+        checkBox_alt_homed->setCheckable(false);
+
+        verticalLayout_2->addWidget(checkBox_alt_homed);
+
+        pushButton_track = new QPushButton(frame);
+        pushButton_track->setObjectName(QString::fromUtf8("pushButton_track"));
+        pushButton_track->setGeometry(QRect(280, 470, 81, 41));
+        pushButton_stop = new QPushButton(frame);
+        pushButton_stop->setObjectName(QString::fromUtf8("pushButton_stop"));
+        pushButton_stop->setGeometry(QRect(390, 470, 71, 41));
+        layoutWidget2 = new QWidget(frame);
+        layoutWidget2->setObjectName(QString::fromUtf8("layoutWidget2"));
+        layoutWidget2->setGeometry(QRect(159, 72, 201, 211));
+        verticalLayout_3 = new QVBoxLayout(layoutWidget2);
+        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
+        verticalLayout_3->setContentsMargins(0, 0, 0, 0);
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout_5 = new QHBoxLayout();
+        horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
+        lineEdit_az_posD = new QLineEdit(layoutWidget2);
+        lineEdit_az_posD->setObjectName(QString::fromUtf8("lineEdit_az_posD"));
+        lineEdit_az_posD->setEnabled(true);
+        lineEdit_az_posD->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_az_posD->setReadOnly(true);
+
+        horizontalLayout_5->addWidget(lineEdit_az_posD);
+
+        label_14 = new QLabel(layoutWidget2);
+        label_14->setObjectName(QString::fromUtf8("label_14"));
+
+        horizontalLayout_5->addWidget(label_14);
+
+
+        horizontalLayout->addLayout(horizontalLayout_5);
+
+        horizontalLayout_7 = new QHBoxLayout();
+        horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
+        lineEdit_az_posM = new QLineEdit(layoutWidget2);
+        lineEdit_az_posM->setObjectName(QString::fromUtf8("lineEdit_az_posM"));
+        lineEdit_az_posM->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_az_posM->setReadOnly(true);
+
+        horizontalLayout_7->addWidget(lineEdit_az_posM);
+
+        label_13 = new QLabel(layoutWidget2);
+        label_13->setObjectName(QString::fromUtf8("label_13"));
+
+        horizontalLayout_7->addWidget(label_13);
+
+
+        horizontalLayout->addLayout(horizontalLayout_7);
+
+        horizontalLayout_6 = new QHBoxLayout();
+        horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
+        lineEdit_az_posS = new QLineEdit(layoutWidget2);
+        lineEdit_az_posS->setObjectName(QString::fromUtf8("lineEdit_az_posS"));
+        lineEdit_az_posS->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_az_posS->setReadOnly(false);
+
+        horizontalLayout_6->addWidget(lineEdit_az_posS);
+
+        label_12 = new QLabel(layoutWidget2);
+        label_12->setObjectName(QString::fromUtf8("label_12"));
+
+        horizontalLayout_6->addWidget(label_12);
+
+
+        horizontalLayout->addLayout(horizontalLayout_6);
+
+
+        verticalLayout_3->addLayout(horizontalLayout);
+
+        horizontalLayout_12 = new QHBoxLayout();
+        horizontalLayout_12->setObjectName(QString::fromUtf8("horizontalLayout_12"));
+        horizontalLayout_11 = new QHBoxLayout();
+        horizontalLayout_11->setObjectName(QString::fromUtf8("horizontalLayout_11"));
+        lineEdit_az_starD = new QLineEdit(layoutWidget2);
+        lineEdit_az_starD->setObjectName(QString::fromUtf8("lineEdit_az_starD"));
+        lineEdit_az_starD->setEnabled(true);
+        lineEdit_az_starD->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_az_starD->setReadOnly(true);
+
+        horizontalLayout_11->addWidget(lineEdit_az_starD);
+
+        label_18 = new QLabel(layoutWidget2);
+        label_18->setObjectName(QString::fromUtf8("label_18"));
+
+        horizontalLayout_11->addWidget(label_18);
+
+
+        horizontalLayout_12->addLayout(horizontalLayout_11);
+
+        horizontalLayout_3 = new QHBoxLayout();
+        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
+        lineEdit_az_starM = new QLineEdit(layoutWidget2);
+        lineEdit_az_starM->setObjectName(QString::fromUtf8("lineEdit_az_starM"));
+        lineEdit_az_starM->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_az_starM->setReadOnly(true);
+
+        horizontalLayout_3->addWidget(lineEdit_az_starM);
+
+        label_19 = new QLabel(layoutWidget2);
+        label_19->setObjectName(QString::fromUtf8("label_19"));
+
+        horizontalLayout_3->addWidget(label_19);
+
+
+        horizontalLayout_12->addLayout(horizontalLayout_3);
+
+        horizontalLayout_13 = new QHBoxLayout();
+        horizontalLayout_13->setObjectName(QString::fromUtf8("horizontalLayout_13"));
+        lineEdit_az_starS = new QLineEdit(layoutWidget2);
+        lineEdit_az_starS->setObjectName(QString::fromUtf8("lineEdit_az_starS"));
+        lineEdit_az_starS->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_az_starS->setReadOnly(true);
+
+        horizontalLayout_13->addWidget(lineEdit_az_starS);
+
+        label_20 = new QLabel(layoutWidget2);
+        label_20->setObjectName(QString::fromUtf8("label_20"));
+
+        horizontalLayout_13->addWidget(label_20);
+
+
+        horizontalLayout_12->addLayout(horizontalLayout_13);
+
+
+        verticalLayout_3->addLayout(horizontalLayout_12);
+
+        horizontalLayout_17 = new QHBoxLayout();
+        horizontalLayout_17->setObjectName(QString::fromUtf8("horizontalLayout_17"));
+        horizontalLayout_18 = new QHBoxLayout();
+        horizontalLayout_18->setObjectName(QString::fromUtf8("horizontalLayout_18"));
+        lineEdit_az_targetD = new QLineEdit(layoutWidget2);
+        lineEdit_az_targetD->setObjectName(QString::fromUtf8("lineEdit_az_targetD"));
+        lineEdit_az_targetD->setEnabled(true);
+        lineEdit_az_targetD->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_az_targetD->setReadOnly(true);
+
+        horizontalLayout_18->addWidget(lineEdit_az_targetD);
+
+        label_24 = new QLabel(layoutWidget2);
+        label_24->setObjectName(QString::fromUtf8("label_24"));
+
+        horizontalLayout_18->addWidget(label_24);
+
+
+        horizontalLayout_17->addLayout(horizontalLayout_18);
+
+        horizontalLayout_19 = new QHBoxLayout();
+        horizontalLayout_19->setObjectName(QString::fromUtf8("horizontalLayout_19"));
+        lineEdit_az_targetM = new QLineEdit(layoutWidget2);
+        lineEdit_az_targetM->setObjectName(QString::fromUtf8("lineEdit_az_targetM"));
+        lineEdit_az_targetM->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_az_targetM->setReadOnly(true);
+
+        horizontalLayout_19->addWidget(lineEdit_az_targetM);
+
+        label_25 = new QLabel(layoutWidget2);
+        label_25->setObjectName(QString::fromUtf8("label_25"));
+
+        horizontalLayout_19->addWidget(label_25);
+
+
+        horizontalLayout_17->addLayout(horizontalLayout_19);
+
+        horizontalLayout_20 = new QHBoxLayout();
+        horizontalLayout_20->setObjectName(QString::fromUtf8("horizontalLayout_20"));
+        lineEdit_az_targetS = new QLineEdit(layoutWidget2);
+        lineEdit_az_targetS->setObjectName(QString::fromUtf8("lineEdit_az_targetS"));
+        lineEdit_az_targetS->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_az_targetS->setReadOnly(true);
+
+        horizontalLayout_20->addWidget(lineEdit_az_targetS);
+
+        label_26 = new QLabel(layoutWidget2);
+        label_26->setObjectName(QString::fromUtf8("label_26"));
+
+        horizontalLayout_20->addWidget(label_26);
+
+
+        horizontalLayout_17->addLayout(horizontalLayout_20);
+
+
+        verticalLayout_3->addLayout(horizontalLayout_17);
+
+        horizontalLayout_30 = new QHBoxLayout();
+        horizontalLayout_30->setObjectName(QString::fromUtf8("horizontalLayout_30"));
+        horizontalSpacer = new QSpacerItem(98, 17, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_30->addItem(horizontalSpacer);
+
+        horizontalSpacer_4 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_30->addItem(horizontalSpacer_4);
+
+        horizontalLayout_25 = new QHBoxLayout();
+        horizontalLayout_25->setObjectName(QString::fromUtf8("horizontalLayout_25"));
+        lineEdit_az_auto = new QLineEdit(layoutWidget2);
+        lineEdit_az_auto->setObjectName(QString::fromUtf8("lineEdit_az_auto"));
+        lineEdit_az_auto->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_az_auto->setReadOnly(true);
+
+        horizontalLayout_25->addWidget(lineEdit_az_auto);
+
+        label_30 = new QLabel(layoutWidget2);
+        label_30->setObjectName(QString::fromUtf8("label_30"));
+
+        horizontalLayout_25->addWidget(label_30);
+
+
+        horizontalLayout_30->addLayout(horizontalLayout_25);
+
+
+        verticalLayout_3->addLayout(horizontalLayout_30);
+
+        horizontalLayout_32 = new QHBoxLayout();
+        horizontalLayout_32->setObjectName(QString::fromUtf8("horizontalLayout_32"));
+        horizontalSpacer_3 = new QSpacerItem(98, 17, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_32->addItem(horizontalSpacer_3);
+
+        horizontalSpacer_6 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_32->addItem(horizontalSpacer_6);
+
+        horizontalLayout_27 = new QHBoxLayout();
+        horizontalLayout_27->setObjectName(QString::fromUtf8("horizontalLayout_27"));
+        lineEdit_az_trackerr = new QLineEdit(layoutWidget2);
+        lineEdit_az_trackerr->setObjectName(QString::fromUtf8("lineEdit_az_trackerr"));
+        lineEdit_az_trackerr->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_az_trackerr->setReadOnly(true);
+
+        horizontalLayout_27->addWidget(lineEdit_az_trackerr);
+
+        label_32 = new QLabel(layoutWidget2);
+        label_32->setObjectName(QString::fromUtf8("label_32"));
+
+        horizontalLayout_27->addWidget(label_32);
+
+
+        horizontalLayout_32->addLayout(horizontalLayout_27);
+
+
+        verticalLayout_3->addLayout(horizontalLayout_32);
+
+        layoutWidget3 = new QWidget(frame);
+        layoutWidget3->setObjectName(QString::fromUtf8("layoutWidget3"));
+        layoutWidget3->setGeometry(QRect(390, 70, 201, 211));
+        verticalLayout_4 = new QVBoxLayout(layoutWidget3);
+        verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
+        verticalLayout_4->setContentsMargins(0, 0, 0, 0);
+        horizontalLayout_2 = new QHBoxLayout();
+        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
+        horizontalLayout_8 = new QHBoxLayout();
+        horizontalLayout_8->setObjectName(QString::fromUtf8("horizontalLayout_8"));
+        lineEdit_alt_posD = new QLineEdit(layoutWidget3);
+        lineEdit_alt_posD->setObjectName(QString::fromUtf8("lineEdit_alt_posD"));
+        lineEdit_alt_posD->setEnabled(true);
+        lineEdit_alt_posD->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_alt_posD->setReadOnly(true);
+
+        horizontalLayout_8->addWidget(lineEdit_alt_posD);
+
+        label_15 = new QLabel(layoutWidget3);
+        label_15->setObjectName(QString::fromUtf8("label_15"));
+
+        horizontalLayout_8->addWidget(label_15);
+
+
+        horizontalLayout_2->addLayout(horizontalLayout_8);
+
+        horizontalLayout_9 = new QHBoxLayout();
+        horizontalLayout_9->setObjectName(QString::fromUtf8("horizontalLayout_9"));
+        lineEdit_alt_posM = new QLineEdit(layoutWidget3);
+        lineEdit_alt_posM->setObjectName(QString::fromUtf8("lineEdit_alt_posM"));
+        lineEdit_alt_posM->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_alt_posM->setReadOnly(true);
+
+        horizontalLayout_9->addWidget(lineEdit_alt_posM);
+
+        label_16 = new QLabel(layoutWidget3);
+        label_16->setObjectName(QString::fromUtf8("label_16"));
+
+        horizontalLayout_9->addWidget(label_16);
+
+
+        horizontalLayout_2->addLayout(horizontalLayout_9);
+
+        horizontalLayout_10 = new QHBoxLayout();
+        horizontalLayout_10->setObjectName(QString::fromUtf8("horizontalLayout_10"));
+        lineEdit_alt_posS = new QLineEdit(layoutWidget3);
+        lineEdit_alt_posS->setObjectName(QString::fromUtf8("lineEdit_alt_posS"));
+        lineEdit_alt_posS->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_alt_posS->setReadOnly(true);
+
+        horizontalLayout_10->addWidget(lineEdit_alt_posS);
+
+        label_17 = new QLabel(layoutWidget3);
+        label_17->setObjectName(QString::fromUtf8("label_17"));
+
+        horizontalLayout_10->addWidget(label_17);
+
+
+        horizontalLayout_2->addLayout(horizontalLayout_10);
+
+
+        verticalLayout_4->addLayout(horizontalLayout_2);
+
+        horizontalLayout_4 = new QHBoxLayout();
+        horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
+        horizontalLayout_14 = new QHBoxLayout();
+        horizontalLayout_14->setObjectName(QString::fromUtf8("horizontalLayout_14"));
+        lineEdit_alt_starD = new QLineEdit(layoutWidget3);
+        lineEdit_alt_starD->setObjectName(QString::fromUtf8("lineEdit_alt_starD"));
+        lineEdit_alt_starD->setEnabled(true);
+        lineEdit_alt_starD->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_alt_starD->setReadOnly(true);
+
+        horizontalLayout_14->addWidget(lineEdit_alt_starD);
+
+        label_21 = new QLabel(layoutWidget3);
+        label_21->setObjectName(QString::fromUtf8("label_21"));
+
+        horizontalLayout_14->addWidget(label_21);
+
+
+        horizontalLayout_4->addLayout(horizontalLayout_14);
+
+        horizontalLayout_15 = new QHBoxLayout();
+        horizontalLayout_15->setObjectName(QString::fromUtf8("horizontalLayout_15"));
+        lineEdit_alt_starM = new QLineEdit(layoutWidget3);
+        lineEdit_alt_starM->setObjectName(QString::fromUtf8("lineEdit_alt_starM"));
+        lineEdit_alt_starM->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_alt_starM->setReadOnly(true);
+
+        horizontalLayout_15->addWidget(lineEdit_alt_starM);
+
+        label_22 = new QLabel(layoutWidget3);
+        label_22->setObjectName(QString::fromUtf8("label_22"));
+
+        horizontalLayout_15->addWidget(label_22);
+
+
+        horizontalLayout_4->addLayout(horizontalLayout_15);
+
+        horizontalLayout_16 = new QHBoxLayout();
+        horizontalLayout_16->setObjectName(QString::fromUtf8("horizontalLayout_16"));
+        lineEdit_alt_starS = new QLineEdit(layoutWidget3);
+        lineEdit_alt_starS->setObjectName(QString::fromUtf8("lineEdit_alt_starS"));
+        lineEdit_alt_starS->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_alt_starS->setReadOnly(true);
+
+        horizontalLayout_16->addWidget(lineEdit_alt_starS);
+
+        label_23 = new QLabel(layoutWidget3);
+        label_23->setObjectName(QString::fromUtf8("label_23"));
+
+        horizontalLayout_16->addWidget(label_23);
+
+
+        horizontalLayout_4->addLayout(horizontalLayout_16);
+
+
+        verticalLayout_4->addLayout(horizontalLayout_4);
+
+        horizontalLayout_21 = new QHBoxLayout();
+        horizontalLayout_21->setObjectName(QString::fromUtf8("horizontalLayout_21"));
+        horizontalLayout_22 = new QHBoxLayout();
+        horizontalLayout_22->setObjectName(QString::fromUtf8("horizontalLayout_22"));
+        lineEdit_alt_targetD = new QLineEdit(layoutWidget3);
+        lineEdit_alt_targetD->setObjectName(QString::fromUtf8("lineEdit_alt_targetD"));
+        lineEdit_alt_targetD->setEnabled(true);
+        lineEdit_alt_targetD->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_alt_targetD->setReadOnly(true);
+
+        horizontalLayout_22->addWidget(lineEdit_alt_targetD);
+
+        label_27 = new QLabel(layoutWidget3);
+        label_27->setObjectName(QString::fromUtf8("label_27"));
+
+        horizontalLayout_22->addWidget(label_27);
+
+
+        horizontalLayout_21->addLayout(horizontalLayout_22);
+
+        horizontalLayout_23 = new QHBoxLayout();
+        horizontalLayout_23->setObjectName(QString::fromUtf8("horizontalLayout_23"));
+        lineEdit_alt_targetM = new QLineEdit(layoutWidget3);
+        lineEdit_alt_targetM->setObjectName(QString::fromUtf8("lineEdit_alt_targetM"));
+        lineEdit_alt_targetM->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_alt_targetM->setReadOnly(true);
+
+        horizontalLayout_23->addWidget(lineEdit_alt_targetM);
+
+        label_28 = new QLabel(layoutWidget3);
+        label_28->setObjectName(QString::fromUtf8("label_28"));
+
+        horizontalLayout_23->addWidget(label_28);
+
+
+        horizontalLayout_21->addLayout(horizontalLayout_23);
+
+        horizontalLayout_24 = new QHBoxLayout();
+        horizontalLayout_24->setObjectName(QString::fromUtf8("horizontalLayout_24"));
+        lineEdit_alt_targetS = new QLineEdit(layoutWidget3);
+        lineEdit_alt_targetS->setObjectName(QString::fromUtf8("lineEdit_alt_targetS"));
+        lineEdit_alt_targetS->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_alt_targetS->setReadOnly(true);
+
+        horizontalLayout_24->addWidget(lineEdit_alt_targetS);
+
+        label_29 = new QLabel(layoutWidget3);
+        label_29->setObjectName(QString::fromUtf8("label_29"));
+
+        horizontalLayout_24->addWidget(label_29);
+
+
+        horizontalLayout_21->addLayout(horizontalLayout_24);
+
+
+        verticalLayout_4->addLayout(horizontalLayout_21);
+
+        horizontalLayout_31 = new QHBoxLayout();
+        horizontalLayout_31->setObjectName(QString::fromUtf8("horizontalLayout_31"));
+        horizontalSpacer_2 = new QSpacerItem(98, 17, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_31->addItem(horizontalSpacer_2);
+
+        horizontalSpacer_5 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_31->addItem(horizontalSpacer_5);
+
+        horizontalLayout_26 = new QHBoxLayout();
+        horizontalLayout_26->setObjectName(QString::fromUtf8("horizontalLayout_26"));
+        lineEdit_alt_auto = new QLineEdit(layoutWidget3);
+        lineEdit_alt_auto->setObjectName(QString::fromUtf8("lineEdit_alt_auto"));
+        lineEdit_alt_auto->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_alt_auto->setReadOnly(true);
+
+        horizontalLayout_26->addWidget(lineEdit_alt_auto);
+
+        label_31 = new QLabel(layoutWidget3);
+        label_31->setObjectName(QString::fromUtf8("label_31"));
+
+        horizontalLayout_26->addWidget(label_31);
+
+
+        horizontalLayout_31->addLayout(horizontalLayout_26);
+
+
+        verticalLayout_4->addLayout(horizontalLayout_31);
+
+        horizontalLayout_33 = new QHBoxLayout();
+        horizontalLayout_33->setObjectName(QString::fromUtf8("horizontalLayout_33"));
+        horizontalSpacer_7 = new QSpacerItem(98, 17, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_33->addItem(horizontalSpacer_7);
+
+        horizontalSpacer_8 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_33->addItem(horizontalSpacer_8);
+
+        horizontalLayout_28 = new QHBoxLayout();
+        horizontalLayout_28->setObjectName(QString::fromUtf8("horizontalLayout_28"));
+        lineEdit_alt_trackerr = new QLineEdit(layoutWidget3);
+        lineEdit_alt_trackerr->setObjectName(QString::fromUtf8("lineEdit_alt_trackerr"));
+        lineEdit_alt_trackerr->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        lineEdit_alt_trackerr->setReadOnly(true);
+
+        horizontalLayout_28->addWidget(lineEdit_alt_trackerr);
+
+        label_33 = new QLabel(layoutWidget3);
+        label_33->setObjectName(QString::fromUtf8("label_33"));
+
+        horizontalLayout_28->addWidget(label_33);
+
+
+        horizontalLayout_33->addLayout(horizontalLayout_28);
+
+
+        verticalLayout_4->addLayout(horizontalLayout_33);
+
+        layoutWidget4 = new QWidget(frame);
+        layoutWidget4->setObjectName(QString::fromUtf8("layoutWidget4"));
+        layoutWidget4->setGeometry(QRect(21, 71, 136, 211));
+        verticalLayout_5 = new QVBoxLayout(layoutWidget4);
+        verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
+        verticalLayout_5->setContentsMargins(0, 0, 0, 0);
+        label_3 = new QLabel(layoutWidget4);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+
+        verticalLayout_5->addWidget(label_3);
+
+        label_4 = new QLabel(layoutWidget4);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+
+        verticalLayout_5->addWidget(label_4);
+
+        label_5 = new QLabel(layoutWidget4);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+
+        verticalLayout_5->addWidget(label_5);
+
+        label_6 = new QLabel(layoutWidget4);
+        label_6->setObjectName(QString::fromUtf8("label_6"));
+
+        verticalLayout_5->addWidget(label_6);
+
+        label_7 = new QLabel(layoutWidget4);
+        label_7->setObjectName(QString::fromUtf8("label_7"));
+
+        verticalLayout_5->addWidget(label_7);
+
+        frame_4 = new QFrame(scrollAreaWidgetContents);
+        frame_4->setObjectName(QString::fromUtf8("frame_4"));
+        frame_4->setGeometry(QRect(640, 70, 301, 551));
+        frame_4->setFrameShape(QFrame::WinPanel);
+        frame_4->setFrameShadow(QFrame::Plain);
+        label_10 = new QLabel(frame_4);
+        label_10->setObjectName(QString::fromUtf8("label_10"));
+        label_10->setGeometry(QRect(110, 30, 51, 31));
+        label_35 = new QLabel(frame_4);
+        label_35->setObjectName(QString::fromUtf8("label_35"));
+        label_35->setGeometry(QRect(30, 80, 31, 21));
+        label_36 = new QLabel(frame_4);
+        label_36->setObjectName(QString::fromUtf8("label_36"));
+        label_36->setGeometry(QRect(30, 120, 41, 21));
+        lineEdit = new QLineEdit(frame_4);
+        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
+        lineEdit->setGeometry(QRect(70, 80, 61, 25));
+        lineEdit_2 = new QLineEdit(frame_4);
+        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
+        lineEdit_2->setGeometry(QRect(130, 80, 61, 25));
+        lineEdit_3 = new QLineEdit(frame_4);
+        lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
+        lineEdit_3->setGeometry(QRect(200, 80, 61, 25));
+        lineEdit_4 = new QLineEdit(frame_4);
+        lineEdit_4->setObjectName(QString::fromUtf8("lineEdit_4"));
+        lineEdit_4->setGeometry(QRect(70, 120, 61, 25));
+        lineEdit_5 = new QLineEdit(frame_4);
+        lineEdit_5->setObjectName(QString::fromUtf8("lineEdit_5"));
+        lineEdit_5->setGeometry(QRect(130, 120, 61, 25));
+        lineEdit_6 = new QLineEdit(frame_4);
+        lineEdit_6->setObjectName(QString::fromUtf8("lineEdit_6"));
+        lineEdit_6->setGeometry(QRect(200, 120, 61, 25));
+        label_37 = new QLabel(frame_4);
+        label_37->setObjectName(QString::fromUtf8("label_37"));
+        label_37->setGeometry(QRect(20, 180, 111, 31));
+        label_38 = new QLabel(frame_4);
+        label_38->setObjectName(QString::fromUtf8("label_38"));
+        label_38->setGeometry(QRect(20, 230, 111, 31));
+        label_39 = new QLabel(frame_4);
+        label_39->setObjectName(QString::fromUtf8("label_39"));
+        label_39->setGeometry(QRect(20, 280, 101, 31));
+        label_40 = new QLabel(frame_4);
+        label_40->setObjectName(QString::fromUtf8("label_40"));
+        label_40->setGeometry(QRect(20, 320, 111, 31));
+        label_48 = new QLabel(frame_4);
+        label_48->setObjectName(QString::fromUtf8("label_48"));
+        label_48->setGeometry(QRect(20, 350, 121, 31));
+        lineEdit_13 = new QLineEdit(frame_4);
+        lineEdit_13->setObjectName(QString::fromUtf8("lineEdit_13"));
+        lineEdit_13->setGeometry(QRect(150, 180, 113, 25));
+        lineEdit_14 = new QLineEdit(frame_4);
+        lineEdit_14->setObjectName(QString::fromUtf8("lineEdit_14"));
+        lineEdit_14->setGeometry(QRect(150, 230, 113, 25));
+        lineEdit_15 = new QLineEdit(frame_4);
+        lineEdit_15->setObjectName(QString::fromUtf8("lineEdit_15"));
+        lineEdit_15->setGeometry(QRect(150, 280, 113, 25));
+        lineEdit_16 = new QLineEdit(frame_4);
+        lineEdit_16->setObjectName(QString::fromUtf8("lineEdit_16"));
+        lineEdit_16->setGeometry(QRect(150, 320, 113, 25));
+        lineEdit_17 = new QLineEdit(frame_4);
+        lineEdit_17->setObjectName(QString::fromUtf8("lineEdit_17"));
+        lineEdit_17->setGeometry(QRect(150, 350, 113, 25));
+        pushButton_caculate = new QPushButton(frame_4);
+        pushButton_caculate->setObjectName(QString::fromUtf8("pushButton_caculate"));
+        pushButton_caculate->setGeometry(QRect(80, 460, 92, 24));
+        Tracking->setWidget(scrollAreaWidgetContents);
+
+        retranslateUi(Tracking);
+
+        QMetaObject::connectSlotsByName(Tracking);
+    } // setupUi
+
+    void retranslateUi(QScrollArea *Tracking)
+    {
+        Tracking->setWindowTitle(QApplication::translate("Tracking", "Tracking Mode", 0, QApplication::UnicodeUTF8));
+        label_11->setText(QApplication::translate("Tracking", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:20pt; font-weight:600; color:#ff0000;\">TRACKING MODE</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label->setText(QApplication::translate("Tracking", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt; color:#0000ff;\">AZIMUTH</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_2->setText(QApplication::translate("Tracking", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt; color:#0000ff;\">ALTITUDE</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_8->setText(QApplication::translate("Tracking", "AZIMUTH", 0, QApplication::UnicodeUTF8));
+        checkBox_az_ampli_enable->setText(QApplication::translate("Tracking", "Amplifier enabled", 0, QApplication::UnicodeUTF8));
+        checkBox_az_homed->setText(QApplication::translate("Tracking", "Homed", 0, QApplication::UnicodeUTF8));
+        label_9->setText(QApplication::translate("Tracking", "ALTITUDE", 0, QApplication::UnicodeUTF8));
+        checkBox_alt_ampli1_enable->setText(QApplication::translate("Tracking", "Amplifier1 enabled", 0, QApplication::UnicodeUTF8));
+        checkBox_alt_ampli2_enable->setText(QApplication::translate("Tracking", "Amplifier2 enabled", 0, QApplication::UnicodeUTF8));
+        checkBox_alt_homed->setText(QApplication::translate("Tracking", "Homed", 0, QApplication::UnicodeUTF8));
+        pushButton_track->setText(QApplication::translate("Tracking", "Track", 0, QApplication::UnicodeUTF8));
+        pushButton_stop->setText(QApplication::translate("Tracking", "Stop", 0, QApplication::UnicodeUTF8));
+        lineEdit_az_posD->setText(QApplication::translate("Tracking", "0", 0, QApplication::UnicodeUTF8));
+        label_14->setText(QApplication::translate("Tracking", "\302\260", 0, QApplication::UnicodeUTF8));
+        lineEdit_az_posM->setText(QApplication::translate("Tracking", "0", 0, QApplication::UnicodeUTF8));
+        label_13->setText(QApplication::translate("Tracking", "\342\200\262", 0, QApplication::UnicodeUTF8));
+        lineEdit_az_posS->setText(QApplication::translate("Tracking", "0", 0, QApplication::UnicodeUTF8));
+        label_12->setText(QApplication::translate("Tracking", "\342\200\263", 0, QApplication::UnicodeUTF8));
+        lineEdit_az_starD->setText(QApplication::translate("Tracking", "0", 0, QApplication::UnicodeUTF8));
+        label_18->setText(QApplication::translate("Tracking", "\302\260", 0, QApplication::UnicodeUTF8));
+        lineEdit_az_starM->setText(QApplication::translate("Tracking", "0", 0, QApplication::UnicodeUTF8));
+        label_19->setText(QApplication::translate("Tracking", "\342\200\262", 0, QApplication::UnicodeUTF8));
+        lineEdit_az_starS->setText(QApplication::translate("Tracking", "0", 0, QApplication::UnicodeUTF8));
+        label_20->setText(QApplication::translate("Tracking", "\342\200\263", 0, QApplication::UnicodeUTF8));
+        lineEdit_az_targetD->setText(QApplication::translate("Tracking", "0", 0, QApplication::UnicodeUTF8));
+        label_24->setText(QApplication::translate("Tracking", "\302\260", 0, QApplication::UnicodeUTF8));
+        lineEdit_az_targetM->setText(QApplication::translate("Tracking", "0", 0, QApplication::UnicodeUTF8));
+        label_25->setText(QApplication::translate("Tracking", "\342\200\262", 0, QApplication::UnicodeUTF8));
+        lineEdit_az_targetS->setText(QApplication::translate("Tracking", "0", 0, QApplication::UnicodeUTF8));
+        label_26->setText(QApplication::translate("Tracking", "\342\200\263", 0, QApplication::UnicodeUTF8));
+        lineEdit_az_auto->setText(QApplication::translate("Tracking", "0", 0, QApplication::UnicodeUTF8));
+        label_30->setText(QApplication::translate("Tracking", "\342\200\263", 0, QApplication::UnicodeUTF8));
+        lineEdit_az_trackerr->setText(QApplication::translate("Tracking", "0", 0, QApplication::UnicodeUTF8));
+        label_32->setText(QApplication::translate("Tracking", "\342\200\263", 0, QApplication::UnicodeUTF8));
+        lineEdit_alt_posD->setText(QApplication::translate("Tracking", "0", 0, QApplication::UnicodeUTF8));
+        label_15->setText(QApplication::translate("Tracking", "\302\260", 0, QApplication::UnicodeUTF8));
+        lineEdit_alt_posM->setText(QApplication::translate("Tracking", "0", 0, QApplication::UnicodeUTF8));
+        label_16->setText(QApplication::translate("Tracking", "\342\200\262", 0, QApplication::UnicodeUTF8));
+        lineEdit_alt_posS->setText(QApplication::translate("Tracking", "0", 0, QApplication::UnicodeUTF8));
+        label_17->setText(QApplication::translate("Tracking", "\342\200\263", 0, QApplication::UnicodeUTF8));
+        lineEdit_alt_starD->setText(QApplication::translate("Tracking", "0", 0, QApplication::UnicodeUTF8));
+        label_21->setText(QApplication::translate("Tracking", "\302\260", 0, QApplication::UnicodeUTF8));
+        lineEdit_alt_starM->setText(QApplication::translate("Tracking", "0", 0, QApplication::UnicodeUTF8));
+        label_22->setText(QApplication::translate("Tracking", "\342\200\262", 0, QApplication::UnicodeUTF8));
+        lineEdit_alt_starS->setText(QApplication::translate("Tracking", "0", 0, QApplication::UnicodeUTF8));
+        label_23->setText(QApplication::translate("Tracking", "\342\200\263", 0, QApplication::UnicodeUTF8));
+        lineEdit_alt_targetD->setText(QApplication::translate("Tracking", "0", 0, QApplication::UnicodeUTF8));
+        label_27->setText(QApplication::translate("Tracking", "\302\260", 0, QApplication::UnicodeUTF8));
+        lineEdit_alt_targetM->setText(QApplication::translate("Tracking", "0", 0, QApplication::UnicodeUTF8));
+        label_28->setText(QApplication::translate("Tracking", "\342\200\262", 0, QApplication::UnicodeUTF8));
+        lineEdit_alt_targetS->setText(QApplication::translate("Tracking", "0", 0, QApplication::UnicodeUTF8));
+        label_29->setText(QApplication::translate("Tracking", "\342\200\263", 0, QApplication::UnicodeUTF8));
+        lineEdit_alt_auto->setText(QApplication::translate("Tracking", "0", 0, QApplication::UnicodeUTF8));
+        label_31->setText(QApplication::translate("Tracking", "\342\200\263", 0, QApplication::UnicodeUTF8));
+        lineEdit_alt_trackerr->setText(QApplication::translate("Tracking", "0", 0, QApplication::UnicodeUTF8));
+        label_33->setText(QApplication::translate("Tracking", "\342\200\263", 0, QApplication::UnicodeUTF8));
+        label_3->setText(QApplication::translate("Tracking", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">Position</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_4->setText(QApplication::translate("Tracking", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">Star Table</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_5->setText(QApplication::translate("Tracking", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">Target</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_6->setText(QApplication::translate("Tracking", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">Auto Guider</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_7->setText(QApplication::translate("Tracking", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">Tracking Error</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_10->setText(QApplication::translate("Tracking", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt; color:#0000ff;\">STAR</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_35->setText(QApplication::translate("Tracking", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">RA</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_36->setText(QApplication::translate("Tracking", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">DEC</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_37->setText(QApplication::translate("Tracking", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">Az Offset(\342\200\263)</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_38->setText(QApplication::translate("Tracking", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">Alt Offset(\342\200\263)</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_39->setText(QApplication::translate("Tracking", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">T Offset(\342\200\263)</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_40->setText(QApplication::translate("Tracking", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">Pressure(mBar)</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_48->setText(QApplication::translate("Tracking", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">Temperature(\302\260c)</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        pushButton_caculate->setText(QApplication::translate("Tracking", "Caculate", 0, QApplication::UnicodeUTF8));
+        Q_UNUSED(Tracking);
+    } // retranslateUi
+
+};
+
+namespace Ui {
+    class Tracking: public Ui_Tracking {};
+} // namespace Ui
+
+QT_END_NAMESPACE
+
+#endif // UI_TRACKING_H

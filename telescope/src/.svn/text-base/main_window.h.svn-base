@@ -1,0 +1,106 @@
+/***************************************************************************
+ *   Copyright (C) 2009 by donglongchao   *
+ *   donglongchao@163.com   *
+ *                                                                         *
+ *   This program is free software; you can redistribute it and/or modify  *
+ *   it under the terms of the GNU General Public License as published by  *
+ *   the Free Software Foundation; either version 2 of the License, or     *
+ *   (at your option) any later version.                                   *
+ *                                                                         *
+ *   This program is distributed in the hope that it will be useful,       *
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
+ *   GNU General Public License for more details.                          *
+ *                                                                         *
+ *   You should have received a copy of the GNU General Public License     *
+ *   along with this program; if not, write to the                         *
+ *   Free Software Foundation, Inc.,                                       *
+ *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
+ ***************************************************************************/
+#ifndef MAIN_WINDOW_H
+#define MAIN_WINDOW_H
+
+#define SOLUTION1
+#include <QtGui>
+#include "ui_telescope.h"
+#include <memory>//for auto_ptr
+class UMAC;
+class DirectAzalt;
+class DirectM3;
+class DirectM2;
+class Tracking;
+class DiagM2;
+class Terminal;
+
+class ServiceThread:public QThread
+{
+		Q_OBJECT
+	public:
+		ServiceThread();
+		virtual ~ServiceThread();
+	protected:
+		virtual void run();
+};
+
+class MainWindow:public QMainWindow,private Ui::MainWindow
+{
+		Q_OBJECT
+	public:
+		MainWindow ( QWidget *parent=0 );
+		virtual ~MainWindow();
+		ServiceThread *service;
+		DirectAzalt *direct_azalt;
+//		std::auto_ptr<DirectM3> direct_m3;
+		DirectM3 *direct_m3;
+		DirectM2 *direct_m2;
+		Tracking *tracking;
+		DiagM2 *diag_m2;
+		Terminal *terminal;
+	protected:
+		virtual void closeEvent ( QCloseEvent *event );
+	public slots:
+	private:
+	private slots:
+		void startDirectAzalt();
+		void startDirectM3();
+		void startDirectM2();
+		void startTracking();
+		void startDiagM2();
+		void startTerminal();
+
+		void on_actionWindows_triggered();
+		void on_actionMotif_triggered();
+		void on_actionGtk_triggered();
+		void on_actionCDE_triggered();
+};
+
+class Application: public QApplication
+{
+		Q_OBJECT
+	public:
+		Application ( int &c, char **v ) : QApplication ( c, v ) {}
+		bool notify ( QObject *rec, QEvent *ev )
+		{
+			try
+			{
+				return QApplication::notify ( rec, ev );
+			}
+			catch ( QString excepts )
+			{
+				QMessageBox mb ( QMessageBox::Warning,
+				                 tr ( "About to close" ),
+				                 tr ( ( excepts+"\n PLease close close this subwindow and check your connection and open this subwindow again." ).toAscii() ),
+				                 QMessageBox::Ok );
+				if ( mb.exec() ==QMessageBox::Ok )
+				{
+					return false;
+				}
+			}
+			catch ( ... )
+			{
+				qDebug() << "Unknown exception!" << endl;
+				quit();
+			}
+		}
+};
+#endif

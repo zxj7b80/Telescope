@@ -1,0 +1,166 @@
+/****************************************************************************
+** Meta object code from reading C++ file 'direct_m2.h'
+**
+** Created: Fri Jan 15 18:12:08 2010
+**      by: The Qt Meta Object Compiler version 61 (Qt 4.5.0)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#include "../src/direct_m2.h"
+#if !defined(Q_MOC_OUTPUT_REVISION)
+#error "The header file 'direct_m2.h' doesn't include <QObject>."
+#elif Q_MOC_OUTPUT_REVISION != 61
+#error "This file was generated using the moc from 4.5.0. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+QT_BEGIN_MOC_NAMESPACE
+static const uint qt_meta_data_DirectM2[] = {
+
+ // content:
+       2,       // revision
+       0,       // classname
+       0,    0, // classinfo
+      32,   12, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+
+ // slots: signature, parameters, type, tag, flags
+      10,    9,    9,    9, 0x08,
+      45,    9,    9,    9, 0x08,
+      85,    9,    9,    9, 0x08,
+     125,    9,    9,    9, 0x08,
+     169,    9,    9,    9, 0x08,
+     213,    9,    9,    9, 0x08,
+     257,    9,    9,    9, 0x08,
+     304,  301,    9,    9, 0x08,
+     345,  301,    9,    9, 0x08,
+     385,  301,    9,    9, 0x08,
+     426,  301,    9,    9, 0x08,
+     470,  301,    9,    9, 0x08,
+     515,  301,    9,    9, 0x08,
+     559,  301,    9,    9, 0x08,
+     604,  301,    9,    9, 0x08,
+     652,  301,    9,    9, 0x08,
+     697,  301,    9,    9, 0x08,
+     741,  301,    9,    9, 0x08,
+     786,  301,    9,    9, 0x08,
+     834,    9,    9,    9, 0x08,
+     864,    9,    9,    9, 0x08,
+     898,    9,    9,    9, 0x08,
+     932,    9,    9,    9, 0x08,
+     965,    9,    9,    9, 0x08,
+     998,    9,    9,    9, 0x08,
+    1035,    9,    9,    9, 0x08,
+    1072,    9,    9,    9, 0x08,
+    1109,    9,    9,    9, 0x08,
+    1146,    9,    9,    9, 0x08,
+    1178,    9,    9,    9, 0x08,
+    1214,    9,    9,    9, 0x08,
+    1250,    9,    9,    9, 0x08,
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_DirectM2[] = {
+    "DirectM2\0\0updateInterface(std::vector<char>)\0"
+    "on_lineEdit_tz_vel_spec_returnPressed()\0"
+    "on_lineEdit_tz_acc_spec_returnPressed()\0"
+    "on_lineEdit_alpha1_vel_spec_returnPressed()\0"
+    "on_lineEdit_alpha1_acc_spec_returnPressed()\0"
+    "on_lineEdit_alpha2_vel_spec_returnPressed()\0"
+    "on_lineEdit_alpha2_acc_spec_returnPressed()\0"
+    "on\0on_radioButton_tz_vel_fast_toggled(bool)\0"
+    "on_radioButton_tz_vel_mid_toggled(bool)\0"
+    "on_radioButton_tz_vel_slow_toggled(bool)\0"
+    "on_radioButton_tz_acc_default_toggled(bool)\0"
+    "on_radioButton_alpha1_vel_fast_toggled(bool)\0"
+    "on_radioButton_alpha1_vel_mid_toggled(bool)\0"
+    "on_radioButton_alpha1_vel_slow_toggled(bool)\0"
+    "on_radioButton_alpha1_acc_default_toggled(bool)\0"
+    "on_radioButton_alpha2_vel_fast_toggled(bool)\0"
+    "on_radioButton_alpha2_vel_mid_toggled(bool)\0"
+    "on_radioButton_alpha2_vel_slow_toggled(bool)\0"
+    "on_radioButton_alpha2_acc_default_toggled(bool)\0"
+    "on_pushButton_tz_go_clicked()\0"
+    "on_pushButton_alpha1_go_clicked()\0"
+    "on_pushButton_alpha2_go_clicked()\0"
+    "on_pushButton_tz_stepM_clicked()\0"
+    "on_pushButton_tz_stepP_clicked()\0"
+    "on_pushButton_alpha1_stepM_clicked()\0"
+    "on_pushButton_alpha1_stepP_clicked()\0"
+    "on_pushButton_alpha2_stepM_clicked()\0"
+    "on_pushButton_alpha2_stepP_clicked()\0"
+    "on_pushButton_tz_stop_clicked()\0"
+    "on_pushButton_alpha1_stop_clicked()\0"
+    "on_pushButton_alpha2_stop_clicked()\0"
+    "on_pushButton_alpha2_reset_clicked()\0"
+};
+
+const QMetaObject DirectM2::staticMetaObject = {
+    { &QScrollArea::staticMetaObject, qt_meta_stringdata_DirectM2,
+      qt_meta_data_DirectM2, 0 }
+};
+
+const QMetaObject *DirectM2::metaObject() const
+{
+    return &staticMetaObject;
+}
+
+void *DirectM2::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_DirectM2))
+        return static_cast<void*>(const_cast< DirectM2*>(this));
+    return QScrollArea::qt_metacast(_clname);
+}
+
+int DirectM2::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QScrollArea::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        switch (_id) {
+        case 0: updateInterface((*reinterpret_cast< std::vector<char>(*)>(_a[1]))); break;
+        case 1: on_lineEdit_tz_vel_spec_returnPressed(); break;
+        case 2: on_lineEdit_tz_acc_spec_returnPressed(); break;
+        case 3: on_lineEdit_alpha1_vel_spec_returnPressed(); break;
+        case 4: on_lineEdit_alpha1_acc_spec_returnPressed(); break;
+        case 5: on_lineEdit_alpha2_vel_spec_returnPressed(); break;
+        case 6: on_lineEdit_alpha2_acc_spec_returnPressed(); break;
+        case 7: on_radioButton_tz_vel_fast_toggled((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 8: on_radioButton_tz_vel_mid_toggled((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 9: on_radioButton_tz_vel_slow_toggled((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 10: on_radioButton_tz_acc_default_toggled((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 11: on_radioButton_alpha1_vel_fast_toggled((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 12: on_radioButton_alpha1_vel_mid_toggled((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 13: on_radioButton_alpha1_vel_slow_toggled((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 14: on_radioButton_alpha1_acc_default_toggled((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 15: on_radioButton_alpha2_vel_fast_toggled((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 16: on_radioButton_alpha2_vel_mid_toggled((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 17: on_radioButton_alpha2_vel_slow_toggled((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 18: on_radioButton_alpha2_acc_default_toggled((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 19: on_pushButton_tz_go_clicked(); break;
+        case 20: on_pushButton_alpha1_go_clicked(); break;
+        case 21: on_pushButton_alpha2_go_clicked(); break;
+        case 22: on_pushButton_tz_stepM_clicked(); break;
+        case 23: on_pushButton_tz_stepP_clicked(); break;
+        case 24: on_pushButton_alpha1_stepM_clicked(); break;
+        case 25: on_pushButton_alpha1_stepP_clicked(); break;
+        case 26: on_pushButton_alpha2_stepM_clicked(); break;
+        case 27: on_pushButton_alpha2_stepP_clicked(); break;
+        case 28: on_pushButton_tz_stop_clicked(); break;
+        case 29: on_pushButton_alpha1_stop_clicked(); break;
+        case 30: on_pushButton_alpha2_stop_clicked(); break;
+        case 31: on_pushButton_alpha2_reset_clicked(); break;
+        default: ;
+        }
+        _id -= 32;
+    }
+    return _id;
+}
+QT_END_MOC_NAMESPACE

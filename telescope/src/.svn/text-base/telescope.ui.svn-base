@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1016</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Telescope 2.5m</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../resource/toobar.qrc">
+    <normaloff>:/icon/star7.png</normaloff>:/icon/star7.png</iconset>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QMdiArea" name="mdiArea">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="viewMode">
+       <enum>QMdiArea::SubWindowView</enum>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Triangular</enum>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::South</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1016</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDirect_D">
+    <property name="title">
+     <string>Direct</string>
+    </property>
+    <addaction name="actionAz_Alt"/>
+    <addaction name="actionM3"/>
+    <addaction name="actionM2"/>
+   </widget>
+   <widget class="QMenu" name="menuTracking">
+    <property name="title">
+     <string>Tracking</string>
+    </property>
+    <addaction name="actionTracking"/>
+   </widget>
+   <widget class="QMenu" name="menuDiagnosis">
+    <property name="title">
+     <string>Diagnosis</string>
+    </property>
+    <addaction name="actionAz_Alt_D"/>
+    <addaction name="actionM3_D"/>
+    <addaction name="actionM2_D"/>
+    <addaction name="actionGlobal"/>
+   </widget>
+   <widget class="QMenu" name="menuSet_up">
+    <property name="title">
+     <string>Set up</string>
+    </property>
+    <addaction name="actionSet_up"/>
+   </widget>
+   <widget class="QMenu" name="menuStyle">
+    <property name="title">
+     <string>Style</string>
+    </property>
+    <addaction name="actionWindows"/>
+    <addaction name="actionMotif"/>
+    <addaction name="actionGtk"/>
+    <addaction name="actionCDE"/>
+   </widget>
+   <addaction name="menuDirect_D"/>
+   <addaction name="menuTracking"/>
+   <addaction name="menuDiagnosis"/>
+   <addaction name="menuSet_up"/>
+   <addaction name="menuStyle"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolbar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAz_Alt"/>
+   <addaction name="actionM3"/>
+   <addaction name="separator"/>
+   <addaction name="actionTerminal"/>
+  </widget>
+  <action name="actionAz_Alt">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource/toobar.qrc">
+     <normaloff>:/icon/20071128105357345.png</normaloff>:/icon/20071128105357345.png</iconset>
+   </property>
+   <property name="text">
+    <string>Az/Alt</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::TextHeuristicRole</enum>
+   </property>
+  </action>
+  <action name="actionM3">
+   <property name="icon">
+    <iconset resource="../resource/toobar.qrc">
+     <normaloff>:/icon/20071128105357345.png</normaloff>:/icon/20071128105357345.png</iconset>
+   </property>
+   <property name="text">
+    <string>M3</string>
+   </property>
+  </action>
+  <action name="actionM3_D">
+   <property name="text">
+    <string>M3</string>
+   </property>
+  </action>
+  <action name="actionM2_D">
+   <property name="text">
+    <string>M2</string>
+   </property>
+  </action>
+  <action name="actionGlobal">
+   <property name="text">
+    <string>Global</string>
+   </property>
+  </action>
+  <action name="actionSet_up">
+   <property name="text">
+    <string>Set up</string>
+   </property>
+  </action>
+  <action name="actionAz_Alt_D">
+   <property name="text">
+    <string>Az/Alt</string>
+   </property>
+  </action>
+  <action name="actionM2">
+   <property name="icon">
+    <iconset resource="../resource/toobar.qrc">
+     <normaloff>:/icon/star.png</normaloff>:/icon/star.png</iconset>
+   </property>
+   <property name="text">
+    <string>M2</string>
+   </property>
+  </action>
+  <action name="actionTerminal">
+   <property name="text">
+    <string>Terminal</string>
+   </property>
+  </action>
+  <action name="actionWindows">
+   <property name="text">
+    <string>Windows</string>
+   </property>
+  </action>
+  <action name="actionMotif">
+   <property name="text">
+    <string>Motif</string>
+   </property>
+  </action>
+  <action name="actionGtk">
+   <property name="text">
+    <string>Gtk</string>
+   </property>
+  </action>
+  <action name="actionCDE">
+   <property name="text">
+    <string>CDE</string>
+   </property>
+  </action>
+  <action name="actionTracking">
+   <property name="text">
+    <string>Tracking</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../resource/toobar.qrc"/>
+ </resources>
+ <connections/>
+</ui>
